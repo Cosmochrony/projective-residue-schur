@@ -205,6 +205,9 @@ of Projection Locking}
       residue, not a shell average of any front cocycle.
     \end{corollary}
 
+    This raw block expression is refined in Section~\ref{sec:spinorial-locking}, where the antiunitary
+    nature of $J_\Pi$ replaces the naive block difference by the transported defect $\Delta_\chi(P)$.
+
   \section{Stratification: $u$ vanishes unless A4 breaks chiral symmetry}
     \label{sec:strat}
 
@@ -391,7 +394,11 @@ of Projection Locking}
       negative semi-definite, zero-order, vanishing in the injective limit (Proposition~\ref{prop:schur}).
       \item Chiral diagonal blocks~\eqref{eq:diag}; left-admissibility $\Leftrightarrow\pi_{LL}=0$
       (Proposition~\ref{prop:chiralblocks}).
-      \item $u\propto\pi_{RR}-\pi_{LL}$ on $\Cgen$ (Corollary~\ref{cor:localise}).
+      \item The $J_3$-odd component of $\EPi^2$ is first exposed in the chiral block decomposition as a raw
+      asymmetry $\pi_{RR}-\pi_{LL}$ (Corollary~\ref{cor:localise}), and refined in
+      Section~\ref{sec:spinorial-locking} as the antiunitary equivariance defect
+      $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$, after $\Deff^{\pm}$-transport and
+      projection to $\Cgen$.
       \item $\pi_{LL}=\pi_{RR}\Rightarrow u=0$; non-zero $u$ requires A4 chiral symmetry-breaking
       (Proposition~\ref{prop:strat}).
       \item The symmetric-square action of the Born--Infeld involution is fixed: $J_\Pi^2=-1$ on the
@@ -399,8 +406,7 @@ of Projection Locking}
       $J_3$~\eqref{eq:jpij3}.
       Hence $u\neq0$ requires a failure of $J_\Pi$-equivariance at projection locking
       (Lemma~\ref{lem:chiral-obstruction}); the magnitude of $u$ depends on the $\Deff^{\pm}$-transported,
-      generation-projected component of the antiunitary defect
-      $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$~\eqref{eq:defect}.
+      generation-projected component of the antiunitary defect $\Delta_\chi(P)$~\eqref{eq:defect}.
       \item Operator $u$ equals spectral $u$ on the flat effective metric; $u$ normalisation-independent in
       the ratio (Section~\ref{sec:conventions}).
       \item Chirality is Lorentzian, not a finite-fibre label; $u$ is not a front observable
@@ -433,16 +439,21 @@ of Projection Locking}
   \section{Conclusion}
     \label{sec:conclusion}
 
-    The generation split $u$ is now localised with no remaining ambiguity of method: it is the chiral
-    asymmetry $\pi_{RR}-\pi_{LL}$ of the spinorial directions eliminated by the non-injective projection,
-    read off the Schur complement $\EPi=-M^{\dagger}M$, projected onto the gauge-singlet triplet $\Cgen$.
-    It vanishes identically for the chirally symmetric minimal non-injectivity, and is non-zero only
+    The generation split $u$ is now localised with no remaining ambiguity of method: it is controlled by
+    the $\Deff^{\pm}$-transported, generation-projected component of the antiunitary chiral equivariance
+    defect
+    \[
+      \Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}
+    \]
+    of the spinorial directions eliminated by the non-injective projection, read off the Schur complement
+    $\EPi=-M^{\dagger}M$ and restricted to the gauge-singlet triplet $\Cgen$.
+    It vanishes identically for the $J_\Pi$-equivariant minimal non-injectivity, and is non-zero only
     through a chiral symmetry-breaking carried by the projection-locking axiom A4.
     The polarisation, the Seeley--DeWitt conventions, and the operator/spectral identification are locked;
     the front observables are confirmed to be null controls rather than carriers of $u$.
-    The single remaining question is whether A4 derives the chiral asymmetry of the eliminated block, and
-    with what magnitude, which is the next text to settle from the Born--Infeld saturation
-    structure~\cite{Beau2026c}.
+    The single remaining question is whether A4 derives the antiunitary chiral equivariance defect of the
+    eliminated block, and with what magnitude, which is the next text to settle from the Born--Infeld
+    saturation structure~\cite{Beau2026c}.
 
     \appendix
   \section{Numerical front controls}
