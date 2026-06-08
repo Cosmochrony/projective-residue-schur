@@ -385,6 +385,86 @@ of Projection Locking}
       lacks the chiral asymmetry that lives in the Lorentzian residue.
     \end{remark}
 
+  \section{Finite locking is $J_\Pi$-equivariant: separation of the finite and Lorentzian sectors}
+    \label{sec:finite-equivariance}
+
+    Before any Lorentzian computation, the finite sector must be excluded as a source of $u$.
+    This section proves that the finite projection locking is $J_\Pi$-equivariant, so that $u$ cannot
+    originate in the finite cascade and the generation split is forced to be a Lorentzian datum.
+
+    Let $\mathrm{Lock}^{\mathrm{fin}}_S$ denote the projection-locking data of axiom A4~\cite{Beau2026m} at
+    finite $q$: the continuous Born--Infeld saturation condition intersected with the discrete shell
+    support on $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
+    Write $P_{\mathrm{fin}}=\PiS^{*}\PiS$ for the resulting finite admissible projector.
+
+    \begin{proposition}[Finite equivariance of projection locking]
+      \label{prop:finite-equivariance}
+      For $q$ an odd prime, the finite locking data is invariant under the spinorial Born--Infeld parity
+      $J_\Pi$, and the finite admissible configuration space carries no $J_\Pi$-odd modulus.
+      Consequently
+      \begin{equation}
+        \label{eq:finite-equiv}
+        [\mathrm{Lock}^{\mathrm{fin}}_S,J_\Pi]=0,\qquad [P_{\mathrm{fin}},J_\Pi]=0,
+      \end{equation}
+      and by Lemma~\ref{lem:chiral-obstruction} the finite generation split vanishes, $u_{\mathrm{fin}}=0$.
+    \end{proposition}
+
+    \begin{proof}
+      Both constituents of A4 are $J_\Pi$-invariant at finite $q$.
+      The continuous saturation condition is Born--Infeld parity itself, whose spinorial lift is
+      $J_\Pi$~\cite{Beau2026q14}, hence $J_\Pi$-invariant by construction.
+      The discrete shell support is a union of orbits of the parity
+      $c\leftrightarrow q-c$~\cite{Beau2026fe}; for $q$ an odd prime this involution acts as $c\mapsto -c$
+      on the central character, whose only fixed point is $c=0$, so no non-trivial shell is parity-fixed
+      and the support singles out no orientation.
+      The locking data is therefore $J_\Pi$-invariant.
+      Equivariance of $P_{\mathrm{fin}}$ then follows from the absence of a $J_\Pi$-odd deformation: a
+      cascade edge $g\to gs$ is a Heisenberg translation, not a symplectic element, so it carries no
+      canonical metaplectic lift, and the chiral eigendirections are complex combinations created only by
+      Lorentzian complexification~\cite{Beau2026q14}.
+      There is thus no finite direction along which a $J_\Pi$-conjugate pair of locked branches could split.
+      The finite locked branch is therefore $J_\Pi$-equivariant, giving~\eqref{eq:finite-equiv}.
+      The vanishing $u_{\mathrm{fin}}=0$ is then Lemma~\ref{lem:chiral-obstruction}.
+    \end{proof}
+
+    The numerical front controls of Appendix~\ref{sec:controls} confirm~\eqref{eq:finite-equiv} directly,
+    though they do not prove it: the proof is the absence of a finite odd modulus above.
+    The symmetric front average vanishes identically, $\Theta_{\mathrm{raw}}=0$ for $q\in\{61,101,151\}$,
+    and the oriented frontier is re-paired by the residual automorphism $\varphi=R_b\circ J_\Pi$, the finite
+    avatar of the parity.
+    These zeros are not failures to detect $u$; they are the measured signature of finite
+    $J_\Pi$-equivariance.
+
+    \begin{corollary}[Finite/Lorentzian separation]
+      \label{cor:separation}
+      The finite A4 locking cannot generate $u$.
+      A non-zero generation split can arise only in the Lorentzian completion of the Born--Infeld
+      saturation, where the chiral-odd modulus first exists.
+    \end{corollary}
+
+    This separates the remaining problem cleanly.
+    Let $s$ parametrise the $J_\Pi$-odd deformation of the locked block, opened only by Lorentzian
+    complexification, with $J_\Pi:s\mapsto -s$, so that $\Delta_\chi(P)$ and hence $u$ are odd in $s$.
+    Since $J_\Pi$ is a symmetry of the Lorentzian saturation functional $\mathcal B$, one has
+    $\mathcal B(s)=\mathcal B(-s)$, so $s=0$ is automatically stationary and the locking character is fixed
+    by the chiral curvature
+    \begin{equation}
+      \label{eq:muchi}
+      \mu_\chi^2:=\partial_s^2\mathcal B(0).
+    \end{equation}
+    Interpreting A4 as selection of saturated admissible minima of $\mathcal B$,
+    \begin{equation*}
+      \mu_\chi^2>0\ \Rightarrow\ J_\Pi\text{-equivariant locking, }u=0;\qquad
+      \mu_\chi^2<0\ \Rightarrow\ \text{a }J_\Pi\text{-conjugate saturated pair }\pm s_*,\ u\neq0,
+    \end{equation*}
+    and the marginal case $\mu_\chi^2=0$ is decided by the leading non-vanishing even coefficient
+    $\lambda_{2k}$ of $\mathcal B(s)=\mathcal B(0)+\lambda_{2k}s^{2k}+O(s^{2k+2})$: positive stabilises the
+    symmetric point ($u=0$), negative drives a higher-order spontaneous break ($u\neq0$), and vanishing to
+    all accessible orders leaves $u$ an unfixed modulus, signalling that A4 alone does not determine the
+    split.
+    This marginal branch is a degenerate case of the second variation, not an independent source, so the
+    decisive next step is the necessarily Lorentzian computation of $\mu_\chi^2$.
+
   \section{Status of results}
     \label{sec:status}
 
@@ -411,6 +491,9 @@ of Projection Locking}
       the ratio (Section~\ref{sec:conventions}).
       \item Chirality is Lorentzian, not a finite-fibre label; $u$ is not a front observable
       (Remark~\ref{rem:nogo}).
+      \item Finite projection locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$: $u$ cannot originate
+      in the finite cascade and is a Lorentzian datum
+      (Proposition~\ref{prop:finite-equivariance}, Corollary~\ref{cor:separation}).
     \end{itemize}
 
     \noindent\emph{Conditional.}
@@ -418,23 +501,41 @@ of Projection Locking}
     orientation-compatible assumption; its derivation from A4 is open.
 
     \noindent\emph{Open.}
-    The magnitude $|u|$ as the spectral weight of the chiral block eliminated by A4 locking.
+    The magnitude $|u|$ is reduced to the Lorentzian A4 problem: define the saturated Born--Infeld
+    functional $\mathcal B(s)$ along the $J_\Pi$-odd modulus and compute the chiral curvature
+    \[
+      \mu_\chi^2:=\partial_s^2\mathcal B(0),
+    \]
+    with the marginal case governed by the leading non-vanishing even coefficient of $\mathcal B(s)$.
 
   \section{Open deliverables}
     \label{sec:open}
 
-    The conceptual obstruction is reduced to three questions about the projection-locking axiom A4 and
-    the Born--Infeld saturation that defines it~\cite{Beau2026c, Beau2026m}.
+    The finite contribution to A4 is now separated: finite projection locking is $J_\Pi$-equivariant and
+    cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and Corollary~\ref{cor:separation}).
+    The remaining obstruction is therefore entirely Lorentzian and concerns the Born--Infeld saturation
+    functional $\mathcal B(s)$ along the $J_\Pi$-odd modulus opened by complexification.
+    The open deliverables are:
     \begin{enumerate}
-      \item Does A4 impose a chiral asymmetry $\pi_{RR}\neq\pi_{LL}$, or only an unoriented discrete
-      selection? If only the latter, left-admissibility remains a conditional branch.
-      \item If A4 imposes an asymmetry, does it fix only its sign (the spontaneous $V-A$ choice), or also
-      its magnitude?
-      \item Is the magnitude tied to the degree of Born--Infeld saturation, to the discrete shell support,
-      or to a still-open normalisation?
+      \item Define the Lorentzian saturation functional $\mathcal B(s)$ whose saturated admissible minima
+      are selected by A4.
+      \item Compute the chiral curvature
+      \[
+        \mu_\chi^2:=\partial_s^2\mathcal B(0).
+      \]
+      If $\mu_\chi^2>0$, the $J_\Pi$-equivariant branch is stable and $u=0$.
+      If $\mu_\chi^2<0$, A4 produces a $J_\Pi$-conjugate saturated pair $\pm s_*$, giving a spontaneous
+      chiral split $u\neq0$.
+      \item In the marginal case $\mu_\chi^2=0$, determine the leading non-vanishing even coefficient
+      $\lambda_{2k}$ of
+      \[
+        \mathcal B(s)=\mathcal B(0)+\lambda_{2k}s^{2k}+O(s^{2k+2}).
+      \]
+      Positive $\lambda_{2k}$ stabilises the symmetric branch; negative $\lambda_{2k}$ drives a
+      higher-order spontaneous break; vanishing to all accessible orders leaves $u$ as an unfixed modulus.
     \end{enumerate}
     These are the last conceptual locks before the explicit construction of $E_\Pi$ as the Schur
-    complement~\eqref{eq:schur} with an explicit eliminated block $1-P$.
+    complement~\eqref{eq:schur} with a Lorentzian $J_\Pi$-odd eliminated block $1-P(s)$.
 
   \section{Conclusion}
     \label{sec:conclusion}
