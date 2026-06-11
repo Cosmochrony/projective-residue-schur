@@ -338,6 +338,108 @@ of Projection Locking}
       Determining this transported and projected component is the remaining A4-level deliverable.
     \end{remark}
 
+  \section{Schur transversality of the A4 locking defect}
+    \label{sec:schur-transversality}
+
+    Remark~\ref{rem:necessary} leaves the A4-level deliverable as a necessary condition that is not yet a
+    criterion: the commutator $[P,J_\Pi]\neq0$ may be supported outside the generation triplet, or may die
+    under the Weyl transport and the projection to $\Cgen$.
+    We turn it into an exhaustive dichotomy on the transported, generation-projected defect.
+
+    Let $s$ parametrise the Lorentzian $J_\Pi$-odd deformation of the locked block, opened only by
+    complexification, with first-order tilt $\partial_s(1-P)|_0$; this is the same modulus whose
+    saturation curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$ is treated in
+    Section~\ref{sec:finite-equivariance} and~\cite{Beau2026bim}.
+    Differentiating the Schur form~\eqref{eq:schur} at $s=0$ with $D_{g,A}$ fixed, and using
+    $\partial_s[-(1-P)]=\partial_s P$, gives the first-order chiral polarisation
+    \begin{equation}
+      \label{eq:polarisation}
+      \mathcal P:=\partial_s\EPi|_0=\PiS\,D_{g,A}\,(\partial_s P|_0)\,D_{g,A}\,\PiS^{*},
+    \end{equation}
+    whose restriction to $\Cgen$ on the $J_\Pi$-odd weights carries $u$ at first order in $s$.
+    The positive sign is the derivative of $-(1-P)$, not a convention.
+
+    \begin{lemma}[Weyl-transport faithfulness on non-zero external symbols]
+      \label{lem:weyl-faithful}
+      Let $X$ be supported on the outer generation weights $\mathrm{span}(e_+,e_-)$.
+      The Weyl transport $X\mapsto\PiS\,D_{g,A}\,X\,D_{g,A}\,\PiS^{*}$, with $D_{g,A}$ chirality-odd as
+      in~\eqref{eq:blocks}, inherits the non-degeneracy of the Clifford principal symbol already used in
+      Proposition~\ref{prop:chiralblocks}: it annihilates a non-zero $X$ only if $X$ lies in the kernel of
+      the transported sector, that is only if $X$ is a zero mode of $\Deff^{\pm}$ on
+      $\mathrm{span}(e_+,e_-)$.
+      This is the symbol-level faithfulness invoked in the proof of Proposition~\ref{prop:chiralblocks};
+      it does not assert the absence of such zero modes, whose locus is classified in
+      Proposition~\ref{prop:schur-dichotomy} as a Schur-null branch.
+    \end{lemma}
+
+    \begin{definition}[Schur transversality]
+      \label{def:schur-transversality}
+      The A4 locking defect is \emph{Schur-transverse} on the generation triplet if the chiral
+      polarisation~\eqref{eq:polarisation} does not vanish,
+      \begin{equation}
+        \label{eq:transversality}
+        \PiS\,D_{g,A}\,(\partial_s P|_0)\,D_{g,A}\,\PiS^{*}\big|_{\Cgen,\,J_\Pi\text{-odd}}\neq 0,
+      \end{equation}
+      equivalently if the transport
+      $X\mapsto\PiS D_{g,A} X D_{g,A}\PiS^{*}\big|_{\Cgen,\,J_\Pi\text{-odd}}$ does not annihilate the
+      opened direction $\partial_s P|_0$.
+    \end{definition}
+
+    \begin{proposition}[Schur dichotomy for the A4 locking defect]
+      \label{prop:schur-dichotomy}
+      Let $\sigma$ denote the projection of $[\partial_s P|_0,J_\Pi]$ onto $\mathrm{span}(e_+,e_-)$.
+      On the chiral-odd A4 locus exactly one of the following holds.
+      \begin{enumerate}
+        \item If $\sigma=0$, the opened direction carries no $J_\Pi$-odd component on the outer generation
+        weights, the polarisation~\eqref{eq:transversality} vanishes, and the locking is
+        \emph{Schur-null}.
+        \item If $\sigma\neq0$ but $\partial_s P|_0$ is transported into a zero mode of $\Deff^{\pm}$ on
+        $\mathrm{span}(e_+,e_-)$, the polarisation~\eqref{eq:transversality} again vanishes and the locking
+        is \emph{Schur-null}.
+        \item If $\sigma\neq0$ and $\partial_s P|_0$ is not such a zero mode, the
+        polarisation~\eqref{eq:transversality} is non-zero and the locking is \emph{Schur-transverse}.
+      \end{enumerate}
+      In the Schur-null cases the first-order chiral polarisation of $\EPi^2$ on the outer weights is
+      absent, the split is not opened at quadratic order, and the locking falls to the marginal branch
+      of~\eqref{eq:muchi}.
+    \end{proposition}
+
+    \begin{proof}
+      By~\eqref{eq:jpisym}--\eqref{eq:jpij3} the antiunitary $J_\Pi^{(2)}$ exchanges $e_+\leftrightarrow
+      e_-$, so the $J_\Pi$-odd component of $\partial_s P|_0$ on the outer weights is exactly the
+      projection $\sigma$ of $[\partial_s P|_0,J_\Pi]$ onto $\mathrm{span}(e_+,e_-)$.
+      If $\sigma=0$ the input to the transport~\eqref{eq:polarisation} has no surviving external-weight
+      component, so the image vanishes; this implication uses only that the projection to $\Cgen$ retains
+      the $e_\pm$ weights, not Weyl-transport faithfulness.
+      If $\sigma\neq0$ but the opened direction is a $\Deff^{\pm}$ zero mode, the transport sends it to
+      zero by the definition of the zero-mode locus.
+      In both cases~\eqref{eq:transversality} vanishes, so the first-order polarisation is absent and the
+      split is undecided at quadratic order, falling to the marginal branch.
+      Conversely, if $\sigma\neq0$ and the opened direction is not a zero mode,
+      Lemma~\ref{lem:weyl-faithful} gives a non-zero transported image, so~\eqref{eq:transversality} holds.
+      Faithfulness is used only in this converse direction, to prevent a non-zero external $J_\Pi$-odd
+      symbol from dying under the Schur transport; the Schur-null implication does not use it.
+    \end{proof}
+
+    \begin{corollary}[A4-level reduction]
+      \label{cor:a4-reduction}
+      The A4 residual problem is reduced to the projected Lorentzian datum
+      \[
+        \sigma=\big[\partial_s P|_0,J_\Pi\big]\big|_{\mathrm{span}(e_+,e_-)}.
+      \]
+      If the locking is Schur-transverse, the generation split is decided by the Born--Infeld genus of the
+      chiral polarisation~\cite{Beau2026bim}: $\mu_\chi^2>0$ gives $u=0$, and $\mu_\chi^2<0$ gives a
+      spontaneous $V-A$ split $u\neq0$.
+      If the locking is Schur-null, $\mu_\chi^2=0$ at quadratic order and the split is governed by the
+      leading even coefficient $\lambda_{2k}$ of~\eqref{eq:muchi}.
+    \end{corollary}
+
+    Schur transversality is thereby reduced to the projected A4 commutator $\sigma$, with an exhaustive
+    transverse/null dichotomy.
+    It is not closed here: $\sigma$ requires the Lorentzian datum $\partial_s P|_0$, which is fixed
+    together with the genus of~\cite{Beau2026bim} by the Born--Infeld saturation
+    structure~\cite{Beau2026c}.
+
   \section{Locked Seeley--DeWitt conventions: operator $u$ equals spectral $u$}
     \label{sec:conventions}
 
