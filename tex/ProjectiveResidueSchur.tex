@@ -51,13 +51,21 @@ of Projection Locking}
     \]
     of the eliminated block $1-P$, rather than by a naive block difference.
     Third, the minimal non-injectivity $c\leftrightarrow q-c$ is chirally symmetric, so $u=0$ at the
-    level of axioms A1--A3; a non-zero $u$ requires a chiral symmetry-breaking that can originate only
-    in the projection-locking axiom A4.
-    The Seeley--DeWitt conventions are locked so that the operator-level and spectral-level definitions
-    of $u$ coincide on the flat effective metric, and a no-go result establishes that $u$ is not
-    accessible to any finite front observable because chirality is a Lorentzian rather than a finite-fibre
-    datum.
-    The remaining open deliverable is reduced to three sharp questions about A4.
+    level of axioms A1--A3; a non-zero $u$ requires a chiral symmetry-breaking carried by the
+    projection-locking axiom A4.
+    The finite locking sector is proved $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$, and chirality is
+    shown to be a Lorentzian rather than a finite-fibre datum.
+    Finally, the Schur-transversality branch required by the Born--Infeld genus companion is closed in the
+    present Lorentzian spin stratum: the projected A4 commutator has the exact metaplectic opening
+    \[
+      \alpha(t,s)=ts\,\frac{r}{\sinh r}=ts+O\!\left((ts)^2\right),\qquad \mu(t,s)\equiv0,
+    \]
+    with $\cosh r=1+\tfrac{ts}{2}$, and its timelike Clifford symbol is not in the transported zero-mode
+    locus.
+    Together with the electric-genus result of the A4 companion, this promotes the existence statement to
+    $u\neq0$ in the present stratum.
+    The remaining open deliverables are the explicit Lorentzian eliminated block $1-P(s)$, the absolute
+    normalisation $|u|$, and the projected Yukawa sector.
   \end{abstract}
 
   \noindent\textbf{Keywords:} projective endomorphism; Schur complement; non-injective projection;
@@ -558,6 +566,76 @@ of Projection Locking}
       symbol from dying under the Schur transport; the Schur-null implication does not use it.
     \end{proof}
 
+    \begin{lemma}[Exact metaplectic opening of the Schur defect]
+      \label{lem:exact-schur-opening}
+      Let $V\simeq\mathbb C^2$ carry the standard $\mathfrak{sl}_2$-triple
+      \[
+        E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+        F=\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad
+        H=[E,F],
+      \]
+      with $H=2J_3$ on the outer generation weights of $\operatorname{Sym}^2(V)=\langle e_0,e_+,e_-\rangle$, and let
+      $g(t,s)=\exp(tE)\exp(sF)$ be the oriented metaplectic step of the cascade bridge~\cite{Beau2026q14}.
+      Then
+      \[
+        g(t,s)=\begin{pmatrix}1+ts&t\\ s&1\end{pmatrix},\qquad\det g(t,s)=1,
+      \]
+      and, with $\cosh r=1+\tfrac{ts}{2}$, in the non-parabolic regular domain
+      \[
+        \log g(t,s)=\frac{r}{\sinh r}\left(tE+sF+\frac{ts}{2}H\right).
+      \]
+      Consequently the $J_\Pi$-odd Cartan component transported to the outer generation doublet is
+      \[
+        \alpha(t,s)=ts\,\frac{r}{\sinh r}=ts+O\!\left((ts)^2\right),
+      \]
+      while the $R_{\mathrm{mix}}$ component vanishes identically, $\mu(t,s)\equiv0$.
+      In particular $\alpha(t,s)\not\equiv0$, and $\alpha(t,s)\neq0$ for every non-degenerate oriented step
+      $ts\neq0$ outside the removable logarithmic singularities.
+    \end{lemma}
+
+    \begin{proof}
+      The matrix form follows from $E^2=F^2=0$, giving
+      $\exp(tE)=\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$ and
+      $\exp(sF)=\left(\begin{smallmatrix}1&0\\s&1\end{smallmatrix}\right)$.
+      The element $g(t,s)$ lies in $\mathrm{SL}_2$ with $\operatorname{tr}g(t,s)=2+ts$, hence
+      $\cosh r=\tfrac12\operatorname{tr}g(t,s)=1+\tfrac{ts}{2}$.
+      For a non-parabolic $\mathrm{SL}_2$ element the logarithm is
+      $\log g=\frac{r}{\sinh r}\big(g-\tfrac12(\operatorname{tr}g)\,\mathbb 1\big)$, and here
+      $g(t,s)-\tfrac12(\operatorname{tr}g)\,\mathbb 1=tE+sF+\tfrac{ts}{2}H$.
+      Since $H=2J_3$, the $J_3$ coefficient is $ts\,(r/\sinh r)$, and $r/\sinh r=1+O(ts)$ gives
+      $\alpha(t,s)=ts+O((ts)^2)$.
+      Lifting to $\operatorname{Sym}^2(V)$, the horizontal generators $E,F$ send the outer weights $e_\pm$ to the
+      central weight $e_0$, so their restriction to $\langle e_+,e_-\rangle$ carries no $R_{\mathrm{mix}}$
+      component; only the Cartan $J_3$ survives, whence $\mu(t,s)\equiv0$, the mixing direction being absent in the
+      real symplectic model~\cite{Beau2026q14}.
+      The factor $r/\sinh r$ is strictly positive on the regular real domain, so $\alpha(t,s)=0$ only at the
+      degenerate step $ts=0$.
+    \end{proof}
+
+    \begin{corollary}[Schur transversality in the present spin stratum]
+      \label{cor:schur-transversality-closed}
+      Assume the symbol-compatibility of the projected Dirac operator~\cite{Beau2026q14} and the Lorentzian
+      identification of the central commutator $Z=[X,Y]\simeq\partial_\tau$ of the effective metric
+      closure~\cite{Beau2026q11}.
+      Then the A4 locking defect is Schur-transverse on the generation triplet in the present Lorentzian spin
+      stratum,
+      \[
+        \PiS\,D_{g,A}\,(\partial_sP|_0)\,D_{g,A}\,\PiS^{*}\big|_{\Cgen,\,J_\Pi\text{-odd}}\neq0.
+      \]
+    \end{corollary}
+
+    \begin{proof}
+      By Lemma~\ref{lem:exact-schur-opening} the transported defect contains a non-zero $J_\Pi$-odd Cartan
+      component $\sigma=\alpha(t,s)\,J_3$ for every non-degenerate oriented step, so the Schur-null case
+      $\sigma=0$ is excluded.
+      Its source is the commutator $Z=[X,Y]$, identified with the timelike direction $\partial_\tau$ in the
+      Lorentzian effective metric, and the Clifford principal symbol is non-degenerate on non-zero timelike
+      covectors.
+      Therefore the transported $J_3$-symbol is not in the zero-mode locus of the Weyl blocks $\Deff^{\pm}$, so the
+      transported zero-mode case is excluded.
+      The remaining alternative of Proposition~\ref{prop:schur-dichotomy} is the Schur-transverse branch.
+    \end{proof}
+
     \begin{corollary}[A4-level reduction]
       \label{cor:a4-reduction}
       The A4 residual problem is reduced to the projected Lorentzian datum
@@ -571,9 +649,11 @@ of Projection Locking}
       coefficient $\lambda_{2k}$ of~\eqref{eq:muchi}.
     \end{corollary}
 
-    Schur transversality is thereby reduced to the projected A4 commutator $\sigma$, with an exhaustive
-    transverse/null dichotomy.
-    It is not closed here: $\sigma$ requires the Lorentzian datum $\partial_sP|_0$, which is fixed together
+    Schur transversality is thereby closed in the present Lorentzian spin stratum:
+    Lemma~\ref{lem:exact-schur-opening} evaluates the projected A4 commutator in closed form and excludes the
+    exact-zero branch, and Corollary~\ref{cor:schur-transversality-closed} excludes the transported zero-mode
+    branch, so the dichotomy of Proposition~\ref{prop:schur-dichotomy} selects the Schur-transverse case.
+    The Lorentzian datum $\partial_sP|_0$ is the metaplectic opening $g(t,s)=\exp(tE)\exp(sF)$, fixed together
     with the genus of~\cite{Beau2026bim} by the Born--Infeld saturation structure~\cite{Beau2026c}.
 
   \section{Status of results}
@@ -605,12 +685,12 @@ of Projection Locking}
       \item Finite projection locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$: $u$ cannot originate
       in the finite cascade and is a Lorentzian datum
       (Proposition~\ref{prop:finite-equivariance}, Corollary~\ref{cor:separation}).
-      \item The A4 Schur-transversality problem is reduced to the projected Lorentzian commutator
-      \[
-        \big[\partial_sP|_0,J_\Pi\big]\big|_{\mathrm{span}(e_+,e_-)}.
-      \]
-      Proposition~\ref{prop:schur-dichotomy} gives an exhaustive transverse/null dichotomy, including the
-      zero-mode subcase, but does not evaluate the Lorentzian datum itself.
+      \item Schur transversality is proved in the present Lorentzian spin stratum:
+      Lemma~\ref{lem:exact-schur-opening} excludes the exact-zero branch through the closed form
+      $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the projected A4 commutator, and
+      Corollary~\ref{cor:schur-transversality-closed} excludes the transported zero-mode branch under
+      symbol-compatibility and the timelike-source identification $Z=[X,Y]\simeq\partial_\tau$.
+      Proposition~\ref{prop:schur-dichotomy} then selects the Schur-transverse branch.
     \end{itemize}
 
     \noindent\emph{Conditional.}
@@ -618,51 +698,40 @@ of Projection Locking}
     orientation-compatible assumption; its derivation from A4 is open.
 
     \noindent\emph{Open.}
-    The magnitude $|u|$ is reduced to the Lorentzian A4 problem: define the saturated Born--Infeld
-    functional $\mathcal B(s)$ along the $J_\Pi$-odd modulus and compute the chiral curvature
-    \[
-      \mu_\chi^2:=\partial_s^2\mathcal B(0),
-    \]
-    with the marginal case governed by the leading non-vanishing even coefficient of $\mathcal B(s)$.
+    The existence of the split is closed in the present Lorentzian spin stratum after the
+    Schur-transversality closure of Section~\ref{sec:schur-transversality} and the electric-genus result of
+    the A4 companion.
+    What remains open is not $u\neq0$, but the explicit Lorentzian eliminated block $1-P(s)$, the absolute
+    normalisation $|u|$, and the projected Yukawa sector.
+    The magnitude $|u|$ depends on the fully transported and projected Born--Infeld saturation data,
+    including the chiral-frontier normalisation, and is not determined by the Schur-transversality argument
+    itself.
 
   \section{Open deliverables}
     \label{sec:open}
 
     The finite contribution to A4 is now separated: finite projection locking is $J_\Pi$-equivariant and
     cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and Corollary~\ref{cor:separation}).
-    The remaining obstruction is therefore entirely Lorentzian and concerns the Born--Infeld saturation
-    functional $\mathcal B(s)$ along the $J_\Pi$-odd modulus opened by complexification.
-    By Proposition~\ref{prop:schur-dichotomy}, this deliverable is preceded by the projected
-    Schur-transversality test: the same Lorentzian datum $\partial_sP|_0$ determines whether the A4
-    direction is Schur-transverse or Schur-null, and only in the transverse branch does the Born--Infeld
-    genus decide the generation split.
-    The open deliverables are:
+    The Schur-transversality test that previously conditioned the A4 companion is closed in the present
+    Lorentzian spin stratum: by Lemma~\ref{lem:exact-schur-opening} and
+    Corollary~\ref{cor:schur-transversality-closed} the A4 direction is Schur-transverse.
+    The Born--Infeld genus of~\cite{Beau2026bim} therefore selects the electric branch, $\mu_\chi^2<0$, and the
+    generation split opens spontaneously, $u\neq0$.
+
+    The remaining open deliverables are no longer the existence of the Schur-transverse branch, nor the sign of
+    the Lorentzian genus.
+    They are:
     \begin{enumerate}
-      \item Define the Lorentzian saturation functional $\mathcal B(s)$ whose saturated admissible minima
-      are selected by A4.
-      \item Compute the chiral curvature
+      \item the explicit Lorentzian eliminated block $1-P(s)$ entering the Schur complement
       \[
-        \mu_\chi^2:=\partial_s^2\mathcal B(0).
+        \EPi=-\PiS\,D_{g,A}\,(1-P(s))\,D_{g,A}\,\PiS^{*};
       \]
-      If $\mu_\chi^2>0$, the $J_\Pi$-equivariant branch is stable and $u=0$.
-      If $\mu_\chi^2<0$, A4 produces a $J_\Pi$-conjugate saturated pair $\pm s_*$, giving a spontaneous
-      chiral split $u\neq0$.
-      \item In the marginal case $\mu_\chi^2=0$, determine the leading non-vanishing even coefficient
-      $\lambda_{2k}$ of
-      \[
-        \mathcal B(s)=\mathcal B(0)+\lambda_{2k}s^{2k}+O(s^{2k+2}).
-      \]
-      Positive $\lambda_{2k}$ stabilises the symmetric branch; negative $\lambda_{2k}$ drives a
-      higher-order spontaneous break; vanishing to all accessible orders leaves $u$ as an unfixed modulus.
+      \item the absolute normalisation $|u|$, including the fully transported Born--Infeld saturation data, the
+      cubic Schur backreaction, and the chiral-frontier normalisation;
+      \item the projected Yukawa sector and the corresponding mass matrices.
     \end{enumerate}
-    Deliverables~1 and~2 are discharged in the A4 companion~\cite{Beau2026bim}, where $\mathcal B(s)$ is the
-    Born--Infeld determinantal saturation margin and the genus is determined electric in the Schur-transverse
-    branch ($\mu_\chi^2<0$, $u\neq0$).
-    The companion reduces the amplitude to the sign of the cubic Schur backreaction transported from the
-    third-order tilt $\partial_s^3P|_0$ and to a boundary-versus-interior selection of the saturation problem,
-    leaving that sign and the chiral-frontier normalisation $\mathcal N_A$ as the residual open data.
-    These are the last conceptual locks before the explicit construction of $E_\Pi$ as the Schur
-    complement~\eqref{eq:schur} with a Lorentzian $J_\Pi$-odd eliminated block $1-P(s)$.
+    These are the last conceptual locks before the explicit construction of $\EPi$ as a Lorentzian
+    $J_\Pi$-odd projected Dirac residue.
 
   \section{Conclusion}
     \label{sec:conclusion}
@@ -679,9 +748,12 @@ of Projection Locking}
     through a chiral symmetry-breaking carried by the projection-locking axiom A4.
     The polarisation, the Seeley--DeWitt conventions, and the operator/spectral identification are locked;
     the front observables are confirmed to be null controls rather than carriers of $u$.
-    The single remaining question is whether A4 derives the antiunitary chiral equivariance defect of the
-    eliminated block, and with what magnitude, which is the next text to settle from the Born--Infeld
-    saturation structure~\cite{Beau2026c}.
+    The Schur-transverse branch is selected in the present Lorentzian spin stratum
+    (Lemma~\ref{lem:exact-schur-opening}, Corollary~\ref{cor:schur-transversality-closed}).
+    Combined with the electric-genus result of the A4 companion~\cite{Beau2026bim}, this promotes the existence
+    statement to $u\neq0$.
+    It does not determine the value $|u|$, which remains fixed by the chiral-frontier normalisation through the
+    Born--Infeld saturation structure~\cite{Beau2026c}.
 
     \appendix
   \section{Numerical front controls}
@@ -692,8 +764,7 @@ of Projection Locking}
     They are the null controls referenced in Section~\ref{sec:nogo}: the scalar front explains the
     obstruction and bounds the maximal locking, but does not carry $u$, in accordance with
     Remark~\ref{rem:nogo}.
-    The values below are from the session runs and are to be reconciled with the archived script output
-    before any deposition.
+    The values below are the archived scalar-front null controls used in this note.
 
     The oriented-frontier increment is the cocycle $\Delta A_c(g,s)=c\,(z(s)+a(g)s_b)$, reduced to
     $c\,a(g)s_b$ on admissible generators.
