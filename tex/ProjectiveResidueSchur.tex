@@ -200,6 +200,25 @@ of Projection Locking}
       for a faithful Weyl symbol exactly when $\pi_{LL}=0$.
     \end{proof}
 
+    \begin{corollary}[The left-admissible residue is chiral block-diagonal]
+      \label{cor:block-diagonal}
+      On the left-admissible branch $\pi_{LL}=0$, the projective residue $\EPi$ is chiral block-diagonal,
+      $E_{LR}=E_{RL}=0$, so $[\EPi,\gamma_5]=0$.
+    \end{corollary}
+
+    \begin{proof}
+      Since $1-P$ is a self-adjoint projector it is positive semidefinite, and a positive-semidefinite
+      self-adjoint operator with a vanishing diagonal block has vanishing off-diagonal blocks; hence
+      $\pi_{LL}=0$ forces $\pi_{LR}=\pi_{RL}=0$.
+      By~\eqref{eq:blocks} the off-diagonal blocks of $\EPi$ are then $-\PiS\Deff^{-}\pi_{RL}\Deff^{-}\PiS^{*}=0$
+      and its adjoint, so $\EPi=\mathrm{diag}(E_{LL},0)$ and commutes with $\gamma_5$.
+      Equivalently, this follows from $\EPi=-M^{\dagger}M\preceq0$ together with $E_{RR}=0$:
+      a negative-semidefinite self-adjoint operator with a vanishing diagonal block has vanishing off-diagonal
+      blocks.
+      The chiral asymmetry of the residue is therefore carried by the diagonal imbalance
+      $E_{LL}$ versus $E_{RR}=0$, not by a chiral commutator.
+    \end{proof}
+
     \begin{corollary}[Localisation of $u$]
       \label{cor:localise}
       After restriction to $\Cgen$, the $J_3$-odd part of $E_\Pi^2$ is controlled by the chiral asymmetry
