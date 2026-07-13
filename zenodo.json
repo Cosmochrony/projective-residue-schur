@@ -3,5 +3,6 @@
   "web_url": "https://cosmochrony.org/science/fermionic-matter/projective-residue-schur/",
   "main_tex": "tex/ProjectiveResidueSchur.tex",
   "zenodo_id": 20601040,
-  "doi": "10.5281/zenodo.20601040"
+  "doi": "10.5281/zenodo.20601040",
+  "version": "1.8"
 }
