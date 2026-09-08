@@ -46,18 +46,26 @@ This note fixes the structural status of $u$ before any explicit construction of
    ($u_{\mathrm{fin}} = 0$); a non-zero generation split can arise only in the Lorentzian
    completion of the Born–Infeld saturation.
 
-The remaining open deliverable is reduced to three sharp questions about A4: define the
-Lorentzian saturation functional $\mathcal{B}(s)$ along the $J_\Pi$-odd modulus, compute the
-chiral curvature $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$, and handle the marginal case via
-the leading non-vanishing even coefficient.
+7. **Schur transversality.** In the present Lorentzian spin stratum the projected A4
+   commutator has the closed form $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, which excludes
+   the exact-zero branch; under symbol-compatibility and the timelike identification
+   $Z = [X, Y] \simeq \partial_\tau$ the transported zero-mode branch is excluded too, so the
+   exhaustive transverse/null dichotomy selects the Schur-transverse case.
+
+With Schur transversality proved, the Born–Infeld genus of the A4 companion note selects the
+electric branch, $\mu_\chi^2 < 0$, and the generation split opens spontaneously, $u \neq 0$. The
+remaining open deliverables are the explicit Lorentzian eliminated block $1 - P(s)$ entering the
+Schur complement, the absolute normalisation $|u|$ (reduced by the constrained-jet companion note
+to the admissible normalisation of $\partial_s \Delta_\chi(P)|_0$, with $|u|$ remaining
+dictionary-bound), and the projected Yukawa sector with its mass matrices.
 
 ## Position in the programme
 
 This note belongs to the **fermionic matter sub-programme** (Presentation Note 6). It refines
-Q14's open deliverable on the inter-generation splitting by reducing the magnitude $|u|$ to a
-single Lorentzian A4-level question (the chiral curvature $\mu_\chi^2$), and identifies the
-front observables of the companion oriented-frontier note as null controls rather than carriers
-of $u$.
+Q14's open deliverable on the inter-generation splitting by localising $u$ in the antiunitary
+chiral equivariance defect and proving the Schur transversality of the A4 direction, and identifies
+the front observables of the companion angular-amplitude and oriented-frontier notes as null
+controls rather than carriers of $u$.
 
 ## Compilation
 
