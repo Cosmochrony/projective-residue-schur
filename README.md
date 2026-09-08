@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.0. DOI: [10.5281/zenodo.20601040](https://doi.org/10.5281/zenodo.20601040)
+Working paper, v2.0. DOI: [10.5281/zenodo.20601040](https://doi.org/10.5281/zenodo.20601040)
 
 ## Abstract
 
@@ -12,7 +12,10 @@ The fermionic sub-programme of Cosmochrony locates the three-generation mass spl
 $J_3$-odd part of the squared projective endomorphism $E_\Pi^2$ restricted to the gauge-singlet
 generation triplet $C^3_{\mathrm{gen}}$, parametrised by a single real number $u$ through
 $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac{1}{2} + u, \tfrac{1}{2} - u)$, with the
-even sector $\mathrm{diag}(1, \tfrac{1}{2}, \tfrac{1}{2})$ already closed by Born–Infeld parity.
+even sector $\mathrm{diag}(1, \tfrac{1}{2}, \tfrac{1}{2})$, the algebraic value of $(C_2 - J_3^2)/C_2$ at
+$C_2 = 2$. Its reading as the Born–Infeld even sector would require an identification between the
+conditional $3 \times 3$ model of O30 on $\mathrm{Sym}^2(V_\rho)$ and $(E_\Pi^2)_{\mathrm{even}}$; no such
+identification is available, so that reading is not used here.
 
 This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
 
