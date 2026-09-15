@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Working paper, v2.0. DOI: [10.5281/zenodo.20601040](https://doi.org/10.5281/zenodo.20601040)
+Working paper, v2.1. DOI: [10.5281/zenodo.20601040](https://doi.org/10.5281/zenodo.20601040)
 
 ## Abstract
 
@@ -55,8 +55,8 @@ This note fixes the structural status of $u$ before any explicit construction of
 With Schur transversality proved, the Born–Infeld genus of the A4 companion note selects the
 electric branch, $\mu_\chi^2 < 0$, and the generation split opens spontaneously, $u \neq 0$. The
 remaining open deliverables are the explicit Lorentzian eliminated block $1 - P(s)$ entering the
-Schur complement, the absolute normalisation $|u|$ (the constrained-jet companion note fixes one
-block of the $J_\Pi$-odd tangent as $\tfrac12 \partial_s \Delta_\chi(P)|_0$, not a unique carrier,
+Schur complement, the absolute normalisation $|u|$ (the constrained-jet companion note fixes the
+left-handed diagonal block of the $J_\Pi$-odd tangent as $\tfrac12 \partial_s \Delta_\chi(P)|_0$, not a unique carrier,
 with $|u|$ remaining dictionary-bound), and the projected Yukawa sector with its mass matrices.
 
 ## Position in the programme
