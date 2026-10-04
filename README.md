@@ -27,12 +27,11 @@ This note fixes the structural status of $u$ before any explicit construction of
    fibre that condition forces $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a multiplicity space.
    $\Pi_S^{*}\Pi_S$ is idempotent if and only if $\Pi_S$ is a partial isometry.
 
-2. **Chiral block reduction.** The chiral block decomposition expresses the antiunitary chiral equivariance defect
+2. **Chiral block reduction.** The chiral block decomposition relates the antiunitary chiral equivariance defect
    $$\Delta_\chi(P) = \pi_{LL} - \tau \, \overline{\pi_{RR}} \, \tau^{-1}$$
-   of the eliminated block $1 - P$, after $\mathcal{D}^{\pm}$-transport and projection to the generation triplet. Under
-a
-   generation-reading hypothesis, a non-zero split requires a locking operator that breaks $J_\Pi$-equivariance; in
-   particular $u$ vanishes for the reference operator $\Pi_S^{*}\Pi_S$.
+   of the eliminated block $1 - P$ to $u$ only as a structural reading, not a theorem. Under the generation-reading
+   hypothesis [H-Gen], a non-zero split requires $J_\Pi P J_\Pi^{-1} \neq P$; in particular $u$ vanishes for the
+   reference operator $\Pi_S^{*}\Pi_S$.
 
 3. **Stratification.** Under a generation-reading hypothesis, if the locking operator commutes with $J_\Pi$ then
    $u = 0$. The minimal non-injectivity $c \leftrightarrow q - c$ is $J_\Pi$-symmetric, so on the structurally
