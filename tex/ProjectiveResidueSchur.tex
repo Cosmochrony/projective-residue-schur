@@ -77,13 +77,15 @@ of Projection Locking}
       defect
     \texorpdfstring{$\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$}{Δ_χ(P) = π_LL − τ conj(π_RR) τ⁻¹}
     of the eliminated block \texorpdfstring{$1-P$}{1−P}, rather than by a naive block difference.
-    Third, the minimal non-injectivity \texorpdfstring{$c\leftrightarrow q-c$}{c ↔ q−c} is chirally symmetric, so
-    \texorpdfstring{$u=0$}{u = 0} at the level of axioms A1--A3; a non-zero \texorpdfstring{$u$}{u} requires a chiral
-    symmetry-breaking carried by the projection-locking axiom A4.
-    The finite locking sector is proved \texorpdfstring{$J_\Pi$}{J_Π}-equivariant, so
-    \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}, and chirality is shown to be a Lorentzian rather than a
-      finite-fibre
-    datum.
+    Third, if the locking operator commutes with \texorpdfstring{$J_\Pi$}{J_Π} then
+    \texorpdfstring{$u=0$}{u = 0}; the minimal non-injectivity
+    \texorpdfstring{$c\leftrightarrow q-c$}{c ↔ q−c} is \texorpdfstring{$J_\Pi$}{J_Π}-symmetric, so on the
+    structurally motivated reading of axioms A1--A3, \texorpdfstring{$u=0$}{u = 0} there, and a non-zero
+    \texorpdfstring{$u$}{u} requires a breaking of \texorpdfstring{$J_\Pi$}{J_Π}-equivariance, which on that reading
+    can come only from the projection-locking axiom A4.
+    The finite locking operator is \texorpdfstring{$J_\Pi$}{J_Π}-equivariant if it is constructed equivariantly from
+    the finite locking data, so that \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}; chirality is a Lorentzian
+    rather than a finite-fibre datum.
     Finally, the first-order opening of the split is governed by the \texorpdfstring{$J_\Pi$}{J_Π}-odd tilt of the
     locking operator
       transported
@@ -397,21 +399,22 @@ of Projection Locking}
 
     \begin{proposition}[Chiral-symmetry stratification of $u$]
       \label{prop:strat}
-      If $\pi_{LL}=\pi_{RR}$ then $u=0$.
-      The conjugate pair $\{V^{(c)},V^{(q-c)}\}$ carries no preferred orientation at the level of axioms
-      A1--A3, consistently with the non-premature-selection axiom A3~\cite{Beau2026m}.
-      Hence at the A1--A3 level $u=0$.
-      A non-zero $u$ requires $\pi_{LL}\neq\pi_{RR}$, a chiral symmetry-breaking that can originate only in
-      the projection-locking axiom A4.
+      Under the $J_\Pi$-compatibility of Lemma~\ref{lem:chiral-obstruction}, if $[P,J_\Pi]=0$ then $u=0$.
+      On the structurally motivated reading in which the minimal non-injectivity $c\leftrightarrow q-c$ is
+      $J_\Pi$-symmetric and axiom A3~\cite{Beau2026m} forbids selection among open directions before locking, the
+      locking operator commutes with $J_\Pi$ at the level of axioms A1--A3, so $u=0$ there.
+      A non-zero $u$ requires $[P,J_\Pi]\neq0$, which on that reading can originate only in the projection-locking
+      axiom A4.
     \end{proposition}
 
     \begin{proof}
-      By Corollary~\ref{cor:localise}, $u\propto\pi_{RR}-\pi_{LL}$, so $\pi_{LL}=\pi_{RR}$ forces $u=0$.
-      The minimal non-injectivity is the chirally symmetric parity $c\leftrightarrow q-c$, and A3 forbids
-      selection among open directions before locking, so no chiral orientation is fixed by A1--A3.
-      The only axiom that selects a resolved direction is A4, ``resolution occurs only when continuous
-      Born--Infeld saturation meets the discrete shell support''~\cite{Beau2026m}; any chiral asymmetry
-      $\pi_{LL}\neq\pi_{RR}$ must therefore arise there.
+      The first statement is Lemma~\ref{lem:chiral-obstruction}.
+      The remaining statements are the reading of axioms A1--A4 stated in the proposition: A3 forbids a chiral
+      orientation before locking, and the only axiom that selects a resolved direction is A4,
+      ``resolution occurs only when continuous Born--Infeld saturation meets the discrete shell
+      support''~\cite{Beau2026m}.
+      They are interpretive, not derived from the axioms.
+      The raw block reading $u\propto\pi_{RR}-\pi_{LL}$ of Corollary~\ref{cor:localise} is not used.
     \end{proof}
 
     The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is thus the maximal chiral asymmetry
@@ -566,8 +569,9 @@ of Projection Locking}
     \label{sec:finite-equivariance}
 
     Before any Lorentzian computation, the finite sector must be excluded as a source of $u$.
-    This section proves that the finite projection locking is $J_\Pi$-equivariant, so that $u$ cannot
-    originate in the finite cascade and the generation split is forced to be a Lorentzian datum.
+    This section shows that the finite projection locking is $J_\Pi$-equivariant when its operator is constructed
+    equivariantly from the locking data, so that $u$ cannot originate in the finite cascade and the generation split is
+    a Lorentzian datum on that construction.
 
     Let $\mathrm{Lock}^{\mathrm{fin}}_S$ denote the projection-locking data of axiom A4~\cite{Beau2026m} at
     finite $q$: the continuous Born--Infeld saturation condition intersected with the discrete shell
@@ -577,7 +581,9 @@ of Projection Locking}
     \begin{proposition}[Finite equivariance of projection locking]
       \label{prop:finite-equivariance}
       For $q$ an odd prime, the finite locking data is invariant under the spinorial Born--Infeld parity
-      $J_\Pi$, and the finite admissible configuration space carries no $J_\Pi$-odd modulus.
+      $J_\Pi$.
+      Assume that $P_{\mathrm{fin}}$ is constructed from the locking data equivariantly, that is with no choice among
+      $J_\Pi$-conjugate alternatives.
       Consequently
       \begin{equation}
         \label{eq:finite-equiv}
@@ -595,12 +601,13 @@ of Projection Locking}
       on the central character, whose only fixed point is $c=0$, so no non-trivial shell is parity-fixed
       and the support singles out no orientation.
       The locking data is therefore $J_\Pi$-invariant.
-      Equivariance of $P_{\mathrm{fin}}$ then follows from the absence of a $J_\Pi$-odd deformation: a
+      Equivariance of $P_{\mathrm{fin}}$ then follows from the assumed equivariant construction.
+      That the construction involves no choice is motivated by the absence of a finite $J_\Pi$-odd direction: a
       cascade edge $g\to gs$ is a Heisenberg translation, not a symplectic element, so it carries no
       canonical metaplectic lift, and the chiral eigendirections are complex combinations created only by
-      Lorentzian complexification~\cite{Beau2026q14}.
-      There is thus no finite direction along which a $J_\Pi$-conjugate pair of locked branches could split.
-      The finite locked branch is therefore $J_\Pi$-equivariant, giving~\eqref{eq:finite-equiv}.
+      Lorentzian complexification~\cite{Beau2026q14}; this is a structural motivation, not a proof that no choice
+      occurs.
+      Under the assumption, the finite locked branch is $J_\Pi$-equivariant, giving~\eqref{eq:finite-equiv}.
       The vanishing $u_{\mathrm{fin}}=0$ is then Lemma~\ref{lem:chiral-obstruction}.
     \end{proof}
 
@@ -614,8 +621,8 @@ of Projection Locking}
 
     \begin{corollary}[Finite/Lorentzian separation]
       \label{cor:separation}
-      The finite A4 locking cannot generate $u$.
-      A non-zero generation split can arise only in the Lorentzian completion of the Born--Infeld
+      Under the equivariant construction of Proposition~\ref{prop:finite-equivariance}, the finite A4 locking cannot
+      generate $u$, and a non-zero generation split can arise only in the Lorentzian completion of the Born--Infeld
       saturation, where the chiral-odd modulus first exists.
     \end{corollary}
 
@@ -856,8 +863,8 @@ of Projection Locking}
       Section~\ref{sec:spinorial-locking} as the antiunitary equivariance defect
       $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$, after $\Deff^{\pm}$-transport and
       projection to $\Cgen$.
-      \item $\pi_{LL}=\pi_{RR}\Rightarrow u=0$; non-zero $u$ requires A4 chiral symmetry-breaking
-      (Proposition~\ref{prop:strat}).
+      \item $[P,J_\Pi]=0\Rightarrow u=0$ under $J_\Pi$-compatibility; on the interpretive reading of axioms A1--A4, a
+      non-zero $u$ requires a breaking of $J_\Pi$-equivariance by A4 (Proposition~\ref{prop:strat}).
       \item The symmetric-square action of the Born--Infeld involution is fixed: $J_\Pi^2=-1$ on the
       fundamental doublet, $(J_\Pi^{(2)})^2=+1$ on the generation triplet, and it anticommutes with
       $J_3$~\eqref{eq:jpij3}.
@@ -868,8 +875,8 @@ of Projection Locking}
       the ratio (Section~\ref{sec:conventions}).
       \item Chirality is Lorentzian, not a finite-fibre label; $u$ is not a front observable
       (Remark~\ref{rem:nogo}).
-      \item Finite projection locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$: $u$ cannot originate
-      in the finite cascade and is a Lorentzian datum
+      \item Under an equivariant construction of the finite locking operator, finite projection locking is
+      $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$: $u$ cannot originate in the finite cascade and is a Lorentzian datum
       (Proposition~\ref{prop:finite-equivariance}, Corollary~\ref{cor:separation}).
       \item The exact $\mathfrak{sl}_2$ opening $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the oriented step, produced
       by $[E,F]=H$ (Lemma~\ref{lem:exact-schur-opening}); under $J_\Pi$-compatibility, the transported tilt
@@ -896,8 +903,9 @@ of Projection Locking}
   \section{Open deliverables}
     \label{sec:open}
 
-    The finite contribution to A4 is separated: finite projection locking is $J_\Pi$-equivariant and
-    cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and Corollary~\ref{cor:separation}).
+    The finite contribution to A4 is separated: under an equivariant construction, finite projection locking is
+    $J_\Pi$-equivariant and cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and
+      Corollary~\ref{cor:separation}).
     The Schur-transversality test that conditions the A4 companion is the non-vanishing of the transported tilt
     $T_{\mathrm{out}}(\sigma)$ (Proposition~\ref{prop:schur-dichotomy}); it holds under
     Hypothesis~\ref{hyp:transport} (Corollary~\ref{cor:schur-transversality-closed}).
