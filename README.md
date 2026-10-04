@@ -19,7 +19,7 @@ identification is available, so that reading is not used here.
 
 This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
 
-1. **Schur complement form.** Under a contraction hypothesis on $\Pi_S$ and a Lichnerowicz compression, the projected
+1. **Schur complement form.** Under a contraction hypothesis on $\Pi_S$, the compression remainder of the projected
 Dirac square admits a
    universal Feshbach/Schur form
    $E_\Pi = -\Pi_S \, D \, (1-P) \, D \, \Pi_S^{*} = -N^{\dagger} N$ with
@@ -49,21 +49,23 @@ Dirac square admits a
    ($u_{\mathrm{fin}} = 0$); a non-zero generation split can arise only in the Lorentzian
    completion of the Born–Infeld saturation.
 
-7. **Schur dichotomy.** The A4 locking defect obeys an exhaustive dichotomy, Schur-null or Schur-transverse,
-   proved under explicit hypotheses; which branch holds is open. The oriented metaplectic step has the exact
-   $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the commutator $[E,F] = H$.
-   Its identification with the $J_\Pi$-odd tangent of the locking operator is supplied by no source; under that
-   identification and under non-annihilation of the Schur transport, the locking is Schur-transverse.
+7. **Schur-null and Schur-transverse loci.** Under $J_\Pi$-compatibility, the first-order opening of the split is
+governed
+   by the $J_\Pi$-odd tilt of the locking operator transported by the Schur map to the outer generation weights; the
+   locking is Schur-null when this transported tilt vanishes and Schur-transverse otherwise. The oriented metaplectic
+   step has the exact $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the
+   commutator $[E,F] = H$. That the transported tilt equals this opening up to a non-zero factor is supplied by no
+   source; under that hypothesis the locking is Schur-transverse.
 
 Neither the sign of the Born–Infeld genus of the A4 companion note nor the non-vanishing of $u$ follows from this
-note. The open deliverables are that identification, the explicit Lorentzian eliminated block $1 - P(s)$, the
+note. The open deliverables are that hypothesis, the explicit Lorentzian eliminated block $1 - P(s)$, the
 absolute normalisation $|u|$, and the projected Yukawa sector.
 
 ## Position in the programme
 
 This note belongs to the **fermionic matter sub-programme** (Presentation Note 6). It refines
 Q14's open deliverable on the inter-generation splitting by localising $u$ in the antiunitary
-chiral equivariance defect and proving the Schur-null / Schur-transverse dichotomy of the A4 direction, and identifies
+chiral equivariance defect and identifying the Schur-null and Schur-transverse loci of the A4 direction, and identifies
 the front observables of the companion angular-amplitude and oriented-frontier notes as null
 controls rather than carriers of $u$.
 

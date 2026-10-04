@@ -1,7 +1,7 @@
 """Bias-independent audit of the exact sl_2 opening of the oriented metaplectic step (Front B, step A).
 
 Scope: this script checks the sl_2 algebra of the generator log g only. It does not relate the generator to the
-derivative of the locking projector P(s); that relation is Hypothesis [H-Tr] of the note and is not tested here.
+derivative of the locking operator P(s); that relation is Hypothesis [H-Tr] of the note and is not tested here.
 
 Verifies, by exact symbolic computation (no numerical sampling), the closed form of the J_Pi-odd Cartan coefficient
 alpha(t, s) of the lifted cascade generator, and that the mixing coefficient mu(t, s) vanishes identically.
@@ -87,6 +87,15 @@ def main():
     assert sp.simplify(coeffE - pref * t) == 0
     assert sp.simplify(coeffF - pref * s) == 0
     assert sp.simplify(coeffH - pref * (t * s / 2)) == 0
+    # Exponentiation check at sample steps with t s > 0 (exact value of r, high-precision matrix exponential).
+    import mpmath
+    mpmath.mp.dps = 40
+    for tv, sv in [(1, 2), (3, sp.Rational(1, 2)), (2, 5)]:
+        rv = sp.acosh(1 + sp.Rational(tv) * sv / 2)
+        Lg = logg.subs({t: tv, s: sv, r: rv})
+        Lm = mpmath.matrix([[sp.N(Lg[i, j], 40) for j in range(2)] for i in range(2)])
+        gm = mpmath.matrix([[sp.N(g.subs({t: tv, s: sv})[i, j], 40) for j in range(2)] for i in range(2)])
+        assert mpmath.norm(mpmath.expm(Lm) - gm) < mpmath.mpf(10) ** (-30)
 
     # Step 3: lift log g to Sym^2(V) and extract the J_Pi-odd projection onto J_3 and R_mix.
     M_log = coeffE * E + coeffF * F + coeffH * H

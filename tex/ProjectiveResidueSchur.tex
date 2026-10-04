@@ -62,7 +62,7 @@ of Projection Locking}
     This note fixes the structural status of \texorpdfstring{$u$}{u} before any explicit construction of
     \texorpdfstring{$E_\Pi$}{EΠ}.
     First, under explicit hypotheses on the projection (a chiral splitting of the spinor bundle, a contraction
-    \texorpdfstring{$\PiS$}{Π_S}, a Lichnerowicz compression, and a symbol condition), the projected Dirac square has a
+    \texorpdfstring{$\PiS$}{Π_S}, and a symbol condition), the projected Dirac square has a
       universal Feshbach/Schur
       form
     \texorpdfstring{$E_\Pi=-\PiS\,D\,(1-P)\,D\,\PiS^{*}=-N^{\dagger}N$}{EΠ = −Π_S D (1−P) D Π_S* = −N†N}
@@ -84,22 +84,21 @@ of Projection Locking}
     \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}, and chirality is shown to be a Lorentzian rather than a
       finite-fibre
     datum.
-    Finally, the A4 locking defect obeys an exhaustive dichotomy, Schur-null or Schur-transverse, proved under
-    explicit hypotheses; which branch holds is open.
-    The oriented metaplectic step has the exact \texorpdfstring{$\mathfrak{{sl}}_2$}{sl₂} opening
-    \texorpdfstring{$\alpha(t,s)=ts\,\frac{{r}}{{\sinh r}}=ts+O\!\left((ts)^2\right)$}{α(t,s) = ts r/sinh r = ts +
+    Finally, the first-order opening of the split is governed by the \texorpdfstring{$J_\Pi$}{J_Π}-odd tilt of the locking operator
+      transported
+    by the Schur map to the outer generation weights; the locking is called Schur-null when this transported tilt
+    vanishes and Schur-transverse otherwise.
+    The oriented metaplectic step has the exact \texorpdfstring{$\mathfrak{sl}_2$}{sl₂} opening
+    \texorpdfstring{$\alpha(t,s)=ts\,\frac{r}{\sinh r}=ts+O\!\left((ts)^2\right)$}{α(t,s) = ts r/sinh r = ts +
       O((ts)²)},
-    \texorpdfstring{$\mu(t,s)\equiv0$}{μ(t,s) = 0}, with \texorpdfstring{$\cosh r=1+\tfrac{{ts}}{{2}}$}{cosh r = 1 +
-      ts/2}, produced by
-    the commutator \texorpdfstring{$[E,F]=H$}{[E,F] = H} of the two shear generators.
-    Its identification with the \texorpdfstring{$J_\Pi$}{J_Π}-odd tangent of the locking operator is supplied by no
-      source;
-    under that identification, and under non-annihilation of the Schur transport, the locking is
-    Schur-transverse.
+    \texorpdfstring{$\mu(t,s)\equiv0$}{μ(t,s) = 0}, with \texorpdfstring{$\cosh r=1+\tfrac{ts}{2}$}{cosh r = 1 + ts/2},
+    produced by the commutator \texorpdfstring{$[E,F]=H$}{[E,F] = H} of the two shear generators.
+    That the transported tilt equals this opening, up to a non-zero factor, is supplied by no source; under that
+    hypothesis the locking is Schur-transverse.
     Neither the sign of the Born--Infeld genus nor the non-vanishing of \texorpdfstring{$u$}{u} follows from this note.
-    The open deliverables are that identification, the explicit Lorentzian eliminated block
-    \texorpdfstring{$1-P(s)$}{1−P(s)}, the absolute normalisation \texorpdfstring{$|u|$}{|u|}, and the projected Yukawa
-      sector.
+    The open deliverables are that hypothesis, the explicit Lorentzian eliminated block
+    \texorpdfstring{$1-P(s)$}{1−P(s)}, the absolute normalisation \texorpdfstring{$|u|$}{|u|}, and the projected
+    Yukawa sector.
   \end{abstract}
 
   \noindent\textbf{Keywords:} projective endomorphism; Schur complement; non-injective projection;
@@ -188,16 +187,7 @@ of Projection Locking}
         \label{eq:hsym}
         (1-P)^{1/2}\,\gamma(\xi)\,\PiS^{*}=0\qquad\text{for every covector }\xi.
       \end{equation}
-      It is a condition on the eliminated sector, strictly weaker than the symbol-compatibility of Q14, which concerns
-      the principal symbol of $D_{\Pi,g,A}$ itself (Remark~\ref{rem:q14-symbol}).
-    \end{hypothesis}
-
-    \begin{hypothesis}[Lichnerowicz compression]
-      \label{hyp:lich}
-      The effective spin--gauge Lichnerowicz operator
-      $-(\nabla^{S,A})^2+\tfrac{R}{4}+\tfrac12\gamma^\mu\gamma^\nu F^a_{\mu\nu}T^a$ of Q14 equals
-      $\PiS D_{g,A}^2\PiS^{*}$.
-      No source states this identity.
+      It is a condition on the eliminated sector (see Remark~\ref{rem:q14-symbol} for its relation to Q14).
     \end{hypothesis}
 
     \begin{hypothesis}[Faithfulness of the chiral transport]
@@ -209,9 +199,9 @@ of Projection Locking}
 
     \begin{proposition}[Schur form of the projective residue]
       \label{prop:schur}
-      Assume Hypotheses~\ref{hyp:contraction} and~\ref{hyp:lich}.
-      Let $\EPi$ be the projective endomorphism of~\cite{Beau2026q14}, the remainder between the projected Dirac square
-      and the effective spin--gauge Lichnerowicz operator, so that $\EPi=D^2_{\Pi,g,A}-\PiS D_{g,A}^2\PiS^{*}$.
+      Assume Hypothesis~\ref{hyp:contraction}.
+      Let $\EPi:=D^2_{\Pi,g,A}-\PiS D_{g,A}^2\PiS^{*}$ be the compression remainder of the projected Dirac square
+      (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
       Then
       \begin{equation}
         \label{eq:schur}
@@ -224,8 +214,7 @@ of Projection Locking}
     \begin{proof}
       The identity $D^2_{\Pi,g,A}=\PiS D_{g,A}\PiS^{*}\PiS D_{g,A}\PiS^{*}=\PiS D_{g,A}\,P\,D_{g,A}\PiS^{*}$ holds for
       any $\PiS$, so no idempotence of $P$ is used.
-      Subtracting $\PiS D_{g,A}^2\PiS^{*}$, which is the Lichnerowicz operator by Hypothesis~\ref{hyp:lich}, gives the
-      first form of~\eqref{eq:schur}.
+      Subtracting $\PiS D_{g,A}^2\PiS^{*}$ gives the first form of~\eqref{eq:schur}.
       By Hypothesis~\ref{hyp:contraction}, $1-P$ is self-adjoint and non-negative, hence
       $1-P=(1-P)^{1/2}(1-P)^{1/2}$, and $N^{\dagger}=\PiS D_{g,A}(1-P)^{1/2}$ because $D_{g,A}$ is self-adjoint (the
       identity is read as a quadratic form, $(1-P)^{1/2}$ being taken weakly differentiable).
@@ -282,24 +271,31 @@ of Projection Locking}
       $(1-P)^{1/2}$ stands to the left of every term of $N$.
     \end{proof}
 
-    Proposition~\ref{prop:schur} makes precise the statement of~\cite{Beau2026q14} that $E_\Pi$ is induced by the
-    non-injective projection itself: under Hypothesis~\ref{hyp:contraction} it is the Schur complement of the
-    eliminated sector $1-P$.
-    A non-zero residue under Hypothesis~\ref{hyp:symbol} therefore requires a fibre on which the Clifford algebra
+    Proposition~\ref{prop:schur} exhibits the compression remainder as the Schur complement of the eliminated sector
+    $1-P$ under Hypothesis~\ref{hyp:contraction}.
+    A non-zero residue under Hypothesis~\ref{hyp:symbol} requires a fibre on which the Clifford algebra
     acts reducibly, that is a multiplicity space.
     The surviving terms of $N$ are then those containing $\nabla\PiS^{*}$ and $B_0\PiS^{*}$; whether they are
     non-zero is a differential question that this note does not control.
     The algebraic obstruction is checked exactly in a finite model (Appendix~\ref{sec:symbolcheck}).
 
-    \begin{remark}[Relation to the symbol-compatibility of Q14]
+    \begin{remark}[Relation to the projective endomorphism of Q14]
       \label{rem:q14-symbol}
-      Under Hypothesis~\ref{hyp:symbol}, $(1-P)\gamma(\xi)\PiS^{*}=0$, so the principal symbol of
-      $D^2_{\Pi,g,A}=\PiS D_{g,A}P D_{g,A}\PiS^{*}$ is $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$.
-      The Laplace-type form with the standard Clifford principal symbol, which is the symbol-compatibility of Q14 and
-      the form used in Section~\ref{sec:conventions}, holds if and only if $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$.
-      In that case $\PiS$ is a coisometry and $P$ a projector, so the hypotheses of this note together with the
-      symbol-compatibility of Q14 select the idempotent case of Remark~\ref{rem:idempotence}.
-      Sections~\ref{sec:schur} and~\ref{sec:chiral} use only the weaker hypotheses they name.
+      Q14 defines its projective endomorphism by $\EPi^{\mathrm{Q14}}:=D^2_{\Pi,g,A}-\mathrm{Lich}$, where
+      $\mathrm{Lich}$
+      is the spin--gauge Lichnerowicz operator $-(\nabla^{S,A})^2+\tfrac{R}{4}+\tfrac12\gamma^\mu\gamma^\nu
+      F^a_{\mu\nu}T^a$,
+      and assumes that the principal symbol of $D_{\Pi,g,A}$ is the projected Clifford symbol.
+      The compression remainder $\EPi$ of Proposition~\ref{prop:schur} equals $\EPi^{\mathrm{Q14}}$ if and only if
+      $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$, an identity that no source states.
+      Comparing principal symbols, that identity forces $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$: the symbol of
+      $\mathrm{Lich}$ is $g^{-1}(\xi,\xi)\,\mathbb 1$ and that of $\PiS D_{g,A}^2\PiS^{*}$ is
+      $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$.
+      In that regime $\PiS$ is a coisometry, $P$ is a projector, contraction is automatic, and the results below apply
+      to $\EPi^{\mathrm{Q14}}$.
+      Outside it, they concern the compression remainder only, and no statement is made about $\EPi^{\mathrm{Q14}}$.
+      Under Hypothesis~\ref{hyp:symbol}, $(1-P)\gamma(\xi)\PiS^{*}=0$, and the principal symbol of $D^2_{\Pi,g,A}$ is
+      $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$ as well.
     \end{remark}
 
   \section{Chiral block reduction and the localisation of $u$}
@@ -664,7 +660,7 @@ of Projection Locking}
     under the Weyl transport and the projection to $\Cgen$.
     Section~\ref{sec:finite-equivariance} reduces the modulus to the Lorentzian deformation $s$
     with saturation curvature $\mu_\chi^2$~\eqref{eq:muchi}.
-    We now turn the necessary condition into an exhaustive dichotomy on the transported,
+    We now turn the necessary condition into a criterion on the transported,
     generation-projected defect.
 
     With $s$ the Lorentzian $J_\Pi$-odd deformation parameter of Section~\ref{sec:finite-equivariance}, consider the
@@ -689,7 +685,7 @@ of Projection Locking}
       Let $\xi$ be a non-null covector.
       Then $\gamma(\xi)^2=g^{-1}(\xi,\xi)\neq0$, so $\gamma(\xi)$ is invertible and the uncompressed symbol map
       $X\mapsto\gamma(\xi)X\gamma(\xi)$ is injective, whether $\xi$ is timelike or spacelike.
-      If, however, Hypothesis~\ref{hyp:symbol} holds for every $s$ of the family, then
+      If, however, $(1-P(s))^{1/2}\gamma(\xi)\PiS^{*}=0$ for every $s$ of the family, then
       $\PiS\gamma(\xi)\,(\partial_sP|_0)\,\gamma(\xi)\PiS^{*}=0$: the symbol-level transport of the polarisation
       vanishes, and $T(\partial_sP|_0)$ is a zero-order operator carried by the terms in $\nabla\PiS^{*}$ and
       $B_0\PiS^{*}$.
@@ -708,40 +704,34 @@ of Projection Locking}
 
     \begin{definition}[Schur transversality]
       \label{def:schur-transversality}
-      Let $\sigma:=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)$ restricted to the outer weights
-      $\mathrm{span}(e_+,e_-)$ be the $J_\Pi$-odd part of the opened direction, a linear operator.
-      The A4 locking defect is \emph{Schur-transverse} on the generation triplet if
+      Assume that $J_\Pi$ acts on $\mathcal S$ and on $\mathcal S_\Pi$ with $J_\Pi D_{g,A}J_\Pi^{-1}=\pm D_{g,A}$ and
+      $J_\Pi\PiS J_\Pi^{-1}=\PiS$, as in Lemma~\ref{lem:chiral-obstruction}.
+      Let $\sigma:=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)$ be the $J_\Pi$-odd part of the
+      opened direction, a linear operator on $\mathcal S$, and
       \begin{equation}
         \label{eq:transversality}
-        T_{\mathrm{out}}(\sigma)=\Big(\PiS\,D_{g,A}\,\sigma\,D_{g,A}\,\PiS^{*}\Big)\Big|_{\mathrm{span}(e_+,e_-)}\neq 0.
+        T_{\mathrm{out}}(\sigma):=\Big(\PiS\,D_{g,A}\,\sigma\,D_{g,A}\,\PiS^{*}\Big)\Big|_{\mathrm{span}(e_+,e_-)}
       \end{equation}
-      Otherwise it is \emph{Schur-null}.
-      Under the $J_\Pi$-compatibility of Lemma~\ref{lem:chiral-obstruction}, $J_\Pi D_{g,A}J_\Pi^{-1}=\pm D_{g,A}$ and
-      $J_\Pi\PiS J_\Pi^{-1}=\PiS$, the transport $T$ commutes with the $J_\Pi$-odd projection, so $T(\sigma)$ is the
-      $J_\Pi$-odd part of the polarisation~\eqref{eq:polarisation}.
+      its Schur transport restricted to the outer generation weights of $\Cgen\subset\mathcal S_\Pi$.
+      The A4 locking defect is \emph{Schur-transverse} if $T_{\mathrm{out}}(\sigma)\neq0$ and \emph{Schur-null}
+      otherwise.
     \end{definition}
 
-    \begin{proposition}[Schur dichotomy for the A4 locking defect]
+    \begin{proposition}[Schur-null and Schur-transverse loci]
       \label{prop:schur-dichotomy}
-      With $\sigma$ as in Definition~\ref{def:schur-transversality}, exactly one of the following alternatives holds.
-      \begin{enumerate}
-        \item $\sigma=0$: the opened direction carries no $J_\Pi$-odd component on the outer generation weights, the
-        quantity~\eqref{eq:transversality} vanishes, and the locking is Schur-null.
-        \item $\sigma\neq0$ and $T_{\mathrm{out}}(\sigma)=0$ (the transported zero-mode locus): the
-        quantity~\eqref{eq:transversality} vanishes and the locking is Schur-null.
-        \item $\sigma\neq0$ and $T_{\mathrm{out}}(\sigma)\neq0$: the locking is Schur-transverse.
-      \end{enumerate}
-      In the Schur-null cases the $J_\Pi$-odd first-order Schur polarisation on the outer weights is absent, so the
-      split does not open at first order.
+      Under the assumptions of Definition~\ref{def:schur-transversality}, $T_{\mathrm{out}}(\sigma)$ is the
+      $J_\Pi$-odd part, restricted to the outer weights, of the first-order polarisation $\mathcal P$
+      of~\eqref{eq:polarisation}.
+      Hence, for the family $\EPi(s)$, the $J_\Pi$-odd first-order polarisation on the outer weights vanishes in the
+      Schur-null case, so that the split does not open at first order, and it is non-zero in the Schur-transverse
+      case.
     \end{proposition}
 
     \begin{proof}
-      The three cases are exhaustive and exclusive by the definition of $\sigma$ and of $T_{\mathrm{out}}$.
-      In the first case $T_{\mathrm{out}}(\sigma)=0$ because $T$ is linear.
-      The statement on the first-order opening follows from the anticommutator discussion above, since the
-      $J_\Pi$-odd part of the polarisation on the outer weights is $T_{\mathrm{out}}(\sigma)$.
-      Whether the saturation curvature is then marginal is a statement about the companion reduction, not proved
-      here.
+      The transport $T(X)=\PiS D_{g,A}XD_{g,A}\PiS^{*}$ satisfies $J_\Pi T(X)J_\Pi^{-1}=T(J_\Pi XJ_\Pi^{-1})$ by the
+      assumed compatibility, so $T$ commutes with the $J_\Pi$-odd projection.
+      Therefore $T(\sigma)$ is the $J_\Pi$-odd part of $T(\partial_sP|_0)=\mathcal P$, and restriction to the outer
+      weights commutes with taking this part because $J_\Pi^{(2)}$ exchanges $e_+$ and $e_-$ by~\eqref{eq:jpisym}.
     \end{proof}
 
     \begin{lemma}[Exact metaplectic opening of the Schur defect]
@@ -794,44 +784,38 @@ of Projection Locking}
       \label{hyp:transport}
       Let $P(s)$ be the locking operator along the $J_\Pi$-odd modulus $s$ of Section~\ref{sec:finite-equivariance}
       (distinct from the shear parameter $s$ of Lemma~\ref{lem:exact-schur-opening}).
-      There is a real $\kappa\neq0$ such that the linear operator $\sigma$ of
-      Definition~\ref{def:schur-transversality} satisfies $\sigma=\kappa\,\alpha(t,s)\,J_3$ for an oriented step
-      with $ts>0$.
-    \end{hypothesis}
-
-    \begin{hypothesis}[Non-annihilation of the transport, {[H-Ker]}]
-      \label{hyp:kernel}
-      $T_{\mathrm{out}}(\sigma)\neq0$ for the operator $\sigma$ of Hypothesis~\ref{hyp:transport}.
-      Under Hypothesis~\ref{hyp:symbol} along the family, $T_{\mathrm{out}}(\sigma)$ is carried by the zero-order terms
-      in $\nabla\PiS^{*}$ and $B_0\PiS^{*}$ (Lemma~\ref{lem:weyl-faithful}).
+      There is a real $\kappa\neq0$ such that
+      $T_{\mathrm{out}}(\sigma)=\kappa\,\alpha(t,s)\,J_3\big|_{\mathrm{span}(e_+,e_-)}$ for an oriented step with
+      $ts>0$.
     \end{hypothesis}
 
     No source relates $P(s)$ to the metaplectic step $g(t,s)$: Hypothesis~\ref{hyp:transport} is a missing element,
-    not an excluded one, and Hypothesis~\ref{hyp:kernel} is a separate one.
+    not an excluded one.
+    Under the symbol condition along the family, the symbol-level part of $T$ vanishes
+    (Lemma~\ref{lem:weyl-faithful}), so a non-zero $T_{\mathrm{out}}(\sigma)$ is carried by the zero-order terms in
+    $\nabla\PiS^{*}$ and $B_0\PiS^{*}$; this is part of what Hypothesis~\ref{hyp:transport} asserts and is examined
+    nowhere in the corpus.
     No identification of the central commutator $Z=[X,Y]$ with a temporal direction is used, and none is available:
     the central entry of the co-metric of Q5b~\cite{Beau2026q5b} (Theorem~5.2) is zero at rank three, it is positive in
     the conditional full-rank completion of Q8~\cite{BeauQ8} (Corollary~6.1), and it is negative in
     neither~\cite{Beau2026q11}.
 
-    \begin{corollary}[Schur transversality under the transport hypotheses]
+    \begin{corollary}[Schur transversality under the transport hypothesis]
       \label{cor:schur-transversality-closed}
-      Assume Hypothesis~\ref{hyp:transport}.
-      Then $\sigma\neq0$, so the alternative $\sigma=0$ of Proposition~\ref{prop:schur-dichotomy} is excluded, and the
-      locking is Schur-transverse if and only if $T_{\mathrm{out}}(\sigma)\neq0$.
-      In particular it is Schur-transverse under Hypothesis~\ref{hyp:kernel}.
+      Assume the compatibility of Definition~\ref{def:schur-transversality} and Hypothesis~\ref{hyp:transport}.
+      Then the A4 locking defect is Schur-transverse.
     \end{corollary}
 
     \begin{proof}
-      By Hypothesis~\ref{hyp:transport} and Lemma~\ref{lem:exact-schur-opening}, $\sigma=\kappa\alpha J_3\neq0$.
-      The remaining alternatives of Proposition~\ref{prop:schur-dichotomy} are distinguished by
-      $T_{\mathrm{out}}(\sigma)$.
+      $T_{\mathrm{out}}(\sigma)=\kappa\alpha J_3|_{\mathrm{span}(e_+,e_-)}$ with $\kappa\neq0$, $\alpha\neq0$ by
+      Lemma~\ref{lem:exact-schur-opening}, and $J_3=\mathrm{diag}(1,-1)$ on $\mathrm{span}(e_+,e_-)$.
     \end{proof}
 
     \begin{corollary}[A4-level reduction]
       \label{cor:a4-reduction}
       The A4 residual problem is reduced to the projected Lorentzian datum
       \[
-        \sigma=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)\big|_{\mathrm{span}(e_+,e_-)}.
+        T_{\mathrm{out}}(\sigma)=\Big(\PiS D_{g,A}\,\sigma\,D_{g,A}\PiS^{*}\Big)\Big|_{\mathrm{span}(e_+,e_-)}.
       \]
       If the locking is Schur-transverse, the generation split is decided by the Born--Infeld genus of the
       chiral two-form supplied in~\cite{Beau2026bim}: $\mu_\chi^2>0$ gives $u=0$, and $\mu_\chi^2<0$ gives a
@@ -841,13 +825,12 @@ of Projection Locking}
       of~\eqref{eq:muchi}.
     \end{corollary}
 
-    The dichotomy of Proposition~\ref{prop:schur-dichotomy} is proved under the hypotheses it names; which branch
-    holds is open.
+    Proposition~\ref{prop:schur-dichotomy} identifies the transported $J_\Pi$-odd tilt $T_{\mathrm{out}}(\sigma)$ as the
+    $J_\Pi$-odd first-order polarisation on the outer weights; which of the two loci holds is open.
     Lemma~\ref{lem:exact-schur-opening} evaluates the $\mathfrak{sl}_2$ commutator of the oriented step in closed form;
-    under Hypothesis~\ref{hyp:transport} it excludes the exact-zero branch, and under Hypothesis~\ref{hyp:kernel} the
-    transported zero-mode branch is excluded.
-    Neither hypothesis is supplied by a source, and the symbol-level transport vanishes
-    (Lemma~\ref{lem:weyl-faithful}), so that Hypothesis~\ref{hyp:kernel} concerns zero-order terms.
+    under Hypothesis~\ref{hyp:transport} the locking is Schur-transverse.
+    That hypothesis is not supplied by a source, and the symbol-level transport vanishes
+    (Lemma~\ref{lem:weyl-faithful}), so that it concerns zero-order terms.
     The Lorentzian datum $\partial_sP|_0$ is not constructed: its relation to the metaplectic step
     $g(t,s)=\exp(tE)\exp(sF)$ is Hypothesis~\ref{hyp:transport}.
     The sign of the Born--Infeld genus of~\cite{Beau2026bim} is not decided here.
@@ -857,7 +840,8 @@ of Projection Locking}
 
     \noindent\emph{Proved / structural (this note).}
     \begin{itemize}
-      \item Under Hypotheses~\ref{hyp:contraction} and~\ref{hyp:lich}, $\EPi=-\PiS D(1-P)D\PiS^{*}=-N^{\dagger}N$ is
+      \item Under Hypothesis~\ref{hyp:contraction}, the compression remainder
+      $\EPi=-\PiS D(1-P)D\PiS^{*}=-N^{\dagger}N$ is
       the Schur
       complement of the eliminated sector, negative semi-definite, vanishing where $P=1$
       (Proposition~\ref{prop:schur}).
@@ -887,20 +871,21 @@ of Projection Locking}
       in the finite cascade and is a Lorentzian datum
       (Proposition~\ref{prop:finite-equivariance}, Corollary~\ref{cor:separation}).
       \item The exact $\mathfrak{sl}_2$ opening $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the oriented step, produced
-      by $[E,F]=H$ (Lemma~\ref{lem:exact-schur-opening}), and the exhaustive Schur-null / Schur-transverse dichotomy
+      by $[E,F]=H$ (Lemma~\ref{lem:exact-schur-opening}); under $J_\Pi$-compatibility, the transported tilt
+      $T_{\mathrm{out}}(\sigma)$ is the $J_\Pi$-odd first-order polarisation on the outer weights
       (Proposition~\ref{prop:schur-dichotomy}).
     \end{itemize}
 
     \noindent\emph{Conditional.}
     The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is an admissible branch selected by the
     orientation-compatible assumption; its derivation from A4 is open.
-    The Schur-transverse branch (Corollary~\ref{cor:schur-transversality-closed}) holds under the chiral splitting,
-    contraction and symbol hypotheses, the transport hypothesis~\ref{hyp:transport} and the non-annihilation
-    hypothesis~\ref{hyp:kernel}.
+    The Schur-transverse locus (Corollary~\ref{cor:schur-transversality-closed}) holds under the
+    $J_\Pi$-compatibility of Definition~\ref{def:schur-transversality} and the transport
+    hypothesis~\ref{hyp:transport}.
     The reduction of $u$ to the Born--Infeld genus of~\cite{Beau2026bim} holds for a chiral two-form supplied there.
 
     \noindent\emph{Open.}
-    Which branch of the dichotomy holds is open, as are the transport hypothesis~\ref{hyp:transport}, the explicit
+    Which locus holds is open, as are the transport hypothesis~\ref{hyp:transport}, the explicit
     Lorentzian eliminated block $1-P(s)$, the sign of the Born--Infeld genus, the absolute normalisation $|u|$, and the
     projected Yukawa sector.
     The magnitude $|u|$ depends on the fully transported and projected Born--Infeld saturation data,
@@ -912,17 +897,16 @@ of Projection Locking}
 
     The finite contribution to A4 is separated: finite projection locking is $J_\Pi$-equivariant and
     cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and Corollary~\ref{cor:separation}).
-    The Schur-transversality test that conditions the A4 companion is an exhaustive dichotomy
-    (Proposition~\ref{prop:schur-dichotomy}); the Schur-transverse branch is reached under
-    Hypotheses~\ref{hyp:transport} and~\ref{hyp:kernel} (Corollary~\ref{cor:schur-transversality-closed}).
+    The Schur-transversality test that conditions the A4 companion is the non-vanishing of the transported tilt
+    $T_{\mathrm{out}}(\sigma)$ (Proposition~\ref{prop:schur-dichotomy}); it holds under
+    Hypothesis~\ref{hyp:transport} (Corollary~\ref{cor:schur-transversality-closed}).
     The Born--Infeld genus of~\cite{Beau2026bim} then decides, for the chiral two-form supplied there, between
     $u=0$ and $u\neq0$.
 
     The open deliverables are:
     \begin{enumerate}
       \item the relation between the locking operator $P(s)$ and the metaplectic step $g(t,s)$
-      (Hypothesis~\ref{hyp:transport}), and the non-annihilation of the Schur transport
-      (Hypothesis~\ref{hyp:kernel});
+      (Hypothesis~\ref{hyp:transport});
       \item the explicit Lorentzian eliminated block $1-P(s)$ entering the Schur complement
       \[
         \EPi=-\PiS\,D_{g,A}\,(1-P(s))\,D_{g,A}\,\PiS^{*};
@@ -967,11 +951,10 @@ of Projection Locking}
     through a chiral symmetry-breaking carried by the projection-locking axiom A4.
     The polarisation, the Seeley--DeWitt conventions, and the operator/spectral identification are locked;
     the front observables are confirmed to be null controls rather than carriers of $u$.
-    The Schur-null / Schur-transverse dichotomy of the A4 locking defect is proved under explicit hypotheses
-    (Proposition~\ref{prop:schur-dichotomy}); which branch holds is open.
-    The exact $\mathfrak{sl}_2$ opening of the oriented step (Lemma~\ref{lem:exact-schur-opening}) excludes the
-    exact-zero branch under the transport hypothesis~\ref{hyp:transport}, and the transported zero-mode branch is
-    excluded under hypothesis~\ref{hyp:kernel}.
+    The transported $J_\Pi$-odd tilt of the locking operator is the first-order polarisation on the outer weights
+    (Proposition~\ref{prop:schur-dichotomy}); which of the Schur-null and Schur-transverse loci holds is open.
+    The exact $\mathfrak{sl}_2$ opening of the oriented step (Lemma~\ref{lem:exact-schur-opening}) gives
+    the Schur-transverse locus under the transport hypothesis~\ref{hyp:transport}.
     Whether $u\neq0$ then follows depends on the Born--Infeld genus of the A4 companion~\cite{Beau2026bim}, which is
     stated there for a chiral two-form supplied as a hypothesis.
     This note does not decide it, and does not determine the value $|u|$, which remains fixed by the chiral-frontier
