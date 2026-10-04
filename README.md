@@ -29,32 +29,32 @@ This note fixes the structural status of $u$ before any explicit construction of
 
 2. **Chiral block reduction.** The chiral block decomposition expresses the antiunitary chiral equivariance defect
    $$\Delta_\chi(P) = \pi_{LL} - \tau \, \overline{\pi_{RR}} \, \tau^{-1}$$
-   of the eliminated block $1 - P$, after $\mathcal{D}^{\pm}$-transport and projection to the generation triplet; a
-   a non-zero split requires that the locking operator break $J_\Pi$-equivariance, under a generation-carrier
-hypothesis.
+   of the eliminated block $1 - P$, after $\mathcal{D}^{\pm}$-transport and projection to the generation triplet. Under
+a
+   generation-reading hypothesis, a non-zero split requires a locking operator that breaks $J_\Pi$-equivariance; in
+   particular $u$ vanishes for the reference operator $\Pi_S^{*}\Pi_S$.
 
 3. **Stratification.** Under a generation-reading hypothesis, if the locking operator commutes with $J_\Pi$ then
    $u = 0$. The minimal non-injectivity $c \leftrightarrow q - c$ is $J_\Pi$-symmetric, so on the structurally
    motivated reading of axioms A1–A3 $u = 0$ there; a non-zero $u$ requires a breaking of $J_\Pi$-equivariance, which
    on that reading can come only from the projection-locking axiom A4.
 
-4. **Seeley–DeWitt conventions.** For the reference residue on a flat background the operator-level and spectral-level
-   definitions of $u$ coincide; for a general locking operator the identification is not claimed.
+4. **Seeley–DeWitt conventions.** The conventions are fixed for the reference residue on a flat background, where
+   $u = 0$; no spectral definition of $u$ is given for a general locking operator.
 
 5. **No finite chiral label.** It is argued that $u$ is not accessible to any finite front observable: chirality is a
    Lorentzian rather than a finite-fibre datum.
 
-6. **Finite/Lorentzian separation.** The finite locking data are $J_\Pi$-invariant; if the finite locking operator is
-   constructed equivariantly and a finite reading is supplied, $u_{\mathrm{fin}} = 0$, and a non-zero split would then
-   need a $J_\Pi$-odd datum from the Lorentzian completion.
+6. **Finite sector.** The finite locking data are invariant under the parity $c \leftrightarrow q - c$, whose
+   identification with $J_\Pi$ is open; under that identification, an equivariant construction of the finite locking
+   operator and a finite reading, $u_{\mathrm{fin}} = 0$.
 
-7. **Schur-null and Schur-transverse loci.** Under $J_\Pi$-compatibility, the first-order opening of the split is
-governed
-   by the $J_\Pi$-odd tilt of the locking operator transported by the Schur map to the outer generation weights; the
-   locking is Schur-null when this transported tilt vanishes and Schur-transverse otherwise. The oriented metaplectic
-   step has the exact $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the
-   commutator $[E,F] = H$. That the transported tilt equals this opening up to a non-zero factor is supplied by no
-   source; under that hypothesis the locking is Schur-transverse.
+7. **Schur-null and Schur-transverse loci.** The $J_\Pi$-odd tilt of the locking operator, transported by the Schur
+   map and read on the outer generation weights, is the $J$-odd part of the first-order polarisation; the locking is
+   Schur-null when it vanishes and Schur-transverse otherwise. The oriented metaplectic step has the exact
+   $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the commutator $[E,F] = H$.
+   That the transported tilt equals this opening up to a non-zero factor is supplied by no source; under that
+   hypothesis the locking is Schur-transverse.
 
 Neither the sign of the Born–Infeld genus of the A4 companion note nor the non-vanishing of $u$ follows from this
 note. The open deliverables are that hypothesis, the explicit Lorentzian eliminated block $1 - P(s)$, the

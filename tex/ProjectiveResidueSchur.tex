@@ -83,8 +83,11 @@ of Projection Locking}
     structurally motivated reading of axioms A1--A3, \texorpdfstring{$u=0$}{u = 0} there, and a non-zero
     \texorpdfstring{$u$}{u} requires a breaking of \texorpdfstring{$J_\Pi$}{J_Π}-equivariance, which on that reading
     can come only from the projection-locking axiom A4.
-    The finite locking data are \texorpdfstring{$J_\Pi$}{J_Π}-invariant; if the finite locking operator is constructed
-    equivariantly and a finite reading is supplied, \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}.
+    In particular \texorpdfstring{$u$}{u} vanishes for the reference operator, hence for Q14's endomorphism when it
+    coincides with the compression remainder; a non-zero \texorpdfstring{$u$}{u} needs a different locking operator.
+    The finite locking data are invariant under the parity \texorpdfstring{$c\leftrightarrow q-c$}{c ↔ q−c}, whose
+    identification with \texorpdfstring{$J_\Pi$}{J_Π} is open; under that identification, an equivariant construction
+    and a finite reading, \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}.
     Finally, the \texorpdfstring{$J_\Pi$}{J_Π}-odd first-order polarisation on the outer generation weights is the
     \texorpdfstring{$J_\Pi$}{J_Π}-odd tilt of the
     locking operator
@@ -511,8 +514,8 @@ of Projection Locking}
 
     \begin{hypothesis}[Generation reading and compatibility, {[H-Gen]}]
       \label{hyp:generation}
-      (i) $J_\Pi$ is an antiunitary operator on $\mathcal S$ and on $\mathcal S_\Pi$ (with $J_\Pi^2=-1$ on the doublet
-      sector, as in Q14), compatible with the Dirac transport and the projection:
+      (i) $J_\Pi$ is an antiunitary operator on $\mathcal S$ and on $\mathcal S_\Pi$ (with $J_\Pi^2=-1$ on $\mathcal
+      S_\Pi$, Q14 Theorem~3.7), compatible with the Dirac transport and the projection:
       $J_\Pi D_{g,A}J_\Pi^{-1}=\pm D_{g,A}$ and $J_\Pi\PiS J_\Pi^{-1}=\PiS$.
       (ii) $\mathcal H$ is a Hilbert space with an antiunitary $J$ and an orthonormal triple $e_0,e_+,e_-$ spanning
       $\Cgen$, with $Je_0=-e_0$ and $Je_\pm=e_\mp$, so that $J^2=+1$ on $\Cgen$; in the model
@@ -625,9 +628,9 @@ of Projection Locking}
     \label{sec:finite-equivariance}
 
     Before any Lorentzian computation, the finite sector must be excluded as a source of $u$.
-    This section shows that the finite projection locking is $J_\Pi$-equivariant when its operator is constructed
-    equivariantly from the locking data, so that $u$ cannot originate in the finite cascade and the generation split is
-    a Lorentzian datum on that construction.
+    This section records what follows for the finite sector if its locking operator is constructed equivariantly from
+      the
+    locking data.
 
     Let $\mathrm{Lock}^{\mathrm{fin}}_S$ denote the projection-locking data of axiom A4~\cite{Beau2026m} at
     finite $q$: the continuous Born--Infeld saturation condition intersected with the discrete shell
@@ -639,9 +642,10 @@ of Projection Locking}
 
     \begin{remark}[Finite equivariance of projection locking]
       \label{prop:finite-equivariance}
-      For $q$ an odd prime, the finite locking data is invariant under the spinorial Born--Infeld parity $J_\Pi$:
-      the continuous saturation condition is Born--Infeld parity itself, whose spinorial lift is
-      $J_\Pi$~\cite{Beau2026q14}, and the discrete shell support is a union of orbits of the parity
+      For $q$ an odd prime, the finite locking data are invariant under the parity $c\leftrightarrow q-c$, whose
+      identification with $J_\Pi$ is an open problem~\cite{Beau2026a22}: the continuous saturation condition is
+      Born--Infeld parity itself, whose spinorial lift is $J_\Pi$~\cite{Beau2026q14}, and the discrete shell support is
+      a union of orbits of the parity
       $c\leftrightarrow q-c$~\cite{Beau2026fe}, whose only fixed point on the central character $c\mapsto-c$ is $c=0$,
       so that the support singles out no orientation.
       If $P_{\mathrm{fin}}$ is constructed from the locking data equivariantly, that is with no choice among
@@ -688,8 +692,9 @@ of Projection Locking}
     \end{equation}
     Interpreting A4 as selection of saturated admissible minima of $\mathcal B$,
     \begin{equation*}
-      \mu_\chi^2>0\ \Rightarrow\ J_\Pi\text{-equivariant locking, }u=0;\qquad
-      \mu_\chi^2<0\ \Rightarrow\ \text{a }J_\Pi\text{-conjugate saturated pair }\pm s_*,\ u\neq0,
+      \mu_\chi^2>0\ \Rightarrow\ \text{the symmetric point is a stable minimum};\qquad
+      \mu_\chi^2<0\ \Rightarrow\ \text{the symmetric point is unstable, and a }J_\Pi\text{-conjugate saturated pair
+      }\pm s_*\text{ may exist},
     \end{equation*}
     and the marginal case $\mu_\chi^2=0$ is decided by the leading non-vanishing even coefficient
     $\lambda_{2k}$ of $\mathcal B(s)=\mathcal B(0)+\lambda_{2k}s^{2k}+O(s^{2k+2})$: positive stabilises the
@@ -733,11 +738,11 @@ of Projection Locking}
     \end{equation}
     The positive sign is the derivative of $-(1-P)$, not a convention.
     Write $T(X):=\PiS D_{g,A}XD_{g,A}\PiS^{*}$ for the Schur transport of an operator $X$ on $\mathcal S$, and
-    $T_{\mathrm{out}}(X)$ for its restriction to the outer generation weights $\mathrm{span}(e_+,e_-)$ of $\Cgen$;
+    $T_{\mathrm{out}}(X)$ for the compression of its generation reading $\Phi(T(X))$ to the outer weights
+    $\mathrm{span}(e_+,e_-)\subset\mathcal H$ (Hypothesis~\ref{hyp:generation});
     $T$ is the full operator, including its lower-order terms.
     The induced first-order contribution to $\EPi^2$ is the anticommutator $\{\EPi|_0,\mathcal P\}$ with the
-    $J_\Pi$-even background; since $u$ is odd in $s$, its leading term is linear, so the vanishing of the $J_\Pi$-odd
-    part of $\mathcal P$ on the outer weights removes the first-order opening of the split.
+    $J_\Pi$-even background; its relation to the split is not examined here.
 
     \begin{lemma}[Symbol-level transport]
       \label{lem:weyl-faithful}
@@ -763,37 +768,36 @@ of Projection Locking}
 
     \begin{definition}[Schur transversality]
       \label{def:schur-transversality}
-      Assume Hypothesis~\ref{hyp:generation}(i), and that the outer generation weights $\mathrm{span}(e_+,e_-)$ are
-      read in
-      $\mathcal S_\Pi$ through an identification of $\Cgen$ with a subspace on which $J_\Pi$ acts as an antiunitary
-      exchanging $e_+$ and $e_-$; this identification is part of the transport hypothesis~\ref{hyp:transport}.
+      Assume Hypothesis~\ref{hyp:generation}.
       Let $\sigma:=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)$ be the $J_\Pi$-odd part of the
       opened direction, a linear operator on $\mathcal S$, and
       \begin{equation}
         \label{eq:transversality}
-        T_{\mathrm{out}}(\sigma):=\Big(\PiS\,D_{g,A}\,\sigma\,D_{g,A}\,\PiS^{*}\Big)\Big|_{\mathrm{span}(e_+,e_-)}
+        T_{\mathrm{out}}(\sigma):=\Pi_{\mathrm{out}}\,\Phi\big(\PiS\,D_{g,A}\,\sigma\,D_{g,A}\,\PiS^{*}\big)\,
+        \Pi_{\mathrm{out}},
       \end{equation}
-      its Schur transport restricted to the outer generation weights of $\Cgen\subset\mathcal S_\Pi$.
+      where $\Pi_{\mathrm{out}}$ is the orthogonal projection of $\mathcal H$ onto $\mathrm{span}(e_+,e_-)$.
       The A4 locking defect is \emph{Schur-transverse} if $T_{\mathrm{out}}(\sigma)\neq0$ and \emph{Schur-null}
       otherwise.
     \end{definition}
 
     \begin{proposition}[Schur-null and Schur-transverse loci]
       \label{prop:schur-dichotomy}
-      Under the assumptions of Definition~\ref{def:schur-transversality}, $T_{\mathrm{out}}(\sigma)$ is the
-      $J_\Pi$-odd part, restricted to the outer weights, of the first-order polarisation $\mathcal P$
-      of~\eqref{eq:polarisation}.
-      Hence, for the family $\EPi(s)$, the $J_\Pi$-odd first-order polarisation on the outer weights vanishes in the
-      Schur-null case and is non-zero in the Schur-transverse case.
+      Under Hypothesis~\ref{hyp:generation}, $T_{\mathrm{out}}(\sigma)$ is the $J$-odd part, compressed to the outer
+      weights, of the generation reading $\Phi(\mathcal P)$ of the first-order polarisation $\mathcal P$
+      of~\eqref{eq:polarisation}, where $J$ is the antiunitary of $\mathcal H$.
+      Hence, for the family $\EPi(s)$, this $J$-odd part vanishes in the Schur-null case and is non-zero in the
+      Schur-transverse case.
       The first-order change of $\EPi^2$ is the anticommutator $\{\EPi|_0,\mathcal P\}$, which involves entries of
       $\mathcal P$ outside the outer weights; no statement is made here about the opening of the split at first order.
     \end{proposition}
 
     \begin{proof}
-      The transport $T(X)=\PiS D_{g,A}XD_{g,A}\PiS^{*}$ satisfies $J_\Pi T(X)J_\Pi^{-1}=T(J_\Pi XJ_\Pi^{-1})$ by the
-      assumed compatibility, so $T$ commutes with the $J_\Pi$-odd projection.
-      Therefore $T(\sigma)$ is the $J_\Pi$-odd part of $T(\partial_sP|_0)=\mathcal P$, and restriction to the outer
-      weights commutes with taking this part because $J_\Pi^{(2)}$ exchanges $e_+$ and $e_-$ by~\eqref{eq:jpisym}.
+      The transport $T(X)=\PiS D_{g,A}XD_{g,A}\PiS^{*}$ satisfies $J_\Pi T(X)J_\Pi^{-1}=T(J_\Pi XJ_\Pi^{-1})$ by
+      Hypothesis~\ref{hyp:generation}(i), and $J\Phi(Y)J^{-1}=\Phi(J_\Pi YJ_\Pi^{-1})$ by~(iii).
+      Hence $\Phi(T(\sigma))$ is the $J$-odd part of $\Phi(T(\partial_sP|_0))=\Phi(\mathcal P)$.
+      The compression to $\mathrm{span}(e_+,e_-)$ commutes with taking the $J$-odd part because $J$ exchanges $e_+$ and
+      $e_-$ and preserves $\mathrm{span}(e_+,e_-)$.
     \end{proof}
 
     \begin{lemma}[Exact metaplectic opening of the Schur defect]
@@ -933,14 +937,8 @@ of Projection Locking}
       Hence $u\neq0$ requires a failure of $J_\Pi$-equivariance at projection locking
       (Lemma~\ref{lem:chiral-obstruction}); the magnitude of $u$ depends on the $\Deff^{\pm}$-transported,
       generation-projected component of the antiunitary defect $\Delta_\chi(P)$~\eqref{eq:defect}.
-      \item For the reference residue on a flat background, the operator and spectral definitions of $u$ coincide and
-      $u$ is normalisation-independent in the ratio (Section~\ref{sec:conventions}); for a general locking operator
-      the identification is not claimed.
-      \item Chirality is Lorentzian, not a finite-fibre label; $u$ is not a front observable
-      (Remark~\ref{rem:nogo}).
-      \item The finite locking data are $J_\Pi$-invariant; under an equivariant construction of the finite locking
-      operator and a finite reading as stated there, $u_{\mathrm{fin}}=0$
-      (Remarks~\ref{prop:finite-equivariance} and~\ref{cor:separation}).
+      \item Section~\ref{sec:conventions} fixes the Seeley--DeWitt conventions for the reference residue on a flat
+      background, where $u=0$; no spectral definition of $u$ is given for a general locking operator.
       \item The exact $\mathfrak{sl}_2$ opening $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the oriented step, produced
       by $[E,F]=H$ (Lemma~\ref{lem:exact-schur-opening}); under $J_\Pi$-compatibility, the transported tilt
       $T_{\mathrm{out}}(\sigma)$ is the $J_\Pi$-odd first-order polarisation on the outer weights
@@ -948,6 +946,11 @@ of Projection Locking}
     \end{itemize}
 
     \noindent\emph{Conditional.}
+    Chirality is argued to be a Lorentzian rather than a finite-fibre datum, and $u$ not a front observable
+    (Remark~\ref{rem:nogo}).
+    The finite locking data are invariant under the parity $c\leftrightarrow q-c$, whose identification with $J_\Pi$ is
+    open; under that identification, an equivariant construction of the finite locking operator and a finite reading,
+    $u_{\mathrm{fin}}=0$ (Remarks~\ref{prop:finite-equivariance} and~\ref{cor:separation}).
     The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is an admissible branch selected by the
     orientation-compatible assumption; its derivation from A4 is open.
     The Schur-transverse locus (Corollary~\ref{cor:schur-transversality-closed}) holds under the
@@ -966,9 +969,9 @@ of Projection Locking}
   \section{Open deliverables}
     \label{sec:open}
 
-    The finite contribution to A4 is separated: under an equivariant construction, finite projection locking is
-    $J_\Pi$-equivariant and cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and
-      Corollary~\ref{cor:separation}).
+    The finite contribution to A4 is separated only conditionally: under an equivariant construction and a finite
+    reading, finite projection locking does not generate $u$
+    (Remarks~\ref{prop:finite-equivariance} and~\ref{cor:separation}).
     The Schur-transversality test that conditions the A4 companion is the non-vanishing of the transported tilt
     $T_{\mathrm{out}}(\sigma)$ (Proposition~\ref{prop:schur-dichotomy}); it holds under
     Hypothesis~\ref{hyp:transport} (Corollary~\ref{cor:schur-transversality-closed}).
