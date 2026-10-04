@@ -31,7 +31,8 @@ Dirac square admits a
 2. **Chiral block reduction.** The chiral block decomposition expresses the antiunitary chiral equivariance defect
    $$\Delta_\chi(P) = \pi_{LL} - \tau \, \overline{\pi_{RR}} \, \tau^{-1}$$
    of the eliminated block $1 - P$, after $\mathcal{D}^{\pm}$-transport and projection to the generation triplet; a
-   non-zero split requires a non-zero equivariance defect.
+   a non-zero split requires that the locking operator break $J_\Pi$-equivariance, under a generation-carrier
+hypothesis.
 
 3. **Stratification.** If the locking operator commutes with $J_\Pi$ then $u = 0$. The minimal non-injectivity
    $c \leftrightarrow q - c$ is $J_\Pi$-symmetric, so on the structurally motivated reading of axioms A1–A3
@@ -64,7 +65,7 @@ absolute normalisation $|u|$, and the projected Yukawa sector.
 ## Position in the programme
 
 This note belongs to the **fermionic matter sub-programme** (Presentation Note 6). It refines
-Q14's open deliverable on the inter-generation splitting by localising $u$ in the antiunitary
+Q14's open deliverable on the inter-generation splitting by examining $u$ through the antiunitary
 chiral equivariance defect and identifying the Schur-null and Schur-transverse loci of the A4 direction, and identifies
 the front observables of the companion angular-amplitude and oriented-frontier notes as null
 controls rather than carriers of $u$.
