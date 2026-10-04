@@ -19,14 +19,13 @@ identification is available, so that reading is not used here.
 
 This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
 
-1. **Schur complement form.** Under a contraction hypothesis on $\Pi_S$, the compression remainder of the projected
-Dirac square admits a
-   universal Feshbach/Schur form
-   $E_\Pi = -\Pi_S \, D \, (1-P) \, D \, \Pi_S^{*} = -N^{\dagger} N$ with
-   $N = (1-P)^{1/2} D\,\Pi_S^{*}$ and $P = \Pi_S^{*} \Pi_S$, negative semi-definite and vanishing where $P = 1$.
-   It is zero-order under an explicit symbol condition; on irreducible Clifford fibres that condition forces
-   $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a fibre on which the Clifford action is reducible.
-   $P^2 = P$ holds if and only if $\Pi_S$ is a partial isometry.
+1. **Schur form.** For every locking operator $0 \preceq P \preceq 1$, the Schur expression
+   $E_\Pi[P] = -\Pi_S \, D \, (1-P) \, D \, \Pi_S^{*} = -N^{\dagger} N$ with $N = (1-P)^{1/2} D\,\Pi_S^{*}$ is negative
+   semi-definite. For the reference operator $P = \Pi_S^{*}\Pi_S$, under a contraction hypothesis, it is the compression
+   remainder of the projected Dirac square (Q14's projective endomorphism when $\Pi_S D^2 \Pi_S^*$ is the Lichnerowicz
+   operator). It is zero-order under an explicit symbol condition; for the reference operator on an irreducible Clifford
+   fibre that condition forces $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a multiplicity space.
+   $\Pi_S^{*}\Pi_S$ is idempotent if and only if $\Pi_S$ is a partial isometry.
 
 2. **Chiral block reduction.** The chiral block decomposition expresses the antiunitary chiral equivariance defect
    $$\Delta_\chi(P) = \pi_{LL} - \tau \, \overline{\pi_{RR}} \, \tau^{-1}$$

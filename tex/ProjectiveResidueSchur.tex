@@ -61,18 +61,17 @@ of Projection Locking}
     here.
     This note fixes the structural status of \texorpdfstring{$u$}{u} before any explicit construction of
     \texorpdfstring{$E_\Pi$}{EΠ}.
-    First, under explicit hypotheses on the projection (a chiral splitting of the spinor bundle, a contraction
-    \texorpdfstring{$\PiS$}{Π_S}, and a symbol condition), the compression remainder of the projected
-    Dirac square (the projective endomorphism of Q14 when \texorpdfstring{$\PiS D^2\PiS^{*}$}{Π_S D² Π_S*} is the
-    Lichnerowicz operator) has a Feshbach/Schur form
-    \texorpdfstring{$E_\Pi=-\PiS\,D\,(1-P)\,D\,\PiS^{*}=-N^{\dagger}N$}{EΠ = −Π_S D (1−P) D Π_S* = −N†N}
-    with \texorpdfstring{$N=(1-P)^{1/2}D\PiS^{*}$}{N = (1−P)^(1/2) D Π_S*} and
-    \texorpdfstring{$P=\PiS^{*}\PiS$}{P = Π_S* Π_S}, negative semi-definite, zero-order under the symbol condition, and
-    vanishing where \texorpdfstring{$P=1$}{P = 1}.
-    Where the Clifford action on the spinor fibre is irreducible, the symbol condition forces
-    \texorpdfstring{$P=1$}{P = 1} and \texorpdfstring{$E_\Pi=0$}{EΠ = 0}:
-    a non-zero residue then needs a fibre on which the Clifford action is reducible (a single irreducible
-      four-component fibre is excluded).
+    First, for every locking operator \texorpdfstring{$0\preceq P\preceq1$}{0 ≤ P ≤ 1} the Schur expression
+    \texorpdfstring{$E_\Pi[P]=-\PiS\,D\,(1-P)\,D\,\PiS^{*}=-N^{\dagger}N$}{EΠ[P] = −Π_S D (1−P) D Π_S* = −N†N} with
+    \texorpdfstring{$N=(1-P)^{1/2}D\PiS^{*}$}{N = (1−P)^(1/2) D Π_S*} is negative semi-definite.
+    For the reference operator \texorpdfstring{$P=\PiS^{*}\PiS$}{P = Π_S* Π_S}, under a contraction hypothesis, it is
+      the
+    compression remainder of the projected Dirac square (the projective endomorphism of Q14 when
+    \texorpdfstring{$\PiS D^2\PiS^{*}$}{Π_S D² Π_S*} is the Lichnerowicz operator).
+    It is zero-order under a symbol condition, and for the reference operator on an irreducible Clifford fibre that
+    condition forces \texorpdfstring{$P=1$}{P = 1} and \texorpdfstring{$E_\Pi=0$}{EΠ = 0}: a non-zero residue then
+      needs a fibre on
+    which the Clifford action is reducible.
     Second, the chiral block decomposition expresses the antiunitary chiral equivariance defect
     \texorpdfstring{$\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$}{Δ_χ(P) = π_LL − τ conj(π_RR) τ⁻¹}
     of the eliminated block \texorpdfstring{$1-P$}{1−P}, after \texorpdfstring{$\Deff^{\pm}$}{D^±}-transport and
@@ -164,10 +163,17 @@ of Projection Locking}
     spinorial bundle, $\PiS^{*}$ the admissible minimal lift, and
     \begin{equation}
       \label{eq:dpidef}
-      D_{\Pi,g,A}:=\PiS\circ D_{g,A}\circ \PiS^{*},\qquad P:=\PiS^{*}\PiS,
+      D_{\Pi,g,A}:=\PiS\circ D_{g,A}\circ \PiS^{*},\qquad P_{\mathrm{ref}}:=\PiS^{*}\PiS,
     \end{equation}
     following~\cite{Beau2026q14}.
     One does not assume $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$.
+    A \emph{locking operator} is a self-adjoint operator $P$ on $\mathcal S$ with $0\preceq P\preceq1$.
+    The reference operator $P_{\mathrm{ref}}$ is a locking operator under Hypothesis~\ref{hyp:contraction} below.
+    From Section~\ref{sec:chiral} on, $P$ denotes a locking operator, and $P_{\mathrm{ref}}=\PiS^{*}\PiS$ is a
+      particular
+    one; every statement says which it uses.
+    For a locking operator $P$ write
+    $\EPi[P]:=-\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$, and $\EPi:=\EPi[P_{\mathrm{ref}}]$.
     The hypotheses below are used where a statement names them; none is supplied by a source.
 
     \begin{hypothesis}[Chiral splitting]
@@ -181,7 +187,7 @@ of Projection Locking}
 
     \begin{hypothesis}[Contraction]
       \label{hyp:contraction}
-      $\|\PiS\|\le1$, equivalently $P=\PiS^{*}\PiS\preceq 1$, so that $1-P\succeq0$ and $(1-P)^{1/2}$ exists.
+      $\|\PiS\|\le1$, equivalently $P_{\mathrm{ref}}\preceq 1$.
       The operator $D_{g,A}$ is formally self-adjoint for the positive Hermitian structure on the spinor bundles; the
       Clifford relation $\gamma(\xi)^2=g^{-1}(\xi,\xi)$ is read up to the sign convention of that structure.
     \end{hypothesis}
@@ -189,6 +195,7 @@ of Projection Locking}
     \begin{hypothesis}[Symbol condition]
       \label{hyp:symbol}
       On the open set considered, $D_{g,A}=\gamma^{\mu}\nabla_{\mu}+B_0$ has Clifford principal symbol $\gamma(\xi)$ and
+      the locking operator $P$ considered satisfies
       \begin{equation}
         \label{eq:hsym}
         (1-P)^{1/2}\,\gamma(\xi)\,\PiS^{*}=0\qquad\text{for every covector }\xi.
@@ -205,81 +212,79 @@ of Projection Locking}
 
     \begin{proposition}[Schur form of the projective residue]
       \label{prop:schur}
-      Assume Hypothesis~\ref{hyp:contraction}.
-      Let $\EPi:=D^2_{\Pi,g,A}-\PiS D_{g,A}^2\PiS^{*}$ be the compression remainder of the projected Dirac square
-      (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
+      Let $P$ be a locking operator and $N_P:=(1-P)^{1/2}D_{g,A}\PiS^{*}$.
       Then
       \begin{equation}
         \label{eq:schur}
-        \EPi=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N^{\dagger}N,
-        \qquad N:=(1-P)^{1/2}\,D_{g,A}\,\PiS^{*}.
+        \EPi[P]=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N_P^{\dagger}N_P\preceq0
       \end{equation}
-      In particular $\EPi\preceq0$ as a quadratic form, and $\EPi=0$ where $1-P=0$, i.e.\ in the injective limit.
+      as a quadratic form, and $\EPi[P]=0$ where $P=1$.
+      Under Hypothesis~\ref{hyp:contraction}, for $P=P_{\mathrm{ref}}$, $\EPi=\EPi[P_{\mathrm{ref}}]=D^2_{\Pi,g,A}-\PiS
+      D_{g,A}^2\PiS^{*}$ is the compression remainder of the projected Dirac square
+      (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
     \end{proposition}
 
     \begin{proof}
-      The identity $D^2_{\Pi,g,A}=\PiS D_{g,A}\PiS^{*}\PiS D_{g,A}\PiS^{*}=\PiS D_{g,A}\,P\,D_{g,A}\PiS^{*}$ holds for
-      any $\PiS$, so no idempotence of $P$ is used.
-      Subtracting $\PiS D_{g,A}^2\PiS^{*}$ gives the first form of~\eqref{eq:schur}.
-      By Hypothesis~\ref{hyp:contraction}, $1-P$ is self-adjoint and non-negative, hence
-      $1-P=(1-P)^{1/2}(1-P)^{1/2}$, and $N^{\dagger}=\PiS D_{g,A}(1-P)^{1/2}$ because $D_{g,A}$ is self-adjoint (the
-      identity is read as a quadratic form, $(1-P)^{1/2}$ being taken weakly differentiable).
-      Therefore $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}=N^{\dagger}N\succeq0$, whence $\EPi=-N^{\dagger}N\preceq0$.
-      If $1-P=0$ then $N=0$.
+      Since $1-P$ is self-adjoint and non-negative, $1-P=(1-P)^{1/2}(1-P)^{1/2}$, and
+      $N_P^{\dagger}=\PiS D_{g,A}(1-P)^{1/2}$ because $D_{g,A}$ is self-adjoint (the identity is read as a quadratic
+      form, $(1-P)^{1/2}$ being taken weakly differentiable).
+      Hence $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}=N_P^{\dagger}N_P\succeq0$, which gives~\eqref{eq:schur}.
+      For $P=P_{\mathrm{ref}}$, $D^2_{\Pi,g,A}=\PiS D_{g,A}\PiS^{*}\PiS D_{g,A}\PiS^{*}=\PiS
+      D_{g,A}P_{\mathrm{ref}}D_{g,A}
+      \PiS^{*}$ holds for any $\PiS$, so no idempotence is used, and subtracting $\PiS D_{g,A}^2\PiS^{*}$ gives the
+      stated form.
     \end{proof}
 
     \begin{lemma}[Order of the residue]
       \label{lem:order}
-      Assume Hypotheses~\ref{hyp:contraction} and~\ref{hyp:symbol}.
-      Then $N$ is an operator of order zero, and $\EPi=-N^{\dagger}N$ is a zero-order endomorphism.
-      Conversely, if the second-order symbol of $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$ vanishes under
-      Hypothesis~\ref{hyp:contraction}, then~\eqref{eq:hsym} holds.
+      Let $P$ be a locking operator satisfying Hypothesis~\ref{hyp:symbol}.
+      Then $N_P$ is an operator of order zero, and $\EPi[P]=-N_P^{\dagger}N_P$ is a zero-order endomorphism.
+      Conversely, if the second-order symbol of $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$ vanishes, then~\eqref{eq:hsym} holds.
     \end{lemma}
 
     \begin{proof}
-      Write $N=a^{\mu}\partial_{\mu}+b$ with $a^{\mu}=(1-P)^{1/2}\gamma^{\mu}\PiS^{*}$ and $b$ of order zero, the
+      Write $N_P=a^{\mu}\partial_{\mu}+b$ with $a^{\mu}=(1-P)^{1/2}\gamma^{\mu}\PiS^{*}$ and $b$ of order zero, the
       covariant derivative being absorbed in $b$ and in the connection terms.
       The order-one coefficient is $a(\xi)=(1-P)^{1/2}\gamma(\xi)\PiS^{*}$, which vanishes by~\eqref{eq:hsym}, so
-      $N=b$ and $N^{\dagger}N=b^{\dagger}b$ has order zero.
-      Conversely, the second-order symbol of $N^{\dagger}N$ at $\xi$ is $a(\xi)^{\dagger}a(\xi)\succeq0$, which
+      $N_P=b$ and $N_P^{\dagger}N_P=b^{\dagger}b$ has order zero.
+      Conversely, the second-order symbol of $N_P^{\dagger}N_P$ at $\xi$ is $a(\xi)^{\dagger}a(\xi)\succeq0$, which
       vanishes if and only if $a(\xi)=0$.
       The vanishing of the second-order symbol alone leaves, a priori, a first-order part; here the factorisation
-      forces it to vanish as well, since every first-order term of $N^{\dagger}N$ contains a factor $a$ or
+      forces it to vanish as well, since every first-order term of $N_P^{\dagger}N_P$ contains a factor $a$ or
       a derivative of $a$.
     \end{proof}
 
-    \begin{remark}[Idempotence of $P$]
+    \begin{remark}[Idempotence of $P_{\mathrm{ref}}$]
       \label{rem:idempotence}
-      $P^2=P$ holds if and only if $\PiS$ is a partial isometry, $\PiS\PiS^{*}\PiS=\PiS$.
-      Indeed $P^2-P=\PiS^{*}X$ with $X=\PiS\PiS^{*}\PiS-\PiS$, the range of $X$ lies in $\mathrm{Im}\,\PiS$ and
-      $\ker\PiS^{*}=(\mathrm{Im}\,\PiS)^{\perp}$, so $P^2=P$ if and only if $X=0$.
+      $P_{\mathrm{ref}}^2=P_{\mathrm{ref}}$ holds if and only if $\PiS$ is a partial isometry,
+      $\PiS\PiS^{*}\PiS=\PiS$.
+      Indeed $P_{\mathrm{ref}}^2-P_{\mathrm{ref}}=\PiS^{*}X$ with $X=\PiS\PiS^{*}\PiS-\PiS$, the range of $X$ lies in
+      $\mathrm{Im}\,\PiS$ and $\ker\PiS^{*}=(\mathrm{Im}\,\PiS)^{\perp}$, so the equality holds if and only if $X=0$.
       If moreover $\PiS$ maps onto $\mathcal S_\Pi$, this is equivalent to $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$,
       the injectively resolved limit.
-      The Schur form~\eqref{eq:schur} does not use it; for a projector $1-P$, $N=(1-P)D_{g,A}\PiS^{*}$.
+      The Schur form~\eqref{eq:schur} does not use it.
     \end{remark}
 
     \begin{proposition}[Irreducible fibres carry no residue under the symbol condition]
       \label{prop:irreducible}
-      Assume Hypotheses~\ref{hyp:contraction} and~\ref{hyp:symbol} on an open set, and suppose that at each point
-      the Clifford algebra generated by the $\gamma(\xi)$ acts irreducibly on the fibre of $\mathcal S$, with
-      $\PiS^{*}\neq0$ and a non-null covector available.
-      Then $P=1$ and $\EPi=0$ on that set.
+      Assume Hypotheses~\ref{hyp:contraction} and~\ref{hyp:symbol} for the reference operator $P=P_{\mathrm{ref}}$ on an
+      open set, and suppose that at each point the Clifford algebra generated by the $\gamma(\xi)$ acts irreducibly on
+      the fibre of $\mathcal S$, with $\PiS^{*}\neq0$ and a non-null covector available.
+      Then $P_{\mathrm{ref}}=1$ and $\EPi=0$ on that set.
     \end{proposition}
 
     \begin{proof}
-      Let $K=\ker(1-P)$ and $R=\mathrm{Im}\,\PiS^{*}$.
-      If $v\in K$ then $v=\PiS^{*}\PiS v\in R$, so $K\subset R$.
+      Let $K=\ker(1-P_{\mathrm{ref}})$ and $R=\mathrm{Im}\,\PiS^{*}$.
+      If $v\in K$ then $v=\PiS^{*}\PiS v\in R$, so $K\subset R$; this uses $P=P_{\mathrm{ref}}$.
       By~\eqref{eq:hsym}, $\gamma(\xi)R\subset K\subset R$ for every $\xi$, so $R$ is invariant under the Clifford
       algebra; irreducibility and $R\neq0$ give $R=\mathcal S$.
       For a non-null $\xi$, $\gamma(\xi)^2=g^{-1}(\xi,\xi)\neq0$ makes $\gamma(\xi)$ invertible, so
-      $\gamma(\xi)R=\mathcal S\subset K$, that is $P=1$.
-      Then $(1-P)^{1/2}=0$ and $N=0$ on the set, with all its derivative terms, because the factor
-      $(1-P)^{1/2}$ stands to the left of every term of $N$.
+      $\gamma(\xi)R=\mathcal S\subset K$, that is $P_{\mathrm{ref}}=1$.
+      Then $(1-P_{\mathrm{ref}})^{1/2}=0$ and $N=0$ on the set, with all its derivative terms, because the factor
+      $(1-P_{\mathrm{ref}})^{1/2}$ stands to the left of every term of $N$.
     \end{proof}
 
-    Proposition~\ref{prop:schur} exhibits the compression remainder as the Schur complement of the eliminated sector
-    $1-P$ under Hypothesis~\ref{hyp:contraction}.
-    A non-zero residue under Hypothesis~\ref{hyp:symbol} requires a fibre on which the Clifford algebra
+    A non-zero residue $\EPi$ under Hypothesis~\ref{hyp:symbol} therefore requires a fibre on which the Clifford algebra
     acts reducibly, that is a multiplicity space.
     The surviving terms of $N$ are then those containing $\nabla\PiS^{*}$ and $B_0\PiS^{*}$; whether they are
     non-zero is a differential question that this note does not control.
@@ -288,35 +293,35 @@ of Projection Locking}
     \begin{remark}[Relation to the projective endomorphism of Q14]
       \label{rem:q14-symbol}
       Q14 defines its projective endomorphism by $\EPi^{\mathrm{Q14}}:=D^2_{\Pi,g,A}-\mathrm{Lich}$, where
-      $\mathrm{Lich}$
-      is the spin--gauge Lichnerowicz operator $-(\nabla^{S,A})^2+\tfrac{R}{4}+\tfrac12\gamma^\mu\gamma^\nu
-      F^a_{\mu\nu}T^a$,
-      and assumes that the principal symbol of $D_{\Pi,g,A}$ is the projected Clifford symbol.
-      The compression remainder $\EPi$ of Proposition~\ref{prop:schur} equals $\EPi^{\mathrm{Q14}}$ if and only if
+      $\mathrm{Lich}$ is the spin--gauge Lichnerowicz operator
+      $-(\nabla^{S,A})^2+\tfrac{R}{4}+\tfrac12\gamma^\mu\gamma^\nu F^a_{\mu\nu}T^a$, and assumes that the principal
+      symbol of $D_{\Pi,g,A}$ is the projected Clifford symbol.
+      The compression remainder $\EPi$ equals $\EPi^{\mathrm{Q14}}$ if and only if
       $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$, an identity that no source states.
       Comparing principal symbols, that identity forces $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$: the symbol of
       $\mathrm{Lich}$ is $g^{-1}(\xi,\xi)\,\mathbb 1$ and that of $\PiS D_{g,A}^2\PiS^{*}$ is
       $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$.
-      That identity forces $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$ (so $\PiS$ is a coisometry, $P$ a projector, and
-      contraction automatic); the converse is not claimed, since $\PiS\PiS^{*}=\mathrm{id}$ matches only the principal
-      symbols.
-      The results below apply to $\EPi^{\mathrm{Q14}}$ exactly under the identity $\PiS
-      D_{g,A}^2\PiS^{*}=\mathrm{Lich}$;
-      without it they concern the compression remainder only, and no statement is made about $\EPi^{\mathrm{Q14}}$.
-      Under Hypothesis~\ref{hyp:symbol}, $(1-P)\gamma(\xi)\PiS^{*}=0$, and the principal symbol of $D^2_{\Pi,g,A}$ is
-      $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$ as well.
+      Hence $\PiS$ is then a coisometry, $P_{\mathrm{ref}}$ a projector, and contraction is automatic; the converse is
+      not claimed, since $\PiS\PiS^{*}=\mathrm{id}$ matches only the principal symbols.
+      The results for $\EPi$ apply to $\EPi^{\mathrm{Q14}}$ exactly under the identity
+      $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$; without it they concern the compression remainder only, and no statement
+      is made about $\EPi^{\mathrm{Q14}}$.
+      Under Hypothesis~\ref{hyp:symbol} for $P_{\mathrm{ref}}$, $(1-P_{\mathrm{ref}})\gamma(\xi)\PiS^{*}=0$ and the
+      principal symbol of $D^2_{\Pi,g,A}$ is $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$ as well.
     \end{remark}
 
-    From here on $\EPi$ denotes the compression remainder of Proposition~\ref{prop:schur}.
-    The normal form~\eqref{eq:normalform} and the coefficient $u$ are statements about it; they concern the projective
-    endomorphism of Q14 only under the identity $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$ of
-    Remark~\ref{rem:q14-symbol}.
-    The Schur expression for a general locking operator $P$ with $0\preceq P\preceq1$ is written
-    $\EPi[P]:=-\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$, and $\EPi=\EPi[\PiS^{*}\PiS]$.
+    From here on, $\EPi$ denotes the compression remainder $\EPi[P_{\mathrm{ref}}]$ and $\EPi[P]$ the Schur expression
+      of
+    a locking operator $P$.
+    The normal form~\eqref{eq:normalform} and the coefficient $u$ are defined for $\EPi[P]$ with the operator $P$ of the
+    statement; they concern the projective endomorphism of Q14 only under the identity
+    $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$ of Remark~\ref{rem:q14-symbol}.
 
   \section{Chiral block reduction and the localisation of $u$}
     \label{sec:chiral}
 
+    In Sections~\ref{sec:chiral} to~\ref{sec:schur-transversality}, $P$ is a locking operator and $\EPi$ stands for
+    $\EPi[P]$; for $P=P_{\mathrm{ref}}$ it is the compression remainder.
     Under the chiral splitting of Hypothesis~\ref{hyp:chiral-splitting}, the chirality operator
     $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ of the effective Clifford algebra is a global section.
     No value of the effective co-metric is used.
@@ -332,7 +337,8 @@ of Projection Locking}
 
     \begin{proposition}[Chiral diagonal blocks of the residue]
       \label{prop:chiralblocks}
-      Assume Hypotheses~\ref{hyp:chiral-splitting} and~\ref{hyp:contraction}, with the conventions of~\eqref{eq:blocks}.
+      Assume Hypothesis~\ref{hyp:chiral-splitting}, with the conventions of~\eqref{eq:blocks} for a locking operator
+      $P$.
       Then
       \begin{equation}
         \label{eq:diag}
@@ -354,20 +360,20 @@ of Projection Locking}
       Conjugating by $\PiS,\PiS^{*}$ and using $\EPi=-\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$
       gives~\eqref{eq:diag}.
       The right-right block of $\EPi$ is $E_{RR}=-\PiS\Deff^{+}\pi_{LL}\Deff^{-}\PiS^{*}=-N_R^{\dagger}N_R$ with
-      $N_R=\pi_{LL}^{1/2}\Deff^{-}\PiS^{*}$, because $\pi_{LL}\succeq0$ by Hypothesis~\ref{hyp:contraction}.
+      $N_R=\pi_{LL}^{1/2}\Deff^{-}\PiS^{*}$, because $\pi_{LL}\succeq0$ for a locking operator.
       If $\pi_{LL}=0$ then $N_R=0$ and $E_{RR}=0$.
       Conversely $E_{RR}=0$ gives $N_R=0$, hence $\pi_{LL}=0$ under Hypothesis~\ref{hyp:faithful}.
     \end{proof}
 
     \begin{corollary}[The left-admissible residue is chiral block-diagonal]
       \label{cor:block-diagonal}
-      Assume Hypotheses~\ref{hyp:chiral-splitting} and~\ref{hyp:contraction}.
+      Assume Hypothesis~\ref{hyp:chiral-splitting}, and a locking operator $P$.
       On the left-admissible branch $\pi_{LL}=0$, the projective residue $\EPi$ is chiral block-diagonal,
       $E_{LR}=E_{RL}=0$, so $[\EPi,\gamma_5]=0$.
     \end{corollary}
 
     \begin{proof}
-      Since $1-P\succeq0$ by Hypothesis~\ref{hyp:contraction}, and a positive-semidefinite
+      Since $1-P\succeq0$ for a locking operator, and a positive-semidefinite
       self-adjoint operator with a vanishing diagonal block has vanishing off-diagonal blocks; hence
       $\pi_{LL}=0$ forces $\pi_{LR}=\pi_{RL}=0$.
       By~\eqref{eq:blocks} the off-diagonal blocks of $\EPi$ are then $-\PiS\Deff^{-}\pi_{RL}\Deff^{-}\PiS^{*}=0$
@@ -605,7 +611,10 @@ of Projection Locking}
     Let $\mathrm{Lock}^{\mathrm{fin}}_S$ denote the projection-locking data of axiom A4~\cite{Beau2026m} at
     finite $q$: the continuous Born--Infeld saturation condition intersected with the discrete shell
     support on $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
-    Write $P_{\mathrm{fin}}=\PiS^{*}\PiS$ for the resulting finite admissible projector.
+    Write $P_{\mathrm{fin}}$ for the finite locking operator constructed from the locking data; it is in general
+      different
+    from the reference operator $\PiS^{*}\PiS$, for which $J_\Pi$-commutation is automatic under
+      Hypothesis~\ref{hyp:generation}.
 
     \begin{proposition}[Finite equivariance of projection locking]
       \label{prop:finite-equivariance}
@@ -884,14 +893,14 @@ of Projection Locking}
 
     \noindent\emph{Proved / structural (this note).}
     \begin{itemize}
-      \item Under Hypothesis~\ref{hyp:contraction}, the compression remainder
-      $\EPi=-\PiS D(1-P)D\PiS^{*}=-N^{\dagger}N$ is
-      the Schur
-      complement of the eliminated sector, negative semi-definite, vanishing where $P=1$
-      (Proposition~\ref{prop:schur}).
+      \item For every locking operator $P$, $\EPi[P]=-\PiS D(1-P)D\PiS^{*}=-N_P^{\dagger}N_P\preceq0$
+      (Proposition~\ref{prop:schur}); for $P=P_{\mathrm{ref}}=\PiS^{*}\PiS$ under Hypothesis~\ref{hyp:contraction} it is
+      the compression remainder of the projected Dirac square.
       It is zero-order under Hypothesis~\ref{hyp:symbol} (Lemma~\ref{lem:order}).
-      On irreducible Clifford fibres that condition forces $\EPi=0$ (Proposition~\ref{prop:irreducible}).
-      $P^2=P$ holds if and only if $\PiS$ is a partial isometry (Remark~\ref{rem:idempotence}).
+      For $P_{\mathrm{ref}}$ on irreducible Clifford fibres that condition forces $\EPi=0$
+      (Proposition~\ref{prop:irreducible}).
+      $P_{\mathrm{ref}}^2=P_{\mathrm{ref}}$ holds if and only if $\PiS$ is a partial isometry
+      (Remark~\ref{rem:idempotence}).
       \item Chiral diagonal blocks~\eqref{eq:diag}; $\pi_{LL}=0$ implies left-admissibility, and the converse holds
       under Hypothesis~\ref{hyp:faithful} (Proposition~\ref{prop:chiralblocks}).
       \item The $J_3$-odd component of $\EPi^2$ is read, as a structural reading, in the chiral block decomposition as
