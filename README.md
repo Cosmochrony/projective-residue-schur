@@ -60,6 +60,15 @@ Neither the sign of the Born–Infeld genus of the A4 companion note nor the non
 note. The open deliverables are that hypothesis, the explicit Lorentzian eliminated block $1 - P(s)$, the
 absolute normalisation $|u|$, and the projected Yukawa sector.
 
+## Scope
+
+For the reference operator $P = \Pi_S^{*}\Pi_S$ the compression remainder and its properties are established under the
+stated hypotheses, and under the generation-reading hypothesis the framework gives $u = 0$. For a general locking
+operator $P \neq \Pi_S^{*}\Pi_S$ only the Schur expression and its sign are unconditional; the compression-remainder
+formula and the Seeley–DeWitt identification do not transfer to it, and every consequence for a non-zero split is
+conditional. The note localises necessary conditions and missing constructions; it derives no physical mechanism for a
+non-zero split.
+
 ## Position in the programme
 
 This note belongs to the **fermionic matter sub-programme** (Presentation Note 6). It refines
