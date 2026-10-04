@@ -66,7 +66,8 @@ stated hypotheses, and under the generation-reading hypothesis the framework giv
 operator $P \neq \Pi_S^{*}\Pi_S$ only the Schur expression and its sign are unconditional; the compression-remainder
 formula and the Seeley–DeWitt identification do not transfer to it, and every consequence for a non-zero split is
 conditional. The note localises necessary conditions and missing constructions; it derives no physical mechanism for a
-non-zero split.
+non-zero split. Under the generation reading, a non-zero reference residue cannot lie on the left-admissible branch of
+Q14, since $J_\Pi$-invariance and $E\preceq0$ force it to vanish there.
 
 ## Position in the programme
 

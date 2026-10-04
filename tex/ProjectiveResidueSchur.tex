@@ -88,6 +88,7 @@ of Projection Locking}
     Neither the sign of the Born--Infeld genus nor the non-vanishing of \texorpdfstring{$u$}{u} follows, and no
       mechanism for a
     non-zero split is derived.
+    Under the generation reading the reference residue is not left-admissible in the sense of Q14 when non-zero.
     Open: that hypothesis, the eliminated block \texorpdfstring{$1-P(s)$}{1−P(s)}, \texorpdfstring{$|u|$}{|u|}, and the
       Yukawa sector.
   \end{abstract}
@@ -314,6 +315,11 @@ of Projection Locking}
       $g^{-1}(\xi,\xi)\,\PiS\PiS^{*}$.
       Hence $\PiS$ is then a coisometry, $P_{\mathrm{ref}}$ a projector, and contraction is automatic; the converse is
       not claimed, since $\PiS\PiS^{*}=\mathrm{id}$ matches only the principal symbols.
+      Q14 states $\EPi^{\mathrm{Q14}}=0$ when the projection is injectively resolved and proves it for $\PiS$
+      injective with $\PiS\PiS^{*}=\mathrm{id}$, where the composition reduces to $D_{g,A}$ (it takes $\PiS$ unitary).
+      Here $\PiS$ is a coisometry with non-trivial kernel, $P_{\mathrm{ref}}\neq1$, and $\PiS\PiS^{*}=\mathrm{id}$
+      alone does not give $\EPi=0$, since $D^2_{\Pi,g,A}=\PiS D P_{\mathrm{ref}} D\PiS^{*}$; the identification
+      concerns that case only, and does not extend Q14's statement for injective $\PiS$.
       The results for $\EPi$ apply to $\EPi^{\mathrm{Q14}}$ exactly under the identity
       $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$; without it they concern the compression remainder only, and no statement
       is made about $\EPi^{\mathrm{Q14}}$.
@@ -328,7 +334,7 @@ of Projection Locking}
     statement; they concern the projective endomorphism of Q14 only under the identity
     $\PiS D_{g,A}^2\PiS^{*}=\mathrm{Lich}$ of Remark~\ref{rem:q14-symbol}.
 
-  \section{Chiral block reduction and the localisation of $u$}
+  \section{Chiral block reduction and the localisation of \texorpdfstring{$u$}{u}}
     \label{sec:chiral}
 
     In Sections~\ref{sec:chiral} to~\ref{sec:schur-transversality}, $P$ is a locking operator and $\EPi$ stands for
@@ -415,7 +421,7 @@ of Projection Locking}
     This raw block expression is refined in Section~\ref{sec:spinorial-locking}, where the antiunitary
     nature of $J_\Pi$ replaces the naive block difference by the transported defect $\Delta_\chi(P)$.
 
-  \section{Stratification of $u$ by $J_\Pi$-equivariance}
+  \section{Stratification of \texorpdfstring{$u$}{u} by \texorpdfstring{$J_\Pi$}{J_Π}-equivariance}
     \label{sec:strat}
 
     The candidate minimal non-injectivity is the parity involution $c\leftrightarrow q-c$ on
@@ -451,7 +457,10 @@ of Projection Locking}
     \end{proof}
 
     The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is the branch on which no purely left-handed
-    direction is eliminated; its relation to A4 locking is not derived here.
+    direction is eliminated.
+    For a $J_\Pi$-commuting $P$ it forces $P=1$ and $\EPi[P]=0$ (Remark~\ref{rem:q14-left}), so a non-zero residue
+    on that branch breaks $J_\Pi$-compatibility and is not covered by the $J_\Pi$-symmetric reading of the minimal
+    block above; the relation of the branch to A4 locking is not derived here.
     The sign of $u$ is exchanged under $P_L\leftrightarrow P_R$.
     The even sector~\eqref{eq:even} is algebraic; reading it as the chirally symmetric part of a
     Born--Infeld saturation would require the identification declared unavailable above, and is not
@@ -543,8 +552,8 @@ of Projection Locking}
         u[P]\neq0\quad\Longrightarrow\quad J_\Pi PJ_\Pi^{-1}\neq P.
       \end{equation*}
       For the reference operator $P=\PiS^{*}\PiS$ the commutation holds automatically under
-      Hypothesis~\ref{hyp:generation}(i); a non-zero $u$ therefore requires a locking operator different from
-      $\PiS^{*}\PiS$.
+      Hypothesis~\ref{hyp:generation}(i); for that fixed $\PiS$ a non-zero $u$ therefore requires a locking operator
+      different from $\PiS^{*}\PiS$.
     \end{lemma}
 
     \begin{proof}
@@ -577,20 +586,26 @@ of Projection Locking}
       Q14 shows that on the left-admissible branch $P_R\,\EPi^{\mathrm{Q14}}P_R=0$ and that, if
       $\EPi^{\mathrm{Q14}}\neq0$ and $\EPi^{\mathrm{Q14}}\preceq0$, then $\EPi^{\mathrm{Q14}}$ is not
       $J_\Pi$-invariant~\cite{Beau2026q14}.
-      Take $\EPi=\EPi[P_{\mathrm{ref}}]$ under the identity of Remark~\ref{rem:q14-symbol}, so that it is the
-      endomorphism of Q14, and Hypothesis~\ref{hyp:generation}(i), so that $J_\Pi\EPi J_\Pi^{-1}=\EPi$.
+      Assume Hypotheses~\ref{hyp:chiral-splitting} and~\ref{hyp:generation}(i) and the identity of
+      Remark~\ref{rem:q14-symbol}, so that $\EPi=\EPi[P_{\mathrm{ref}}]$ is the endomorphism of Q14 and satisfies
+      $J_\Pi\EPi J_\Pi^{-1}=\EPi$.
       Then $\EPi\preceq0$ and $P_R\EPi P_R=0$ give $\EPi P_R=0$, hence $\EPi=P_L\EPi P_L$; the invariance and
       $J_\Pi P_L=P_R J_\Pi$ give $P_L\EPi P_L=J_\Pi^{-1}(P_R\EPi P_R)J_\Pi=0$, so $\EPi=0$.
-      Under these hypotheses the reference residue is therefore either zero or not left-admissible.
-      Consequently a non-zero $J_\Pi$-compatible reference residue, such as the normal form
-      $E_0=-\mathrm{diag}(1,2^{-1/2},2^{-1/2})$ of the covariant family of~\cite{Beau2026ebj}, cannot be placed on the
-      left-admissible branch of Q14, and a non-zero endomorphism of Q14 on that branch cannot be identified with
-      $\EPi[P_{\mathrm{ref}}]$ under Hypothesis~\ref{hyp:generation}(i): it must break the $J_\Pi$-compatibility of
-      $\PiS$ or of $D$, or differ from $\EPi[P_{\mathrm{ref}}]$.
-      The vanishing $u[P_{\mathrm{ref}}]=0$ of Lemma~\ref{lem:chiral-obstruction} bounds neither the $J_\Pi$-odd part of
-      Q14's endomorphism nor the split of a family with a moving embedding: in the family of~\cite{Beau2026ebj},
-      $J_\Pi\PiS(s)J_\Pi^{-1}=\PiS(-s)$ and the rate $u'(0)$ is non-zero although each $P(s)=\PiS(s)^{*}\PiS(s)$ is a
-      reference operator.
+      The same holds for any locking operator $P$ with $J_\Pi PJ_\Pi^{-1}=P$: the equivariance defect vanishes, so
+      $\pi_{LL}=\tau\,\overline{\pi_{RR}}\,\tau^{-1}$, the branch $\pi_{LL}=0$ gives $\pi_{RR}=0$, and
+      $1-P\succeq0$ with both diagonal blocks zero gives $1-P=0$, hence $\EPi[P]=0$.
+      A non-zero residue on the left-admissible branch therefore requires $J_\Pi PJ_\Pi^{-1}\neq P$, or a
+      $J_\Pi$ that does not preserve $\PiS$ or $D$ as in Hypothesis~\ref{hyp:generation}(i); it cannot be the
+      residue of a $J_\Pi$-compatible $P_{\mathrm{ref}}$, and Q14's anomaly computation, which uses
+      $\EPi=P_L\EPi P_L$, concerns a residue that this framework does not produce.
+      The vanishing $u[P_{\mathrm{ref}}]=0$ of Lemma~\ref{lem:chiral-obstruction} concerns the fixed $\PiS$ of
+      Hypothesis~\ref{hyp:generation}(i); it bounds neither the $J_\Pi$-odd part of Q14's endomorphism nor the split
+      of a family whose embedding moves.
+      In the covariant family of~\cite{Beau2026ebj} one has $J_\Pi\PiS(s)J_\Pi^{-1}=\PiS(-s)$, each
+      $P(s)=\PiS(s)^{*}\PiS(s)$ is the reference operator of its own $\PiS(s)$, and the rate $u'(0)$ is non-zero.
+      Its even base block is $J_\Pi$-compatible, so by the argument above it is not left-admissible unless
+      $1-P(0)=0$; the statement is made for the chiral frame of that note and not for its finite witness on
+      $\mathbb C^3_{\mathrm{gen}}$, whose target carries no chirality.
     \end{remark}
 
   \section{Seeley--DeWitt conventions for the reference residue}
@@ -619,9 +634,9 @@ of Projection Locking}
     linear-in-$\EPi$ term can separate the operator and spectral readings.
     Flatness, $R=0$, is a hypothesis of this section, taken in an effective co-metric of Lorentzian signature with
     constant coefficients; the sources leave both the coefficients and the signature of a full-rank co-metric
-    conditional~\\cite{Beau2026q11}.
+    conditional~\cite{Beau2026q11}.
     Third, the common $a_4$ normalisation factor cancels in a ratio of generation-reading coefficients such as
-    $(\\tfrac12+u)/(\\tfrac12-u)$.
+    $(\tfrac12+u)/(\tfrac12-u)$.
     Since $u=0$ for the reference residue, nothing is asserted here about a non-zero $u$.
 
   \section{Chirality is not a finite-fibre label}
@@ -968,8 +983,8 @@ of Projection Locking}
     The finite locking data are invariant under the parity $c\leftrightarrow q-c$, whose identification with $J_\Pi$ is
     open; under that identification, an equivariant construction of the finite locking operator and a finite reading,
     $u_{\mathrm{fin}}=0$ (Remarks~\ref{prop:finite-equivariance} and~\ref{cor:separation}).
-    The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is an admissible branch selected by the
-    orientation-compatible assumption; its derivation from A4 is open.
+    The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is not reachable by a $J_\Pi$-commuting locking
+    operator with a non-zero residue (Remark~\ref{rem:q14-left}); its derivation from A4 is open.
     The Schur-transverse locus (Corollary~\ref{cor:schur-transversality-closed}) holds under the
     $J_\Pi$-compatibility of Definition~\ref{def:schur-transversality} and the transport
     hypothesis~\ref{hyp:transport}.
@@ -1044,6 +1059,8 @@ of Projection Locking}
     (Proposition~\ref{prop:strat}).
     The polarisation and the Seeley--DeWitt conventions are fixed in the conditional sense of the corresponding
     sections; the front observables are null controls rather than carriers of $u$.
+    Under Hypothesis~\ref{hyp:generation}(i) a non-zero residue cannot lie on the left-admissible branch of Q14
+    (Remark~\ref{rem:q14-left}).
     The note localises necessary conditions and missing constructions; it does not derive a physical mechanism for a
     non-zero split.
     The transported $J_\Pi$-odd tilt of the locking operator is the first-order polarisation on the outer weights
