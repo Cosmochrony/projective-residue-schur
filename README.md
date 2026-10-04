@@ -19,12 +19,13 @@ identification is available, so that reading is not used here.
 
 This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
 
-1. **Schur complement form.** Under a contraction hypothesis on $\Pi_S$, the projected Dirac square admits a
+1. **Schur complement form.** Under a contraction hypothesis on $\Pi_S$ and a Lichnerowicz compression, the projected
+Dirac square admits a
    universal Feshbach/Schur form
    $E_\Pi = -\Pi_S \, D \, (1-P) \, D \, \Pi_S^{*} = -N^{\dagger} N$ with
    $N = (1-P)^{1/2} D\,\Pi_S^{*}$ and $P = \Pi_S^{*} \Pi_S$, negative semi-definite and vanishing where $P = 1$.
    It is zero-order under an explicit symbol condition; on irreducible Clifford fibres that condition forces
-   $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a multiplicity space and a non-parallel embedding.
+   $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a fibre on which the Clifford action is reducible.
    $P^2 = P$ holds if and only if $\Pi_S$ is a partial isometry.
 
 2. **Chiral block reduction.** The chiral block decomposition shows that $u$ is controlled by
@@ -51,8 +52,8 @@ This note fixes the structural status of $u$ before any explicit construction of
 7. **Schur dichotomy.** The A4 locking defect obeys an exhaustive dichotomy, Schur-null or Schur-transverse,
    proved under explicit hypotheses; which branch holds is open. The oriented metaplectic step has the exact
    $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the commutator $[E,F] = H$.
-   Its identification with the $J_\Pi$-odd tangent of the locking projector is supplied by no source; under that
-   identification and under non-annihilation of the transported symbol, the locking is Schur-transverse.
+   Its identification with the $J_\Pi$-odd tangent of the locking operator is supplied by no source; under that
+   identification and under non-annihilation of the Schur transport, the locking is Schur-transverse.
 
 Neither the sign of the Born–Infeld genus of the A4 companion note nor the non-vanishing of $u$ follows from this
 note. The open deliverables are that identification, the explicit Lorentzian eliminated block $1 - P(s)$, the
