@@ -28,11 +28,10 @@ Dirac square admits a
    $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a fibre on which the Clifford action is reducible.
    $P^2 = P$ holds if and only if $\Pi_S$ is a partial isometry.
 
-2. **Chiral block reduction.** The chiral block decomposition shows that $u$ is controlled by
-   the $\mathcal{D}^{\pm}$-transported, generation-projected part of the antiunitary chiral
-   equivariance defect
+2. **Chiral block reduction.** The chiral block decomposition expresses the antiunitary chiral equivariance defect
    $$\Delta_\chi(P) = \pi_{LL} - \tau \, \overline{\pi_{RR}} \, \tau^{-1}$$
-   of the eliminated block $1 - P$, rather than by a naive block difference.
+   of the eliminated block $1 - P$, after $\mathcal{D}^{\pm}$-transport and projection to the generation triplet; a
+   non-zero split requires a non-zero equivariance defect.
 
 3. **Stratification.** If the locking operator commutes with $J_\Pi$ then $u = 0$. The minimal non-injectivity
    $c \leftrightarrow q - c$ is $J_\Pi$-symmetric, so on the structurally motivated reading of axioms A1–A3

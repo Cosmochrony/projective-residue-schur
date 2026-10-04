@@ -9,8 +9,8 @@ Checks:
       N = (1-P)^{1/2} D Pi^*, for D a Hermitian symbol matrix.
   C3  The four Euclidean Clifford generators on C^4 generate the full matrix algebra (dimension 16), so the action is
       irreducible; consequently no proper non-zero subspace is stable.
-  C4  Symbol condition on an irreducible fibre: for an isometric Pi^* of rank 2 the span of {gamma_mu Pi^* v} is all
-      of C^4, so (1-P)^{1/2} gamma Pi^* = 0 cannot hold unless P = 1 (here P != 1, so it fails).
+  C4  Symbol condition on an irreducible fibre: for an isometric Pi^* of rank 2 the subspace R = Im Pi^* is not
+      gamma-invariant and R together with its gamma-images spans C^4, so (1-P)^{1/2} gamma Pi^* = 0 fails (P != 1).
   C5  Reducible fibre C^4 (x) C^2 with a constant embedding Pi^* = 1 (x) iota: the symbol condition holds and N = 0.
 """
 
@@ -100,17 +100,18 @@ def check_c3_c4():
     dim = algebra_dimension(gens)
     assert dim == 16, dim
     print("C3 ok (algebra dimension 16)")
-    # C4: isometric Pi^* of rank 2
+    # C4: isometric Pi^* of rank 2 on the irreducible fibre C^4.
     PiStar = sp.Matrix([[1, 0], [0, 1], [0, 0], [0, 0]])
+    R = PiStar
     P = PiStar * PiStar.H
     one_minus_P = sp.eye(4) - P
-    span_cols = []
-    for g in gens:
-        span_cols.extend(list(g * PiStar))
-    span = sp.Matrix(span_cols).reshape(len(gens) * 2, 4)
-    assert span.rank() == 4
+    # The symbol condition requires gamma(xi) R to lie in K = ker(1-P), which is contained in R: R would be
+    # invariant under every gamma. Check that R is NOT invariant, and that R together with its images spans C^4.
+    stacked = sp.Matrix.hstack(R, *[g * R for g in gens])
+    assert stacked.rank() == 4
+    assert any(sp.Matrix.hstack(R, g * R).rank() > 2 for g in gens)
     assert any(not ((one_minus_P) * g * PiStar).is_zero_matrix for g in gens)
-    print("C4 ok (span of gamma Pi^* is C^4; symbol condition fails with P != 1)")
+    print("C4 ok (R and its gamma-images span C^4, R is not gamma-invariant; the symbol condition fails with P != 1)")
 
 
 def check_c5():
