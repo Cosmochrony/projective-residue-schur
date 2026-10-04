@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Working paper, v2.1. DOI: [10.5281/zenodo.20601040](https://doi.org/10.5281/zenodo.20601040)
+Working paper, v3.0 (candidate, not deposited). DOI: [10.5281/zenodo.20601040](https://doi.org/10.5281/zenodo.20601040)
 
 ## Abstract
 
@@ -19,11 +19,13 @@ identification is available, so that reading is not used here.
 
 This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
 
-1. **Schur complement form.** The projected Dirac square admits a universal Feshbach/Schur form
-   $E_\Pi = -\Pi_S \, D \, (1-P) \, D \, \Pi_S^{*} = -M^{\dagger} M$ with $P = \Pi_S^{*} \Pi_S$,
-   exhibiting $E_\Pi$ as the Schur complement of the spinorial directions eliminated by the
-   non-injective projection. It is negative semi-definite, zero-order, and vanishes in the
-   injective limit.
+1. **Schur complement form.** Under a contraction hypothesis on $\Pi_S$, the projected Dirac square admits a
+   universal Feshbach/Schur form
+   $E_\Pi = -\Pi_S \, D \, (1-P) \, D \, \Pi_S^{*} = -N^{\dagger} N$ with
+   $N = (1-P)^{1/2} D\,\Pi_S^{*}$ and $P = \Pi_S^{*} \Pi_S$, negative semi-definite and vanishing where $P = 1$.
+   It is zero-order under an explicit symbol condition; on irreducible Clifford fibres that condition forces
+   $P = 1$ and $E_\Pi = 0$, so a non-zero residue needs a multiplicity space and a non-parallel embedding.
+   $P^2 = P$ holds if and only if $\Pi_S$ is a partial isometry.
 
 2. **Chiral block reduction.** The chiral block decomposition shows that $u$ is controlled by
    the $\mathcal{D}^{\pm}$-transported, generation-projected part of the antiunitary chiral
@@ -36,7 +38,7 @@ This note fixes the structural status of $u$ before any explicit construction of
    symmetry-breaking that can originate only in the projection-locking axiom A4.
 
 4. **Seeley–DeWitt lock.** The conventions are locked so that the operator-level and
-   spectral-level definitions of $u$ coincide on the flat effective metric; $u$ is
+   spectral-level definitions of $u$ coincide on a flat background; $u$ is
    normalisation-independent in the ratio.
 
 5. **No finite chiral label.** A no-go result establishes that $u$ is not accessible to any
@@ -46,24 +48,21 @@ This note fixes the structural status of $u$ before any explicit construction of
    ($u_{\mathrm{fin}} = 0$); a non-zero generation split can arise only in the Lorentzian
    completion of the Born–Infeld saturation.
 
-7. **Schur transversality.** In the present Lorentzian spin stratum the projected A4
-   commutator has the closed form $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, which excludes
-   the exact-zero branch; under symbol-compatibility and the timelike identification
-   $Z = [X, Y] \simeq \partial_\tau$ the transported zero-mode branch is excluded too, so the
-   exhaustive transverse/null dichotomy selects the Schur-transverse case.
+7. **Schur dichotomy.** The A4 locking defect obeys an exhaustive dichotomy, Schur-null or Schur-transverse,
+   proved under explicit hypotheses; which branch holds is open. The oriented metaplectic step has the exact
+   $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the commutator $[E,F] = H$.
+   Its identification with the $J_\Pi$-odd tangent of the locking projector is supplied by no source; under that
+   identification and under non-annihilation of the transported symbol, the locking is Schur-transverse.
 
-With Schur transversality proved, the Born–Infeld genus of the A4 companion note selects the
-electric branch, $\mu_\chi^2 < 0$, and the generation split opens spontaneously, $u \neq 0$. The
-remaining open deliverables are the explicit Lorentzian eliminated block $1 - P(s)$ entering the
-Schur complement, the absolute normalisation $|u|$ (the constrained-jet companion note fixes the
-left-handed diagonal block of the $J_\Pi$-odd tangent as $\tfrac12 \partial_s \Delta_\chi(P)|_0$, not a unique carrier,
-with $|u|$ remaining dictionary-bound), and the projected Yukawa sector with its mass matrices.
+Neither the sign of the Born–Infeld genus of the A4 companion note nor the non-vanishing of $u$ follows from this
+note. The open deliverables are that identification, the explicit Lorentzian eliminated block $1 - P(s)$, the
+absolute normalisation $|u|$, and the projected Yukawa sector.
 
 ## Position in the programme
 
 This note belongs to the **fermionic matter sub-programme** (Presentation Note 6). It refines
 Q14's open deliverable on the inter-generation splitting by localising $u$ in the antiunitary
-chiral equivariance defect and proving the Schur transversality of the A4 direction, and identifies
+chiral equivariance defect and proving the Schur-null / Schur-transverse dichotomy of the A4 direction, and identifies
 the front observables of the companion angular-amplitude and oriented-frontier notes as null
 controls rather than carriers of $u$.
 
@@ -75,3 +74,15 @@ bash compile.sh
 
 Runs `pdflatex → bibtex → pdflatex → pdflatex` on `tex/ProjectiveResidueSchur.tex` and produces
 `out/ProjectiveResidueSchur.pdf`.
+
+## Reproduction
+
+```bash
+cd code
+python -W error schur_transversality_alpha.py
+python -W error schur_symbol_obstruction.py
+```
+
+The first script verifies the exact $\mathfrak{sl}_2$ opening of the oriented step; the second verifies, in exact
+arithmetic, the algebraic statements on the symbol condition (finite model, at a point). Neither controls terms
+containing the derivative of $\Pi_S^{*}$. Dependencies: `code/requirements.txt`.

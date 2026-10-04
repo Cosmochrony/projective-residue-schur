@@ -1,4 +1,7 @@
-"""Bias-independent audit of the Schur-transversality lemma (Front B, step A).
+"""Bias-independent audit of the exact sl_2 opening of the oriented metaplectic step (Front B, step A).
+
+Scope: this script checks the sl_2 algebra of the generator log g only. It does not relate the generator to the
+derivative of the locking projector P(s); that relation is Hypothesis [H-Tr] of the note and is not tested here.
 
 Verifies, by exact symbolic computation (no numerical sampling), the closed form of the J_Pi-odd Cartan coefficient
 alpha(t, s) of the lifted cascade generator, and that the mixing coefficient mu(t, s) vanishes identically.

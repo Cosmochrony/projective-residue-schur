@@ -23,6 +23,7 @@
 \newtheorem{corollary}{Corollary}
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
+\newtheorem{hypothesis}{Hypothesis}
 \newtheorem{remark}{Remark}
 
 \newcommand{\Heis}{\mathrm{Heis}}
@@ -53,10 +54,12 @@ of Projection Locking}
     $(E_\Pi^2)_{\mathrm{even}}$; no such identification is available, so that reading is not used
     here.
     This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
-    First, the projected Dirac square admits a universal Feshbach/Schur form
-    $E_\Pi=-\PiS\,D\,(1-P)\,D\,\PiS^{*}=-M^{\dagger}M$ with $P=\PiS^{*}\PiS$, exhibiting $E_\Pi$ as the
-    Schur complement of the spinorial directions eliminated by the non-injective projection, negative
-    semi-definite and vanishing in the injective limit.
+    First, under three explicit hypotheses on the projection (a chiral splitting of the spinor bundle, a contraction
+    $\PiS$, and a symbol condition), the projected Dirac square has a universal Feshbach/Schur form
+    $E_\Pi=-\PiS\,D\,(1-P)\,D\,\PiS^{*}=-N^{\dagger}N$ with $N=(1-P)^{1/2}D\PiS^{*}$ and $P=\PiS^{*}\PiS$,
+    negative semi-definite, zero-order under the symbol condition, and vanishing where $P=1$.
+    Where the Clifford action on the spinor fibre is irreducible, the symbol condition forces $P=1$ and $E_\Pi=0$:
+    a non-zero residue then needs a multiplicity space and a non-parallel embedding.
     Second, the chiral block decomposition shows that $u$ is controlled by the $\Deff^{\pm}$-transported,
     generation-projected part of the antiunitary chiral equivariance defect
     \[
@@ -68,16 +71,17 @@ of Projection Locking}
     projection-locking axiom A4.
     The finite locking sector is proved $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$, and chirality is
     shown to be a Lorentzian rather than a finite-fibre datum.
-    Finally, the Schur-transversality branch required by the Born--Infeld genus companion is closed in the
-    present Lorentzian spin stratum: the projected A4 commutator has the exact metaplectic opening
+    Finally, the A4 locking defect obeys an exhaustive dichotomy, Schur-null or Schur-transverse, proved under
+    explicit hypotheses; which branch holds is open.
+    The oriented metaplectic step has the exact $\mathfrak{sl}_2$ opening
     \[
       \alpha(t,s)=ts\,\frac{r}{\sinh r}=ts+O\!\left((ts)^2\right),\qquad \mu(t,s)\equiv0,
     \]
-    with $\cosh r=1+\tfrac{ts}{2}$, and its timelike Clifford symbol is not in the transported zero-mode
-    locus.
-    Together with the electric-genus result of the A4 companion, this promotes the existence statement to
-    $u\neq0$ in the present stratum.
-    The remaining open deliverables are the explicit Lorentzian eliminated block $1-P(s)$, the absolute
+    with $\cosh r=1+\tfrac{ts}{2}$, produced by the commutator $[E,F]=H$ of the two shear generators.
+    Its identification with the $J_\Pi$-odd tangent of the locking projector is supplied by no source; under that
+    identification, and under non-annihilation of the transported symbol, the locking is Schur-transverse.
+    Neither the sign of the Born--Infeld genus nor the non-vanishing of $u$ follows from this note.
+    The open deliverables are that identification, the explicit Lorentzian eliminated block $1-P(s)$, the absolute
     normalisation $|u|$, and the projected Yukawa sector.
   \end{abstract}
 
@@ -92,10 +96,9 @@ of Projection Locking}
   \section{Position and purpose}
     \label{sec:position}
 
-    The fermionic sub-programme~\cite{Beau2026q14} derives the admissible spinor bundle $\mathcal S_\Pi$,
-    the $V-A$ chiral structure, hypercharge rigidity, and a gauge-singlet three-generation factor
-    $\Cgen$ as the spinorial face of the admissible Weil module after the Lorentzian complexification of
-    its metaplectic lift.
+    The fermionic sub-programme~\cite{Beau2026q14} reads the admissible spinor bundle $\mathcal S_\Pi$ through
+    a Lorentzian spin solder, [H-Spin], and a distinct weak factor, [H-Weak], neither of which is supplied by a source;
+    it carries a gauge-singlet three-generation factor $\Cgen$ as a distinct supplied carrier.
     The generation mass split is carried by the projective endomorphism
     $E_\Pi\in\Gamma(\mathrm{End}(\mathcal S_\Pi))$, the zero-order spectral residue of non-injective
     projection in the spinorial sector~\cite{Beau2026q14}.
@@ -143,48 +146,130 @@ of Projection Locking}
       D_{\Pi,g,A}:=\PiS\circ D_{g,A}\circ \PiS^{*},\qquad P:=\PiS^{*}\PiS,
     \end{equation}
     following~\cite{Beau2026q14}.
-    One does not assume $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$; this holds only in the injectively
-    resolved limit.
-    Symbol-compatibility means the projection defect affects only the zero-order part of
-    $D^2_{\Pi,g,A}$, leaving the Clifford principal symbol intact.
+    One does not assume $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$.
+    The hypotheses below are used where a statement names them; none is supplied by a source.
+
+    \begin{hypothesis}[Chiral splitting]
+      \label{hyp:chiral-splitting}
+      The bundles split chirally, $\mathcal S=\mathcal S_L\oplus\mathcal S_R$ and
+      $\mathcal S_\Pi=\mathcal S_{\Pi,L}\oplus\mathcal S_{\Pi,R}$, the projection $\PiS$ preserves the splitting,
+      and $D_{g,A}$ is chirality-odd.
+      This is the Lorentzian spin-solder hypothesis [H-Spin] of Q14 (Hypothesis~2.2), which no source supplies.
+    \end{hypothesis}
+
+    \begin{hypothesis}[Contraction]
+      \label{hyp:contraction}
+      $\|\PiS\|\le1$, equivalently $P=\PiS^{*}\PiS\preceq 1$, so that $1-P\succeq0$ and $(1-P)^{1/2}$ exists.
+      The operator $D_{g,A}$ is formally self-adjoint.
+    \end{hypothesis}
+
+    \begin{hypothesis}[Symbol condition]
+      \label{hyp:symbol}
+      On the open set considered, $D_{g,A}=\gamma^{\mu}\nabla_{\mu}+B_0$ has Clifford principal symbol $\gamma(\xi)$ and
+      \begin{equation}
+        \label{eq:hsym}
+        (1-P)^{1/2}\,\gamma(\xi)\,\PiS^{*}=0\qquad\text{for every covector }\xi.
+      \end{equation}
+      This is the precise form of symbol-compatibility used here: the projection defect does not touch the
+      Clifford principal symbol.
+    \end{hypothesis}
+
+    \begin{hypothesis}[Faithfulness of the chiral transport]
+      \label{hyp:faithful}
+      For each chirality, $\pi^{1/2}\,\Deff\,\PiS^{*}=0$ implies $\pi=0$, where $\pi$ is the corresponding diagonal
+      block of $1-P$ and $\Deff$ the corresponding Weyl block.
+      It is used only for the converse in Proposition~\ref{prop:chiralblocks}.
+    \end{hypothesis}
 
     \begin{proposition}[Schur form of the projective residue]
       \label{prop:schur}
-      Under symbol-compatibility, the projective endomorphism of~\cite{Beau2026q14} satisfies
+      Assume Hypothesis~\ref{hyp:contraction}.
+      Let $\EPi:=D^2_{\Pi,g,A}-\PiS D_{g,A}^2\PiS^{*}$ be the remainder between the projected Dirac square and the
+      uncompressed square, which reconstructs the effective spin--gauge Lichnerowicz operator up to
+      symbol~\cite{Beau2026q14}.
+      Then
       \begin{equation}
         \label{eq:schur}
-        \EPi=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-M^{\dagger}M,
-        \qquad M:=(1-P)\,D_{g,A}\,\PiS^{*}.
+        \EPi=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N^{\dagger}N,
+        \qquad N:=(1-P)^{1/2}\,D_{g,A}\,\PiS^{*}.
       \end{equation}
-      In particular $\EPi\preceq 0$, it is zero-order, and $\EPi=0$ if and only if $1-P=0$, i.e.\ in the
-      injective limit.
+      In particular $\EPi\preceq0$ as a quadratic form, and $\EPi=0$ where $1-P=0$, i.e.\ in the injective limit.
     \end{proposition}
 
     \begin{proof}
-      With $P=\PiS^{*}\PiS$ idempotent, $D^2_{\Pi,g,A}=\PiS D_{g,A}P D_{g,A}\PiS^{*}$.
-      The uncompressed square $\PiS D_{g,A}^2\PiS^{*}$ reconstructs the effective spin--gauge Lichnerowicz
-      operator on $\mathcal S_\Pi$ up to symbol, so that
-      \begin{equation*}
-        \mathrm{Lich}(g,A)\approx \PiS D_{g,A}^2\PiS^{*}=D^2_{\Pi,g,A}+\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}.
-      \end{equation*}
-      Subtracting the Lichnerowicz block from $D^2_{\Pi,g,A}$ gives~\eqref{eq:schur}.
-      Since $1-P$ is a self-adjoint projector and $D_{g,A}$ is self-adjoint,
-      $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}=M^{\dagger}M\succeq 0$, hence $\EPi=-M^{\dagger}M\preceq 0$.
-      The first-order part vanishes by symbol-compatibility, leaving a zero-order endomorphism, and
-      $\EPi=0\Leftrightarrow M=0\Leftrightarrow(1-P)D_{g,A}\PiS^{*}=0$, which for a faithful symbol holds
-      exactly when $1-P=0$.
+      The identity $D^2_{\Pi,g,A}=\PiS D_{g,A}\PiS^{*}\PiS D_{g,A}\PiS^{*}=\PiS D_{g,A}\,P\,D_{g,A}\PiS^{*}$ holds for
+      any $\PiS$, so no idempotence of $P$ is used.
+      Subtracting $\PiS D_{g,A}^2\PiS^{*}$ gives the first form of~\eqref{eq:schur}.
+      By Hypothesis~\ref{hyp:contraction}, $1-P$ is self-adjoint and non-negative, hence
+      $1-P=(1-P)^{1/2}(1-P)^{1/2}$, and $N^{\dagger}=\PiS D_{g,A}(1-P)^{1/2}$ because $D_{g,A}$ is self-adjoint.
+      Therefore $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}=N^{\dagger}N\succeq0$, whence $\EPi=-N^{\dagger}N\preceq0$.
+      If $1-P=0$ then $N=0$.
     \end{proof}
 
-    Proposition~\ref{prop:schur} makes precise the statement of~\cite{Beau2026q14} that $E_\Pi$ is not a
-    postulated finite Dirac datum but is induced by the non-injective projection itself: it is the Schur
-    complement of the eliminated sector $1-P$.
+    \begin{lemma}[Order of the residue]
+      \label{lem:order}
+      Assume Hypotheses~\ref{hyp:contraction} and~\ref{hyp:symbol}.
+      Then $N$ is an operator of order zero, and $\EPi=-N^{\dagger}N$ is a zero-order endomorphism.
+      Conversely, if the second-order symbol of $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$ vanishes under
+      Hypothesis~\ref{hyp:contraction}, then~\eqref{eq:hsym} holds.
+    \end{lemma}
+
+    \begin{proof}
+      Write $N=a^{\mu}\partial_{\mu}+b$ with $a^{\mu}=(1-P)^{1/2}\gamma^{\mu}\PiS^{*}$ and $b$ of order zero, the
+      covariant derivative being absorbed in $b$ and in the connection terms.
+      The order-one coefficient is $a(\xi)=(1-P)^{1/2}\gamma(\xi)\PiS^{*}$, which vanishes by~\eqref{eq:hsym}, so
+      $N=b$ and $N^{\dagger}N=b^{\dagger}b$ has order zero.
+      Conversely, the second-order symbol of $N^{\dagger}N$ at $\xi$ is $a(\xi)^{\dagger}a(\xi)\succeq0$, which
+      vanishes if and only if $a(\xi)=0$.
+      The vanishing of the second-order symbol alone leaves, a priori, a first-order part; here the factorisation
+      forces it to vanish as well, since every first-order term of $N^{\dagger}N$ contains a factor $a$ or
+      a derivative of $a$.
+    \end{proof}
+
+    \begin{remark}[Idempotence of $P$]
+      \label{rem:idempotence}
+      $P^2=P$ holds if and only if $\PiS$ is a partial isometry, $\PiS\PiS^{*}\PiS=\PiS$.
+      Indeed $P^2-P=\PiS^{*}X$ with $X=\PiS\PiS^{*}\PiS-\PiS$, the range of $X$ lies in $\mathrm{Im}\,\PiS$ and
+      $\ker\PiS^{*}=(\mathrm{Im}\,\PiS)^{\perp}$, so $P^2=P$ if and only if $X=0$.
+      If moreover $\PiS$ maps onto $\mathcal S_\Pi$, this is equivalent to $\PiS\PiS^{*}=\mathrm{id}_{\mathcal S_\Pi}$,
+      the injectively resolved limit.
+      The Schur form~\eqref{eq:schur} does not use it; for a projector $1-P$, $N=(1-P)D_{g,A}\PiS^{*}$.
+    \end{remark}
+
+    \begin{proposition}[Irreducible fibres carry no residue under the symbol condition]
+      \label{prop:irreducible}
+      Assume Hypotheses~\ref{hyp:contraction} and~\ref{hyp:symbol} on an open set, and suppose that at each point
+      the Clifford algebra generated by the $\gamma(\xi)$ acts irreducibly on the fibre of $\mathcal S$, with
+      $\PiS^{*}\neq0$ and a non-null covector available.
+      Then $P=1$ and $\EPi=0$ on that set.
+    \end{proposition}
+
+    \begin{proof}
+      Let $K=\ker(1-P)$ and $R=\mathrm{Im}\,\PiS^{*}$.
+      If $v\in K$ then $v=\PiS^{*}\PiS v\in R$, so $K\subset R$.
+      By~\eqref{eq:hsym}, $\gamma(\xi)R\subset K\subset R$ for every $\xi$, so $R$ is invariant under the Clifford
+      algebra; irreducibility and $R\neq0$ give $R=\mathcal S$.
+      For a non-null $\xi$, $\gamma(\xi)^2=g^{-1}(\xi,\xi)\neq0$ makes $\gamma(\xi)$ invertible, so
+      $\gamma(\xi)R=\mathcal S\subset K$, that is $P=1$.
+      Then $(1-P)^{1/2}=0$ and $N=0$ on the set, with all its derivative terms, because the factor
+      $(1-P)^{1/2}$ stands to the left of every term of $N$.
+    \end{proof}
+
+    Proposition~\ref{prop:schur} makes precise the statement of~\cite{Beau2026q14} that $E_\Pi$ is induced by the
+    non-injective projection itself: under Hypothesis~\ref{hyp:contraction} it is the Schur complement of the
+    eliminated sector $1-P$.
+    A non-zero residue under Hypothesis~\ref{hyp:symbol} therefore requires a fibre on which the Clifford algebra
+    acts reducibly, that is a multiplicity space, together with an embedding $\PiS^{*}$ whose image varies from point
+    to point, since the surviving terms of $N$ are those containing the derivative of $\PiS^{*}$.
+    The algebraic obstruction is checked exactly in a finite model (Appendix~\ref{sec:symbolcheck}); the differential
+    terms in the derivative of $\PiS^{*}$ are not controlled in this note.
 
   \section{Chiral block reduction and the localisation of $u$}
     \label{sec:chiral}
 
-    The chirality operator $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ of the effective Clifford algebra
-    exists as a global section because of the Lorentzian closure of the effective
-    metric~\cite{Beau2026q11}.
+    Under the chiral splitting of Hypothesis~\ref{hyp:chiral-splitting}, the chirality operator
+    $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ of the effective Clifford algebra is a global section.
+    No value of the effective co-metric is used.
     The Dirac operator is chirality-odd, hence off-diagonal in the chiral splitting
     $\mathcal S_\Pi=\mathcal S_L\oplus\mathcal S_R$:
     \begin{equation}
@@ -197,14 +282,16 @@ of Projection Locking}
 
     \begin{proposition}[Chiral diagonal blocks of the residue]
       \label{prop:chiralblocks}
-      With the conventions of~\eqref{eq:blocks},
+      Assume Hypotheses~\ref{hyp:chiral-splitting} and~\ref{hyp:contraction}, with the conventions of~\eqref{eq:blocks}.
+      Then
       \begin{equation}
         \label{eq:diag}
         E_{LL}=-\PiS\,\Deff^{-}\pi_{RR}\Deff^{+}\,\PiS^{*},\qquad
         E_{RR}=-\PiS\,\Deff^{+}\pi_{LL}\Deff^{-}\,\PiS^{*}.
       \end{equation}
-      The left-admissibility condition $P_R\EPi P_R=0$ of~\cite{Beau2026q14} is equivalent to $\pi_{LL}=0$:
-      the non-injective projection eliminates no purely left-handed direction.
+      If $\pi_{LL}=0$ the left-admissibility condition $P_R\EPi P_R=0$ of~\cite{Beau2026q14} holds: the non-injective
+      projection eliminates no purely left-handed direction.
+      Under Hypothesis~\ref{hyp:faithful} the converse holds, so that the condition is equivalent to $\pi_{LL}=0$.
     \end{proposition}
 
     \begin{proof}
@@ -216,23 +303,26 @@ of Projection Locking}
       \end{equation*}
       Conjugating by $\PiS,\PiS^{*}$ and using $\EPi=-\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$
       gives~\eqref{eq:diag}.
-      The right-right block of $\EPi$ is $E_{RR}=-\PiS\Deff^{+}\pi_{LL}\Deff^{-}\PiS^{*}$, which vanishes
-      for a faithful Weyl symbol exactly when $\pi_{LL}=0$.
+      The right-right block of $\EPi$ is $E_{RR}=-\PiS\Deff^{+}\pi_{LL}\Deff^{-}\PiS^{*}=-N_R^{\dagger}N_R$ with
+      $N_R=\pi_{LL}^{1/2}\Deff^{-}\PiS^{*}$, because $\pi_{LL}\succeq0$ by Hypothesis~\ref{hyp:contraction}.
+      If $\pi_{LL}=0$ then $N_R=0$ and $E_{RR}=0$.
+      Conversely $E_{RR}=0$ gives $N_R=0$, hence $\pi_{LL}=0$ under Hypothesis~\ref{hyp:faithful}.
     \end{proof}
 
     \begin{corollary}[The left-admissible residue is chiral block-diagonal]
       \label{cor:block-diagonal}
+      Assume Hypotheses~\ref{hyp:chiral-splitting} and~\ref{hyp:contraction}.
       On the left-admissible branch $\pi_{LL}=0$, the projective residue $\EPi$ is chiral block-diagonal,
       $E_{LR}=E_{RL}=0$, so $[\EPi,\gamma_5]=0$.
     \end{corollary}
 
     \begin{proof}
-      Since $1-P$ is a self-adjoint projector it is positive semidefinite, and a positive-semidefinite
+      Since $1-P\succeq0$ by Hypothesis~\ref{hyp:contraction}, and a positive-semidefinite
       self-adjoint operator with a vanishing diagonal block has vanishing off-diagonal blocks; hence
       $\pi_{LL}=0$ forces $\pi_{LR}=\pi_{RL}=0$.
       By~\eqref{eq:blocks} the off-diagonal blocks of $\EPi$ are then $-\PiS\Deff^{-}\pi_{RL}\Deff^{-}\PiS^{*}=0$
       and its adjoint, so $\EPi=\mathrm{diag}(E_{LL},0)$ and commutes with $\gamma_5$.
-      Equivalently, this follows from $\EPi=-M^{\dagger}M\preceq0$ together with $E_{RR}=0$:
+      Equivalently, this follows from $\EPi=-N^{\dagger}N\preceq0$ together with $E_{RR}=0$:
       a negative-semidefinite self-adjoint operator with a vanishing diagonal block has vanishing off-diagonal
       blocks.
       The chiral asymmetry of the residue is therefore carried by the diagonal imbalance
@@ -288,8 +378,7 @@ of Projection Locking}
     \end{proof}
 
     The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is thus the maximal chiral asymmetry
-    compatible with A4 locking, and the sign of $u$ is the spontaneous $V-A$ choice exchanged under
-    $P_L\leftrightarrow P_R$.
+    compatible with A4 locking, and the sign of $u$ is exchanged under $P_L\leftrightarrow P_R$.
     The even sector~\eqref{eq:even} is algebraic; reading it as the chirally symmetric part of a
     Born--Infeld saturation would require the identification declared unavailable above, and is not
     used here.
@@ -401,10 +490,12 @@ of Projection Locking}
     Three facts make the operator-level $u$ of~\eqref{eq:udef} coincide with the spectral coefficient
     that enters the effective amplitude.
     First, $u$ is quadratic in $\EPi$, so it is immune to the linear sign convention of $E$.
-    Second, on the gauge-singlet $\Cgen$ the gauge curvature term vanishes, and on the flat effective
-    metric $g^{\mu\nu}=2\eta^{\mu\nu}$~\cite{Beau2026q11} all curvature cross-terms vanish, in particular
-    $-\tfrac16 R\EPi=0$; only $\tfrac12\EPi^2$ survives, so no linear-in-$\EPi$ term can separate the
-    operator and spectral readings.
+    Second, on the gauge-singlet $\Cgen$ the gauge curvature term vanishes, and on a flat background all curvature
+    cross-terms vanish, in particular $-\tfrac16 R\EPi=0$; only $\tfrac12\EPi^2$ survives, so no linear-in-$\EPi$ term
+    can separate the operator and spectral readings.
+    Flatness, $R=0$, is a hypothesis of this section, taken in an effective co-metric of Lorentzian signature with
+    constant coefficients; the sources leave both the coefficients and the signature of a full-rank co-metric
+    conditional~\cite{Beau2026q11}.
     Third, the common $a_4$ normalisation factor cancels in the generation ratio
     $(\tfrac12+u)/(\tfrac12-u)$, so $u$ is independent of the spectral normalisation while the absolute
     mass scale carries it.
@@ -415,8 +506,7 @@ of Projection Locking}
     \label{sec:nogo}
 
     The chirality $\gamma_5$ is the chirality operator of the effective spacetime Clifford
-    algebra~\cite{Beau2026q14}, existing because of the Lorentzian closure
-    $g^{\mu\nu}=2\eta^{\mu\nu}$~\cite{Beau2026q11}.
+    algebra~\cite{Beau2026q14}, existing under the chiral splitting of Hypothesis~\ref{hyp:chiral-splitting}.
     The supplied spinor carrier has the compact pseudoreal form $\mathfrak{su}(2)$, in which the
     fundamental is self-conjugate (O23 Theorem~3.1, conditional on that
     carrier)~\cite{Beau2026a27}; the Lorentzian complexification is what removes the
@@ -513,9 +603,9 @@ of Projection Locking}
     all accessible orders leaves $u$ an unfixed modulus, signalling that A4 alone does not determine the
     split.
     This marginal branch is a degenerate case of the second variation, not an independent source, so the
-    decisive step is the necessarily Lorentzian computation of $\mu_\chi^2$, carried out in the A4
-    companion~\cite{Beau2026bim}: in the Schur-transverse branch the chiral polarisation is electric, so
-    $\mu_\chi^2<0$ and the split opens spontaneously.
+    decisive step is the necessarily Lorentzian computation of $\mu_\chi^2$, which the A4 companion~\cite{Beau2026bim}
+    reduces to the Lorentzian genus of a chiral two-form; the construction of that two-form from the locking data and
+    its genus are open there.
 
     This does not exclude a chiral frontier normalisation after Lorentzian complexification.
     It excludes only a symmetric finite-front observable.
@@ -538,7 +628,8 @@ of Projection Locking}
     generation-projected defect.
 
     With $s$ the Lorentzian $J_\Pi$-odd deformation parameter of Section~\ref{sec:finite-equivariance},
-    differentiating the Schur form~\eqref{eq:schur} at $s=0$ with $D_{g,A}$ fixed, and using
+    differentiating the Schur form~\eqref{eq:schur} at $s=0$ with $D_{g,A}$ and $\PiS$ held fixed (the first-order
+    motion of the embedding contributes further terms~\cite{Beau2026ebj}), and using
     $\partial_s[-(1-P)]=\partial_sP$, gives the first-order chiral polarisation
     \begin{equation}
       \label{eq:polarisation}
@@ -552,16 +643,20 @@ of Projection Locking}
 
     \begin{lemma}[Weyl-transport faithfulness on non-zero external symbols]
       \label{lem:weyl-faithful}
-      Let $X$ be supported on the outer generation weights $\mathrm{span}(e_+,e_-)$.
-      The transported Weyl-symbol map $X\mapsto\PiS\,D_{g,A}\,X\,D_{g,A}\,\PiS^{*}$ inherits the
-      non-degeneracy of the Clifford principal symbol already used in Proposition~\ref{prop:chiralblocks}.
-      It can annihilate a non-zero external symbol only when that symbol lies in the null space of the
-      transported map, equivalently when its source or target component lies in the corresponding
-      zero-mode sector of $\Deff^{\pm}$.
-      This is the symbol-level faithfulness invoked in the proof of Proposition~\ref{prop:chiralblocks}; it
-      does not assert the absence of zero modes, whose locus is classified in
-      Proposition~\ref{prop:schur-dichotomy} as a Schur-null branch.
+      Let $\xi$ be a non-null covector.
+      Then $\gamma(\xi)^2=g^{-1}(\xi,\xi)\neq0$, so $\gamma(\xi)$ is invertible and the uncompressed symbol map
+      $X\mapsto\gamma(\xi)X\gamma(\xi)$ is injective, whether $\xi$ is timelike or spacelike.
+      The compressed transport $T:X\mapsto\PiS\,D_{g,A}\,X\,D_{g,A}\,\PiS^{*}$ on symbols supported on the outer
+      generation weights $\mathrm{span}(e_+,e_-)$ may nevertheless have a kernel, because $\PiS$ compresses.
+      The transported zero-mode locus is defined as $\ker T$.
+      Injectivity of the uncompressed map does not exclude a kernel of $T$.
     \end{lemma}
+
+    \begin{proof}
+      $\gamma(\xi)^2=g^{-1}(\xi,\xi)\,\mathbb 1$ by the Clifford relation, which is non-zero for a non-null covector;
+      if $\gamma(\xi)X\gamma(\xi)=0$, multiplying on both sides by $\gamma(\xi)^{-1}$ gives $X=0$.
+      The remaining statements are definitions.
+    \end{proof}
 
     \begin{definition}[Schur transversality]
       \label{def:schur-transversality}
@@ -581,9 +676,10 @@ of Projection Locking}
       \begin{enumerate}
         \item If $\sigma=0$, the opened direction carries no $J_\Pi$-odd component on the outer generation
         weights, the polarisation~\eqref{eq:transversality} vanishes, and the locking is Schur-null.
-        \item If $\sigma\neq0$ but $\sigma$ lies in the transported zero-mode locus of $\Deff^{\pm}$, the
+        \item If $\sigma\neq0$ but $\sigma$ lies in the transported zero-mode locus $\ker T$ of
+        Lemma~\ref{lem:weyl-faithful}, the
         polarisation~\eqref{eq:transversality} again vanishes and the locking is Schur-null.
-        \item If $\sigma\neq0$ and $\sigma$ does not lie in the transported zero-mode locus, the
+        \item If $\sigma\neq0$ and $\sigma$ does not lie in $\ker T$, the
         polarisation~\eqref{eq:transversality} is non-zero and the locking is Schur-transverse.
       \end{enumerate}
       In the Schur-null cases the first-order Schur polarisation on the outer weights is absent.
@@ -598,14 +694,11 @@ of Projection Locking}
       If $\sigma=0$ the input to the transport~\eqref{eq:polarisation} has no surviving external-weight
       component, so the image vanishes; this implication uses only that the projection to $\Cgen$ retains
       the $e_\pm$ weights, not Weyl-transport faithfulness.
-      If $\sigma\neq0$ but lies in the transported zero-mode locus, the map of
-      Lemma~\ref{lem:weyl-faithful} sends it to zero.
+      If $\sigma\neq0$ but lies in $\ker T$, then $T(\sigma)=0$ by the definition of the locus.
       In both cases~\eqref{eq:transversality} vanishes, the first-order polarisation is absent, and the
       split is undecided at leading order, falling to the marginal branch.
-      Conversely, if $\sigma\neq0$ and does not lie in the zero-mode locus, Lemma~\ref{lem:weyl-faithful}
-      gives a non-zero transported image, so~\eqref{eq:transversality} holds.
-      Faithfulness is used only in this converse direction, to prevent a non-zero external $J_\Pi$-odd
-      symbol from dying under the Schur transport; the Schur-null implication does not use it.
+      Conversely, if $\sigma\neq0$ and $\sigma\notin\ker T$ then $T(\sigma)\neq0$, so~\eqref{eq:transversality} holds.
+      The dichotomy is exhaustive by construction; which alternative holds is a statement about $\sigma$ and $T$.
     \end{proof}
 
     \begin{lemma}[Exact metaplectic opening of the Schur defect]
@@ -626,7 +719,8 @@ of Projection Locking}
       \[
         \log g(t,s)=\frac{r}{\sinh r}\left(tE+sF+\frac{ts}{2}H\right).
       \]
-      Consequently the $J_\Pi$-odd Cartan component transported to the outer generation doublet is
+      Consequently the $J_\Pi$-odd Cartan component of the generator $\log g(t,s)$ on the generation triplet, produced
+      by the $\mathfrak{sl}_2$ commutator $[E,F]=H$ and not by the Heisenberg bracket (Q14, Proposition~6.5), is
       \[
         \alpha(t,s)=ts\,\frac{r}{\sinh r}=ts+O\!\left((ts)^2\right),
       \]
@@ -654,28 +748,43 @@ of Projection Locking}
       degenerate step $ts=0$.
     \end{proof}
 
-    \begin{corollary}[Schur transversality in the present spin stratum]
+    \begin{hypothesis}[Transport of the opening to the locking projector, {[H-Tr]}]
+      \label{hyp:transport}
+      Let $P(s)$ be the locking projector along the $J_\Pi$-odd modulus $s$ of Section~\ref{sec:finite-equivariance}
+      (distinct from the shear parameter $s$ of Lemma~\ref{lem:exact-schur-opening}).
+      There is a real $\kappa\neq0$ such that
+      $\sigma=[\partial_sP|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}=\kappa\,\alpha(t,s)\,J_3$ for a non-degenerate
+      oriented step $ts\neq0$.
+    \end{hypothesis}
+
+    \begin{hypothesis}[Non-annihilation of the transported symbol, {[H-Ker]}]
+      \label{hyp:kernel}
+      $T(\sigma)\neq0$ for the symbol $\sigma$ of Hypothesis~\ref{hyp:transport}.
+      It holds in particular if the covector carrying $\sigma$ is non-null and $T$ is injective on the $J_\Pi$-odd
+      outer-weight symbols at that covector.
+    \end{hypothesis}
+
+    No source relates $P(s)$ to the metaplectic step $g(t,s)$: Hypothesis~\ref{hyp:transport} is a missing element,
+    not an excluded one.
+    Non-nullity suffices for the uncompressed symbol (Lemma~\ref{lem:weyl-faithful}); no identification of the
+    central commutator $Z=[X,Y]$ with a temporal direction is used, and none is available: the central entry of the
+    co-metric of Q5b~\cite{Beau2026q5b} (Theorem~5.2) is zero at rank three, it is positive in the conditional
+    full-rank completion of Q8~\cite{BeauQ8} (Corollary~6.1), and it is negative in neither~\cite{Beau2026q11}.
+
+    \begin{corollary}[Schur transversality under the transport hypotheses]
       \label{cor:schur-transversality-closed}
-      Assume the symbol-compatibility of the projected Dirac operator~\cite{Beau2026q14} and the
-      identification of the central commutator $Z=[X,Y]$ with the timelike direction $\partial_\tau$, a metric
-      temporal direction only after the co-metric completion~\cite{Beau2026n} of the effective metric closure
-      $g^{\mu\nu}=2\eta^{\mu\nu}$~\cite{Beau2026q11}.
-      Then the A4 locking defect is Schur-transverse on the generation triplet in the present Lorentzian spin
-      stratum,
+      Assume Hypotheses~\ref{hyp:chiral-splitting}, \ref{hyp:contraction}, \ref{hyp:symbol}, \ref{hyp:transport}
+      and~\ref{hyp:kernel}.
+      Then the A4 locking defect is Schur-transverse on the generation triplet,
       \[
         \PiS\,D_{g,A}\,(\partial_sP|_0)\,D_{g,A}\,\PiS^{*}\big|_{\Cgen,\,J_\Pi\text{-odd}}\neq0.
       \]
     \end{corollary}
 
     \begin{proof}
-      By Lemma~\ref{lem:exact-schur-opening} the transported defect contains a non-zero $J_\Pi$-odd Cartan
-      component $\sigma=\alpha(t,s)\,J_3$ for every non-degenerate oriented step, so the Schur-null case
-      $\sigma=0$ is excluded.
-      Its source is the commutator $Z=[X,Y]$, identified with the timelike direction $\partial_\tau$ in the
-      Lorentzian effective metric, and the Clifford principal symbol is non-degenerate on non-zero timelike
-      covectors.
-      Therefore the transported $J_3$-symbol is not in the zero-mode locus of the Weyl blocks $\Deff^{\pm}$, so the
-      transported zero-mode case is excluded.
+      By Hypothesis~\ref{hyp:transport} and Lemma~\ref{lem:exact-schur-opening}, $\sigma=\kappa\alpha J_3$ is non-zero
+      for every non-degenerate oriented step, so the Schur-null case $\sigma=0$ is excluded.
+      By Hypothesis~\ref{hyp:kernel}, $\sigma\notin\ker T$, so the transported zero-mode case is excluded.
       The remaining alternative of Proposition~\ref{prop:schur-dichotomy} is the Schur-transverse branch.
     \end{proof}
 
@@ -686,28 +795,35 @@ of Projection Locking}
         \sigma=\big[\partial_sP|_0,J_\Pi\big]\big|_{\mathrm{span}(e_+,e_-)}.
       \]
       If the locking is Schur-transverse, the generation split is decided by the Born--Infeld genus of the
-      chiral polarisation~\cite{Beau2026bim}: $\mu_\chi^2>0$ gives $u=0$, and $\mu_\chi^2<0$ gives a
-      spontaneous $V-A$ split $u\neq0$.
+      chiral two-form supplied in~\cite{Beau2026bim}: $\mu_\chi^2>0$ gives $u=0$, and $\mu_\chi^2<0$ gives a
+      split $u\neq0$ under the nondegeneracy hypothesis stated there.
       If the locking is Schur-null, $\mu_\chi^2=0$ and the split is governed by the leading even
       coefficient $\lambda_{2k}$ of~\eqref{eq:muchi}.
     \end{corollary}
 
-    Schur transversality is thereby closed in the present Lorentzian spin stratum:
-    Lemma~\ref{lem:exact-schur-opening} evaluates the projected A4 commutator in closed form and excludes the
-    exact-zero branch, and Corollary~\ref{cor:schur-transversality-closed} excludes the transported zero-mode
-    branch, so the dichotomy of Proposition~\ref{prop:schur-dichotomy} selects the Schur-transverse case.
-    The Lorentzian datum $\partial_sP|_0$ is the metaplectic opening $g(t,s)=\exp(tE)\exp(sF)$, fixed together
-    with the genus of~\cite{Beau2026bim} by the Born--Infeld saturation structure~\cite{Beau2026c}.
+    The dichotomy of Proposition~\ref{prop:schur-dichotomy} is proved under the hypotheses it names; which branch
+    holds is open.
+    Lemma~\ref{lem:exact-schur-opening} evaluates the $\mathfrak{sl}_2$ commutator of the oriented step in closed form;
+    under Hypothesis~\ref{hyp:transport} it excludes the exact-zero branch, and under Hypothesis~\ref{hyp:kernel} the
+    transported zero-mode branch is excluded.
+    Neither hypothesis is supplied by a source.
+    The Lorentzian datum $\partial_sP|_0$ is not constructed: its relation to the metaplectic step
+    $g(t,s)=\exp(tE)\exp(sF)$ is Hypothesis~\ref{hyp:transport}.
+    The sign of the Born--Infeld genus of~\cite{Beau2026bim} is not decided here.
 
   \section{Status of results}
     \label{sec:status}
 
     \noindent\emph{Proved / structural (this note).}
     \begin{itemize}
-      \item $\EPi=-\PiS D(1-P)D\PiS^{*}=-M^{\dagger}M$ is the Schur complement of the eliminated sector,
-      negative semi-definite, zero-order, vanishing in the injective limit (Proposition~\ref{prop:schur}).
-      \item Chiral diagonal blocks~\eqref{eq:diag}; left-admissibility $\Leftrightarrow\pi_{LL}=0$
-      (Proposition~\ref{prop:chiralblocks}).
+      \item Under Hypothesis~\ref{hyp:contraction}, $\EPi=-\PiS D(1-P)D\PiS^{*}=-N^{\dagger}N$ is the Schur
+      complement of the eliminated sector, negative semi-definite, vanishing where $P=1$
+      (Proposition~\ref{prop:schur}).
+      It is zero-order under Hypothesis~\ref{hyp:symbol} (Lemma~\ref{lem:order}).
+      On irreducible Clifford fibres that condition forces $\EPi=0$ (Proposition~\ref{prop:irreducible}).
+      $P^2=P$ holds if and only if $\PiS$ is a partial isometry (Remark~\ref{rem:idempotence}).
+      \item Chiral diagonal blocks~\eqref{eq:diag}; $\pi_{LL}=0$ implies left-admissibility, and the converse holds
+      under Hypothesis~\ref{hyp:faithful} (Proposition~\ref{prop:chiralblocks}).
       \item The $J_3$-odd component of $\EPi^2$ is first exposed in the chiral block decomposition as a raw
       asymmetry $\pi_{RR}-\pi_{LL}$ (Corollary~\ref{cor:localise}), and refined in
       Section~\ref{sec:spinorial-locking} as the antiunitary equivariance defect
@@ -721,31 +837,30 @@ of Projection Locking}
       Hence $u\neq0$ requires a failure of $J_\Pi$-equivariance at projection locking
       (Lemma~\ref{lem:chiral-obstruction}); the magnitude of $u$ depends on the $\Deff^{\pm}$-transported,
       generation-projected component of the antiunitary defect $\Delta_\chi(P)$~\eqref{eq:defect}.
-      \item Operator $u$ equals spectral $u$ on the flat effective metric; $u$ normalisation-independent in
+      \item Operator $u$ equals spectral $u$ on a flat background; $u$ normalisation-independent in
       the ratio (Section~\ref{sec:conventions}).
       \item Chirality is Lorentzian, not a finite-fibre label; $u$ is not a front observable
       (Remark~\ref{rem:nogo}).
       \item Finite projection locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$: $u$ cannot originate
       in the finite cascade and is a Lorentzian datum
       (Proposition~\ref{prop:finite-equivariance}, Corollary~\ref{cor:separation}).
-      \item Schur transversality is proved in the present Lorentzian spin stratum:
-      Lemma~\ref{lem:exact-schur-opening} excludes the exact-zero branch through the closed form
-      $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the projected A4 commutator, and
-      Corollary~\ref{cor:schur-transversality-closed} excludes the transported zero-mode branch under
-      symbol-compatibility and the timelike-source identification $Z=[X,Y]\simeq\partial_\tau$.
-      Proposition~\ref{prop:schur-dichotomy} then selects the Schur-transverse branch.
+      \item The exact $\mathfrak{sl}_2$ opening $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the oriented step, produced
+      by $[E,F]=H$ (Lemma~\ref{lem:exact-schur-opening}), and the exhaustive Schur-null / Schur-transverse dichotomy
+      (Proposition~\ref{prop:schur-dichotomy}).
     \end{itemize}
 
     \noindent\emph{Conditional.}
     The left-admissibility branch $\pi_{LL}=0$~\cite{Beau2026q14} is an admissible branch selected by the
     orientation-compatible assumption; its derivation from A4 is open.
+    The Schur-transverse branch (Corollary~\ref{cor:schur-transversality-closed}) holds under the chiral splitting,
+    contraction and symbol hypotheses, the transport hypothesis~\ref{hyp:transport} and the non-annihilation
+    hypothesis~\ref{hyp:kernel}.
+    The reduction of $u$ to the Born--Infeld genus of~\cite{Beau2026bim} holds for a chiral two-form supplied there.
 
     \noindent\emph{Open.}
-    The existence of the split is closed in the present Lorentzian spin stratum after the
-    Schur-transversality closure of Section~\ref{sec:schur-transversality} and the electric-genus result of
-    the A4 companion.
-    What remains open is not $u\neq0$, but the explicit Lorentzian eliminated block $1-P(s)$, the absolute
-    normalisation $|u|$, and the projected Yukawa sector.
+    Which branch of the dichotomy holds is open, as are the transport hypothesis~\ref{hyp:transport}, the explicit
+    Lorentzian eliminated block $1-P(s)$, the sign of the Born--Infeld genus, the absolute normalisation $|u|$, and the
+    projected Yukawa sector.
     The magnitude $|u|$ depends on the fully transported and projected Born--Infeld saturation data,
     including the chiral-frontier normalisation, and is not determined by the Schur-transversality argument
     itself.
@@ -753,18 +868,19 @@ of Projection Locking}
   \section{Open deliverables}
     \label{sec:open}
 
-    The finite contribution to A4 is now separated: finite projection locking is $J_\Pi$-equivariant and
+    The finite contribution to A4 is separated: finite projection locking is $J_\Pi$-equivariant and
     cannot generate $u$ (Proposition~\ref{prop:finite-equivariance} and Corollary~\ref{cor:separation}).
-    The Schur-transversality test that previously conditioned the A4 companion is closed in the present
-    Lorentzian spin stratum: by Lemma~\ref{lem:exact-schur-opening} and
-    Corollary~\ref{cor:schur-transversality-closed} the A4 direction is Schur-transverse.
-    The Born--Infeld genus of~\cite{Beau2026bim} therefore selects the electric branch, $\mu_\chi^2<0$, and the
-    generation split opens spontaneously, $u\neq0$.
+    The Schur-transversality test that conditions the A4 companion is an exhaustive dichotomy
+    (Proposition~\ref{prop:schur-dichotomy}); the Schur-transverse branch is reached under
+    Hypotheses~\ref{hyp:transport} and~\ref{hyp:kernel} (Corollary~\ref{cor:schur-transversality-closed}).
+    The Born--Infeld genus of~\cite{Beau2026bim} then decides, for the chiral two-form supplied there, between
+    $u=0$ and $u\neq0$.
 
-    The remaining open deliverables are no longer the existence of the Schur-transverse branch, nor the sign of
-    the Lorentzian genus.
-    They are:
+    The open deliverables are:
     \begin{enumerate}
+      \item the relation between the locking projector $P(s)$ and the metaplectic step $g(t,s)$
+      (Hypothesis~\ref{hyp:transport}), and the non-annihilation of the transported symbol
+      (Hypothesis~\ref{hyp:kernel});
       \item the explicit Lorentzian eliminated block $1-P(s)$ entering the Schur complement
       \[
         \EPi=-\PiS\,D_{g,A}\,(1-P(s))\,D_{g,A}\,\PiS^{*};
@@ -804,17 +920,20 @@ of Projection Locking}
       \Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}
     \]
     of the spinorial directions eliminated by the non-injective projection, read off the Schur complement
-    $\EPi=-M^{\dagger}M$ and restricted to the gauge-singlet triplet $\Cgen$.
+    $\EPi=-N^{\dagger}N$ and restricted to the gauge-singlet triplet $\Cgen$.
     It vanishes identically for the $J_\Pi$-equivariant minimal non-injectivity, and is non-zero only
     through a chiral symmetry-breaking carried by the projection-locking axiom A4.
     The polarisation, the Seeley--DeWitt conventions, and the operator/spectral identification are locked;
     the front observables are confirmed to be null controls rather than carriers of $u$.
-    The Schur-transverse branch is selected in the present Lorentzian spin stratum
-    (Lemma~\ref{lem:exact-schur-opening}, Corollary~\ref{cor:schur-transversality-closed}).
-    Combined with the electric-genus result of the A4 companion~\cite{Beau2026bim}, this promotes the existence
-    statement to $u\neq0$.
-    It does not determine the value $|u|$, which remains fixed by the chiral-frontier normalisation through the
-    Born--Infeld saturation structure~\cite{Beau2026c}.
+    The Schur-null / Schur-transverse dichotomy of the A4 locking defect is proved under explicit hypotheses
+    (Proposition~\ref{prop:schur-dichotomy}); which branch holds is open.
+    The exact $\mathfrak{sl}_2$ opening of the oriented step (Lemma~\ref{lem:exact-schur-opening}) excludes the
+    exact-zero branch under the transport hypothesis~\ref{hyp:transport}, and the transported zero-mode branch is
+    excluded under hypothesis~\ref{hyp:kernel}.
+    Whether $u\neq0$ then follows depends on the Born--Infeld genus of the A4 companion~\cite{Beau2026bim}, which is
+    stated there for a chiral two-form supplied as a hypothesis.
+    This note does not decide it, and does not determine the value $|u|$, which remains fixed by the chiral-frontier
+    normalisation through the Born--Infeld saturation structure~\cite{Beau2026c}.
 
     \appendix
   \section{Numerical front controls}
@@ -870,6 +989,20 @@ of Projection Locking}
     separate admissible-rank observable.
     With only two contributing shells, the $q$-stability of~\eqref{eq:thetascalar}--\eqref{eq:nsat} is the
     operative robustness check; the constancy of any per-shell profile is a weak test on two points.
+
+  \section{Exact check of the symbol obstruction}
+    \label{sec:symbolcheck}
+
+    The script \texttt{code/schur\_symbol\_obstruction.py} verifies, in exact rational and symbolic arithmetic, the
+    algebraic statements of Section~\ref{sec:schur} on a finite model: $P^2=P$ if and only if the model $\PiS$ is a
+    partial isometry; the identity $\EPi=-N^{\dagger}N$ for a contraction that is not a partial isometry; the
+    irreducibility of the Clifford action on a four-dimensional fibre (the algebra generated by the four generators has
+    dimension $16$), which gives Proposition~\ref{prop:irreducible}; and, on a reducible fibre with a multiplicity
+    space, a constant embedding for which the symbol condition holds and $N=0$.
+    The check is algebraic at a point.
+    It does not control the terms containing the derivative of $\PiS^{*}$, which require a separate differential
+    computation.
+    The command is documented in the repository \texttt{README.md}.
 
     \bibliographystyle{plain}
     \bibliography{cosmochrony-bibliography}
