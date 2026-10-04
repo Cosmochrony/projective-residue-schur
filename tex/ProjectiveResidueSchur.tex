@@ -75,17 +75,16 @@ of Projection Locking}
     Second, the chiral block decomposition expresses the antiunitary chiral equivariance defect
     \texorpdfstring{$\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$}{Δ_χ(P) = π_LL − τ conj(π_RR) τ⁻¹}
     of the eliminated block \texorpdfstring{$1-P$}{1−P}, after \texorpdfstring{$\Deff^{\pm}$}{D^±}-transport and
-    projection to the generation triplet; a non-zero split requires that the locking operator break
-    \texorpdfstring{$J_\Pi$}{J_Π}-equivariance, under a generation-carrier hypothesis.
+    projection to the generation triplet; under a generation-reading hypothesis, a non-zero split requires a locking
+    operator that breaks \texorpdfstring{$J_\Pi$}{J_Π}-equivariance.
     Third, if the locking operator commutes with \texorpdfstring{$J_\Pi$}{J_Π} then
     \texorpdfstring{$u=0$}{u = 0}; the minimal non-injectivity
     \texorpdfstring{$c\leftrightarrow q-c$}{c ↔ q−c} is \texorpdfstring{$J_\Pi$}{J_Π}-symmetric, so on the
     structurally motivated reading of axioms A1--A3, \texorpdfstring{$u=0$}{u = 0} there, and a non-zero
     \texorpdfstring{$u$}{u} requires a breaking of \texorpdfstring{$J_\Pi$}{J_Π}-equivariance, which on that reading
     can come only from the projection-locking axiom A4.
-    The finite locking operator is \texorpdfstring{$J_\Pi$}{J_Π}-equivariant if it is constructed equivariantly from
-    the finite locking data, so that \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}; chirality is a Lorentzian
-    rather than a finite-fibre datum.
+    The finite locking data are \texorpdfstring{$J_\Pi$}{J_Π}-invariant; if the finite locking operator is constructed
+    equivariantly and a finite reading is supplied, \texorpdfstring{$u_{\mathrm{fin}}=0$}{u_fin = 0}.
     Finally, the \texorpdfstring{$J_\Pi$}{J_Π}-odd first-order polarisation on the outer generation weights is the
     \texorpdfstring{$J_\Pi$}{J_Π}-odd tilt of the
     locking operator
@@ -149,6 +148,10 @@ of Projection Locking}
       u=\frac{\big\langle \Pi_{J_\Pi\text{-odd}}(E_\Pi^2),\,J_3\big\rangle_{\HS}}{\langle J_3,J_3\rangle_{\HS}}
       =\tfrac12\big(\langle e_+|E_\Pi^2|e_+\rangle-\langle e_-|E_\Pi^2|e_-\rangle\big).
     \end{equation}
+    In~\eqref{eq:normalform} and~\eqref{eq:udef}, $E_\Pi^2|_{\Cgen}$ stands for the compression to $\Cgen$ of the
+      generation
+    reading $G=\Phi(E_\Pi^2)$ of $E_\Pi^2$ on the generation space of Hypothesis~\ref{hyp:generation}; Q14 supplies no
+    such reading~\cite{Beau2026q14}.
     This note records what is established about $u$ and isolates the single conceptual obstruction
     that remains, so that the explicit construction of $E_\Pi$ can proceed in a locked frame.
     The companion front observables of the angular and oriented-frontier
@@ -345,7 +348,8 @@ of Projection Locking}
         E_{LL}=-\PiS\,\Deff^{-}\pi_{RR}\Deff^{+}\,\PiS^{*},\qquad
         E_{RR}=-\PiS\,\Deff^{+}\pi_{LL}\Deff^{-}\,\PiS^{*}.
       \end{equation}
-      If $\pi_{LL}=0$ the left-admissibility condition $P_R\EPi P_R=0$ of~\cite{Beau2026q14} holds: the non-injective
+      If $\pi_{LL}=0$ the condition $P_R\EPi P_R=0$ holds, which is the left-admissibility condition
+      of~\cite{Beau2026q14} when $\EPi$ is Q14's endomorphism: the non-injective
       projection eliminates no purely left-handed direction.
       Under Hypothesis~\ref{hyp:faithful} the converse holds, so that the condition is equivalent to $\pi_{LL}=0$.
     \end{proposition}
@@ -418,12 +422,13 @@ of Projection Locking}
 
     \begin{proposition}[Chiral-symmetry stratification of $u$]
       \label{prop:strat}
-      Under Hypothesis~\ref{hyp:generation}, if the locking operator $P$ commutes with $J$ then $u=0$
+      Under Hypothesis~\ref{hyp:generation}, if the locking operator $P$ commutes with $J_\Pi$ then $u[P]=0$
       (Lemma~\ref{lem:chiral-obstruction}).
       On the structurally motivated reading in which the minimal non-injectivity $c\leftrightarrow q-c$ is
       $J_\Pi$-symmetric and axiom A3~\cite{Beau2026m} forbids selection among open directions before locking, the
       locking operator commutes with $J_\Pi$ at the level of axioms A1--A3, so $u=0$ there.
-      A non-zero $u$ requires $JPJ^{-1}\neq P$, which on that reading can originate only in the projection-locking
+      A non-zero $u$ requires $J_\Pi PJ_\Pi^{-1}\neq P$, which on that reading can originate only in the
+      projection-locking
       axiom A4.
     \end{proposition}
 
@@ -479,6 +484,14 @@ of Projection Locking}
     \end{equation}
     so the Born--Infeld spinorial conjugation exchanges the two outer generation weights.
 
+    In what follows $V$ is the fundamental spinorial doublet of the model and $\mathcal H=\mathrm{Sym}^2(V)$ with
+    $J=J_\Pi^{(2)}$ is the generation space of Hypothesis~\ref{hyp:generation}.
+    Q14 keeps the generation carrier $V_{\mathrm{gen}}$ distinct from the soldered doublet $V$, for which
+      $\mathrm{Sym}^2(V)$
+    is the Lorentz sector, with a different internal parity~\cite{Beau2026q14}; taking $\mathcal H=\mathrm{Sym}^2(V)$
+      is a
+    model choice of this note, not a result of Q14.
+
     We now apply this to the Schur residue.
     Let $\tau:\mathcal S_R\to\mathcal S_L$ be the unitary intertwiner realising the chirality exchange
     $J_\Pi P_L=P_R J_\Pi$ of~\cite{Beau2026q14} in the chiral frame.
@@ -496,47 +509,48 @@ of Projection Locking}
     which reduces to $\pi_{LL}-\tau\pi_{RR}\tau^{-1}$ on the real structure fixed by $J_\Pi^{(2)}$ on the
     generation triplet.
 
-    \begin{hypothesis}[Generation carrier and compatibility, {[H-Gen]}]
+    \begin{hypothesis}[Generation reading and compatibility, {[H-Gen]}]
       \label{hyp:generation}
-      The operator $\EPi^2$ acts on a Hilbert space $\mathcal H$ carrying an antiunitary $J$, and
-      $\Cgen=\mathrm{span}(e_0,e_+,e_-)\subset\mathcal H$ is a $J$-invariant subspace on which $J$ acts as the
-      involution $J_\Pi^{(2)}$ of~\eqref{eq:jpisym}, in particular $J^2=+1$ on $\Cgen$; $\EPi^2|_{\Cgen}$ is the
-      compression of $\EPi^2$ to $\Cgen$.
-      The space $\mathcal H$ is not required to be $\mathcal S_\Pi$, on which $J_\Pi^2=-1$.
-      Moreover $J$ is compatible with the Dirac transport and the projection:
-      $J D_{g,A}J^{-1}=\pm D_{g,A}$ and $J\PiS J^{-1}=\PiS$.
-      Q14 keeps the generation carrier distinct from the soldered doublet, uses a different operator on it, and does not
-      state this compatibility~\cite{Beau2026q14}; this hypothesis supplies all three.
+      (i) $J_\Pi$ is an antiunitary operator on $\mathcal S$ and on $\mathcal S_\Pi$ (with $J_\Pi^2=-1$ on the doublet
+      sector, as in Q14), compatible with the Dirac transport and the projection:
+      $J_\Pi D_{g,A}J_\Pi^{-1}=\pm D_{g,A}$ and $J_\Pi\PiS J_\Pi^{-1}=\PiS$.
+      (ii) $\mathcal H$ is a Hilbert space with an antiunitary $J$ and an orthonormal triple $e_0,e_+,e_-$ spanning
+      $\Cgen$, with $Je_0=-e_0$ and $Je_\pm=e_\mp$, so that $J^2=+1$ on $\Cgen$; in the model
+      $\mathcal H=\mathrm{Sym}^2(V)$ and $J=J_\Pi^{(2)}$ of~\eqref{eq:jpisym}.
+      (iii) A real-linear reading map $\Phi:\mathrm{End}(\mathcal S_\Pi)\to\mathrm{End}(\mathcal H)$ satisfies
+      $\Phi(X^{*})=\Phi(X)^{*}$ and $\Phi(J_\Pi XJ_\Pi^{-1})=J\,\Phi(X)\,J^{-1}$.
+      The generation operator of a locking operator $P$ is $G[P]:=\Phi(\EPi[P]^2)$, and $u[P]$ is given
+      by~\eqref{eq:udef} with $G[P]$ in place of $E_\Pi^2$.
+      Q14 keeps the generation carrier distinct from the soldered doublet, uses a different operator on it, and supplies
+      neither this reading map nor this compatibility~\cite{Beau2026q14}; this hypothesis supplies them.
     \end{hypothesis}
 
     \begin{lemma}[Chiral obstruction of spinorial locking]
       \label{lem:chiral-obstruction}
-      Assume Hypothesis~\ref{hyp:generation}, and let $P$ be a locking operator, $0\preceq P\preceq1$, with
-      $\EPi[P]=-\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}$.
-      If $JPJ^{-1}=P$, then $J\,\EPi[P]\,J^{-1}=\EPi[P]$ and $J\,\EPi[P]^2J^{-1}=\EPi[P]^2$.
-      Consequently $\langle e_+|\EPi[P]^2|e_+\rangle=\langle e_-|\EPi[P]^2|e_-\rangle$, and the split coefficient
-      $u$ of~\eqref{eq:udef} vanishes.
-      Hence a non-zero generation split requires a locking operator that does not commute with $J$,
+      Assume Hypothesis~\ref{hyp:generation}, and let $P$ be a locking operator, $0\preceq P\preceq1$.
+      If $J_\Pi PJ_\Pi^{-1}=P$, then $J_\Pi\,\EPi[P]\,J_\Pi^{-1}=\EPi[P]$, $J\,G[P]\,J^{-1}=G[P]$, and
+      $\langle e_+|G[P]|e_+\rangle=\langle e_-|G[P]|e_-\rangle$, so that $u[P]=0$.
+      Hence a non-zero generation split requires a locking operator that does not commute with $J_\Pi$,
       \begin{equation*}
-        u\neq0\quad\Longrightarrow\quad JPJ^{-1}\neq P.
+        u[P]\neq0\quad\Longrightarrow\quad J_\Pi PJ_\Pi^{-1}\neq P.
       \end{equation*}
       For the reference operator $P=\PiS^{*}\PiS$ the commutation holds automatically under
-      Hypothesis~\ref{hyp:generation}; a non-zero $u$ therefore requires a locking operator different from
+      Hypothesis~\ref{hyp:generation}(i); a non-zero $u$ therefore requires a locking operator different from
       $\PiS^{*}\PiS$.
     \end{lemma}
 
     \begin{proof}
-      Since $Je_+=e_-$ and~\eqref{eq:jpij3} holds, the two outer generation weights are conjugate under $J$.
-      The assumptions give $J\EPi[P]J^{-1}=-\PiS(JD_{g,A}J^{-1})(1-P)(JD_{g,A}J^{-1})\PiS^{*}=\EPi[P]$, the two signs
-      $\pm$ multiplying to $+1$; hence $J\EPi[P]^2J^{-1}=\EPi[P]^2$.
-      Because $J$ is antiunitary,
-      $\langle J\psi|\EPi[P]^2|J\psi\rangle=\overline{\langle\psi|\EPi[P]^2|\psi\rangle}$, and $\EPi[P]^2$ is
-      self-adjoint, so this expectation value is real.
-      Taking $\psi=e_+$ and using $Je_+=e_-$ gives
-      $\langle e_-|\EPi[P]^2|e_-\rangle=\langle e_+|\EPi[P]^2|e_+\rangle$.
-      The definition~\eqref{eq:udef} of $u$ then gives $u=0$, and the final implication is the contrapositive.
-      For $P=\PiS^{*}\PiS$, $JPJ^{-1}=J\PiS^{*}J^{-1}\,J\PiS J^{-1}=P$ since $J\PiS^{*}J^{-1}=\PiS^{*}$ by the
-      compatibility and the antiunitarity of $J$.
+      The assumptions give
+      $J_\Pi\EPi[P]J_\Pi^{-1}=-\PiS(J_\Pi D_{g,A}J_\Pi^{-1})(1-P)(J_\Pi D_{g,A}J_\Pi^{-1})\PiS^{*}=\EPi[P]$, the two
+      signs
+      $\pm$ multiplying to $+1$ and $J_\Pi\PiS^{*}J_\Pi^{-1}=\PiS^{*}$ following from the antiunitarity of $J_\Pi$.
+      Hence $J_\Pi\EPi[P]^2J_\Pi^{-1}=\EPi[P]^2$, and by~(iii) $JG[P]J^{-1}=G[P]$; $G[P]$ is self-adjoint because
+      $\EPi[P]^2$ is and $\Phi$ preserves adjoints.
+      Because $J$ is antiunitary, $\langle J\psi|G|J\psi\rangle=\overline{\langle\psi|G|\psi\rangle}$, which is real
+      since $G$ is self-adjoint.
+      Taking $\psi=e_+$ and using $Je_+=e_-$ gives $\langle e_-|G|e_-\rangle=\langle e_+|G|e_+\rangle$.
+      The definition~\eqref{eq:udef} then gives $u[P]=0$.
+      For $P=\PiS^{*}\PiS$, $J_\Pi PJ_\Pi^{-1}=(J_\Pi\PiS J_\Pi^{-1})^{*}(J_\Pi\PiS J_\Pi^{-1})=P$.
     \end{proof}
 
     \begin{remark}[Necessary condition, not a sufficient one]
@@ -550,9 +564,16 @@ of Projection Locking}
       projected component is the remaining A4-level deliverable.
     \end{remark}
 
-  \section{Locked Seeley--DeWitt conventions: operator $u$ equals spectral $u$}
+  \section{Seeley--DeWitt conventions for the reference residue}
     \label{sec:conventions}
 
+    This section concerns the reference operator $P_{\mathrm{ref}}$ under the identity $\PiS
+      D_{g,A}^2\PiS^{*}=\mathrm{Lich}$
+    of Remark~\ref{rem:q14-symbol}, for which $\EPi$ is the endomorphism of Q14; for a locking operator
+    $P\neq P_{\mathrm{ref}}$, $\EPi[P]$ is not the remainder of $D^2_{\Pi,g,A}$ and the identification below is not
+    claimed.
+    In particular, for $P_{\mathrm{ref}}$ the coefficient $u$ vanishes by Lemma~\ref{lem:chiral-obstruction}, and the
+    operator/spectral identification of a non-zero $u$ is not established here.
     The projected square is Laplace-type, $D^2_{\Pi,g,A}=-(\nabla^{S,A})^2+E$, with
     $E=\tfrac{R}{4}+\tfrac12\gamma^\mu\gamma^\nu F^a_{\mu\nu}T^a+\EPi$~\cite{Beau2026q14} (with $\EPi$ the endomorphism
     of Q14, that is the compression remainder under the identity of Remark~\ref{rem:q14-symbol}), and the
@@ -616,38 +637,28 @@ of Projection Locking}
     from the reference operator $\PiS^{*}\PiS$, for which $J_\Pi$-commutation is automatic under
       Hypothesis~\ref{hyp:generation}.
 
-    \begin{proposition}[Finite equivariance of projection locking]
+    \begin{remark}[Finite equivariance of projection locking]
       \label{prop:finite-equivariance}
-      For $q$ an odd prime, the finite locking data is invariant under the spinorial Born--Infeld parity
-      $J_\Pi$.
-      Assume that $P_{\mathrm{fin}}$ is constructed from the locking data equivariantly, that is with no choice among
-      $J_\Pi$-conjugate alternatives.
-      Consequently
+      For $q$ an odd prime, the finite locking data is invariant under the spinorial Born--Infeld parity $J_\Pi$:
+      the continuous saturation condition is Born--Infeld parity itself, whose spinorial lift is
+      $J_\Pi$~\cite{Beau2026q14}, and the discrete shell support is a union of orbits of the parity
+      $c\leftrightarrow q-c$~\cite{Beau2026fe}, whose only fixed point on the central character $c\mapsto-c$ is $c=0$,
+      so that the support singles out no orientation.
+      If $P_{\mathrm{fin}}$ is constructed from the locking data equivariantly, that is with no choice among
+      $J_\Pi$-conjugate alternatives, then
       \begin{equation}
         \label{eq:finite-equiv}
-        [\mathrm{Lock}^{\mathrm{fin}}_S,J_\Pi]=0,\qquad [P_{\mathrm{fin}},J_\Pi]=0,
+        [\mathrm{Lock}^{\mathrm{fin}}_S,J_\Pi]=0,\qquad [P_{\mathrm{fin}},J_\Pi]=0.
       \end{equation}
-      and by Lemma~\ref{lem:chiral-obstruction} the finite generation split vanishes, $u_{\mathrm{fin}}=0$.
-    \end{proposition}
-
-    \begin{proof}
-      Both constituents of A4 are $J_\Pi$-invariant at finite $q$.
-      The continuous saturation condition is Born--Infeld parity itself, whose spinorial lift is
-      $J_\Pi$~\cite{Beau2026q14}, hence $J_\Pi$-invariant by construction.
-      The discrete shell support is a union of orbits of the parity
-      $c\leftrightarrow q-c$~\cite{Beau2026fe}; for $q$ an odd prime this involution acts as $c\mapsto -c$
-      on the central character, whose only fixed point is $c=0$, so no non-trivial shell is parity-fixed
-      and the support singles out no orientation.
-      The locking data is therefore $J_\Pi$-invariant.
-      Equivariance of $P_{\mathrm{fin}}$ then follows from the assumed equivariant construction.
+      The second relation is the assumption of equivariant construction.
       That the construction involves no choice is motivated by the absence of a finite $J_\Pi$-odd direction: a
-      cascade edge $g\to gs$ is a Heisenberg translation, not a symplectic element, so it carries no
-      canonical metaplectic lift, and the chiral eigendirections are complex combinations created only by
-      Lorentzian complexification~\cite{Beau2026q14}; this is a structural motivation, not a proof that no choice
-      occurs.
-      Under the assumption, the finite locked branch is $J_\Pi$-equivariant, giving~\eqref{eq:finite-equiv}.
-      The vanishing $u_{\mathrm{fin}}=0$ is then Lemma~\ref{lem:chiral-obstruction}.
-    \end{proof}
+      cascade edge $g\to gs$ is a Heisenberg translation, not a symplectic element, so it carries no canonical
+      metaplectic lift, and the chiral eigendirections are complex combinations created only by Lorentzian
+      complexification~\cite{Beau2026q14}; this is a structural motivation, not a proof.
+      No source defines $\EPi[P_{\mathrm{fin}}]$ or $u_{\mathrm{fin}}$ on the finite data.
+      If a finite reading of the Schur expression with a reading map as in Hypothesis~\ref{hyp:generation} is supplied,
+      Lemma~\ref{lem:chiral-obstruction} gives $u_{\mathrm{fin}}=0$.
+    \end{remark}
 
     The numerical front controls of Appendix~\ref{sec:controls} are consistent with~\eqref{eq:finite-equiv}; they do
     not establish it.
@@ -656,16 +667,16 @@ of Projection Locking}
     avatar of the parity.
     These zeros are not failures to detect $u$; they are consistent with finite $J_\Pi$-equivariance.
 
-    \begin{corollary}[Finite/Lorentzian separation]
+    \begin{remark}[Finite/Lorentzian separation]
       \label{cor:separation}
-      Under the equivariant construction of Proposition~\ref{prop:finite-equivariance}, the finite A4 locking does not
-      generate $u$.
+      Under the equivariant construction of Remark~\ref{prop:finite-equivariance} and a finite reading as stated there,
+      the finite A4 locking does not generate $u$.
       A non-zero generation split then requires a $J_\Pi$-odd datum outside that construction, which this note
       locates in the Lorentzian completion of the Born--Infeld saturation, where the chiral-odd modulus first exists,
       as a hypothesis.
-    \end{corollary}
+    \end{remark}
 
-    This separates the remaining problem cleanly.
+    The remaining problem is then the following.
     Let $s$ parametrise the $J_\Pi$-odd deformation of the locked block, opened only by Lorentzian
     complexification, with $J_\Pi:s\mapsto -s$, so that $\Delta_\chi(P)$ and hence $u$ are odd in $s$.
     Since $J_\Pi$ is a symmetry of the Lorentzian saturation functional $\mathcal B$, one has
@@ -752,8 +763,10 @@ of Projection Locking}
 
     \begin{definition}[Schur transversality]
       \label{def:schur-transversality}
-      Assume that $J_\Pi$ acts on $\mathcal S$ and on $\mathcal S_\Pi$ with $J_\Pi D_{g,A}J_\Pi^{-1}=\pm D_{g,A}$ and
-      $J_\Pi\PiS J_\Pi^{-1}=\PiS$, as in Lemma~\ref{lem:chiral-obstruction}.
+      Assume Hypothesis~\ref{hyp:generation}(i), and that the outer generation weights $\mathrm{span}(e_+,e_-)$ are
+      read in
+      $\mathcal S_\Pi$ through an identification of $\Cgen$ with a subspace on which $J_\Pi$ acts as an antiunitary
+      exchanging $e_+$ and $e_-$; this identification is part of the transport hypothesis~\ref{hyp:transport}.
       Let $\sigma:=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)$ be the $J_\Pi$-odd part of the
       opened direction, a linear operator on $\mathcal S$, and
       \begin{equation}
@@ -842,8 +855,10 @@ of Projection Locking}
 
     No source relates $P(s)$ to the metaplectic step $g(t,s)$: Hypothesis~\ref{hyp:transport} is a missing element,
     not an excluded one.
-    Under the symbol condition along the family it can hold only on a fibre with a multiplicity space
-    (Proposition~\ref{prop:irreducible}).
+    Under the symbol condition along the family it can hold only on a fibre with a multiplicity space.
+    Indeed, on an irreducible fibre Proposition~\ref{prop:irreducible} gives $P(0)=P_{\mathrm{ref}}=1$; since
+    $1-P(s)\succeq0$ vanishes at $s=0$, its derivative vanishes there, $\partial_sP|_0=0$, hence $\sigma=0$ and
+    $T_{\mathrm{out}}(\sigma)=0$, contradicting $\kappa\alpha\neq0$.
     Under the symbol condition along the family, the symbol-level part of $T$ vanishes
     (Lemma~\ref{lem:weyl-faithful}), so a non-zero $T_{\mathrm{out}}(\sigma)$ is carried by the zero-order terms in
     $\nabla\PiS^{*}$ and $B_0\PiS^{*}$; this is part of what Hypothesis~\ref{hyp:transport} asserts and is examined
@@ -908,7 +923,8 @@ of Projection Locking}
       Section~\ref{sec:spinorial-locking} as the antiunitary equivariance defect
       $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$, after $\Deff^{\pm}$-transport and
       projection to $\Cgen$.
-      \item $JPJ^{-1}=P\Rightarrow u=0$ under Hypothesis~\ref{hyp:generation}; on the interpretive reading of axioms
+      \item $J_\Pi PJ_\Pi^{-1}=P\Rightarrow u=0$ under Hypothesis~\ref{hyp:generation}; on the interpretive reading of
+      axioms
       A1--A4, a
       non-zero $u$ requires a breaking of $J_\Pi$-equivariance by A4 (Proposition~\ref{prop:strat}).
       \item The symmetric-square action of the Born--Infeld involution is fixed: $J_\Pi^2=-1$ on the
@@ -917,13 +933,14 @@ of Projection Locking}
       Hence $u\neq0$ requires a failure of $J_\Pi$-equivariance at projection locking
       (Lemma~\ref{lem:chiral-obstruction}); the magnitude of $u$ depends on the $\Deff^{\pm}$-transported,
       generation-projected component of the antiunitary defect $\Delta_\chi(P)$~\eqref{eq:defect}.
-      \item Operator $u$ equals spectral $u$ on a flat background; $u$ normalisation-independent in
-      the ratio (Section~\ref{sec:conventions}).
+      \item For the reference residue on a flat background, the operator and spectral definitions of $u$ coincide and
+      $u$ is normalisation-independent in the ratio (Section~\ref{sec:conventions}); for a general locking operator
+      the identification is not claimed.
       \item Chirality is Lorentzian, not a finite-fibre label; $u$ is not a front observable
       (Remark~\ref{rem:nogo}).
-      \item Under an equivariant construction of the finite locking operator, finite projection locking is
-      $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$: $u$ cannot originate in the finite cascade and is a Lorentzian datum
-      (Proposition~\ref{prop:finite-equivariance}, Corollary~\ref{cor:separation}).
+      \item The finite locking data are $J_\Pi$-invariant; under an equivariant construction of the finite locking
+      operator and a finite reading as stated there, $u_{\mathrm{fin}}=0$
+      (Remarks~\ref{prop:finite-equivariance} and~\ref{cor:separation}).
       \item The exact $\mathfrak{sl}_2$ opening $\alpha(t,s)=ts\,(r/\sinh r)\not\equiv0$ of the oriented step, produced
       by $[E,F]=H$ (Lemma~\ref{lem:exact-schur-opening}); under $J_\Pi$-compatibility, the transported tilt
       $T_{\mathrm{out}}(\sigma)$ is the $J_\Pi$-odd first-order polarisation on the outer weights
@@ -988,7 +1005,7 @@ of Projection Locking}
     The admissible normalisation of $\partial_s\Delta_\chi(P)|_0$ is therefore one component of the second deliverable,
     the selection of the family and the injective localisation of the $J_\Pi$-odd tangent onto its left-handed block
     remaining open, with $|u|$ dictionary-bound.
-    These are the last conceptual locks before the explicit construction of $\EPi$ as a Lorentzian
+    These are the remaining conceptual steps before the explicit construction of $\EPi$ as a Lorentzian
     $J_\Pi$-odd projected Dirac residue.
 
   \section{Conclusion}
@@ -1020,7 +1037,7 @@ of Projection Locking}
   \section{Numerical front controls}
     \label{sec:controls}
 
-    This appendix records the scalar front diagnostics obtained in the session runs of the
+    This appendix records the scalar front diagnostics obtained by of the
     oriented-frontier pipeline.
     They are the null controls referenced in Section~\ref{sec:nogo}: the scalar front explains the
     obstruction and bounds the maximal locking, but does not carry $u$, in accordance with

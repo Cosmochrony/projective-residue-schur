@@ -33,21 +33,20 @@ This note fixes the structural status of $u$ before any explicit construction of
    a non-zero split requires that the locking operator break $J_\Pi$-equivariance, under a generation-carrier
 hypothesis.
 
-3. **Stratification.** If the locking operator commutes with $J_\Pi$ then $u = 0$. The minimal non-injectivity
-   $c \leftrightarrow q - c$ is $J_\Pi$-symmetric, so on the structurally motivated reading of axioms A1–A3
-   $u = 0$ there; a non-zero $u$ requires a breaking of $J_\Pi$-equivariance, which on that reading can come
-   only from the projection-locking axiom A4.
+3. **Stratification.** Under a generation-reading hypothesis, if the locking operator commutes with $J_\Pi$ then
+   $u = 0$. The minimal non-injectivity $c \leftrightarrow q - c$ is $J_\Pi$-symmetric, so on the structurally
+   motivated reading of axioms A1–A3 $u = 0$ there; a non-zero $u$ requires a breaking of $J_\Pi$-equivariance, which
+   on that reading can come only from the projection-locking axiom A4.
 
-4. **Seeley–DeWitt lock.** The conventions are locked so that the operator-level and
-   spectral-level definitions of $u$ coincide on a flat background; $u$ is
-   normalisation-independent in the ratio.
+4. **Seeley–DeWitt conventions.** For the reference residue on a flat background the operator-level and spectral-level
+   definitions of $u$ coincide; for a general locking operator the identification is not claimed.
 
-5. **No finite chiral label.** A no-go result establishes that $u$ is not accessible to any
-   finite front observable: chirality is a Lorentzian rather than a finite-fibre datum.
+5. **No finite chiral label.** It is argued that $u$ is not accessible to any finite front observable: chirality is a
+   Lorentzian rather than a finite-fibre datum.
 
-6. **Finite/Lorentzian separation.** If the finite locking operator is constructed equivariantly from the finite
-   locking data, it is $J_\Pi$-equivariant ($u_{\mathrm{fin}} = 0$); a non-zero generation split can then arise only
-   in the Lorentzian completion of the Born–Infeld saturation.
+6. **Finite/Lorentzian separation.** The finite locking data are $J_\Pi$-invariant; if the finite locking operator is
+   constructed equivariantly and a finite reading is supplied, $u_{\mathrm{fin}} = 0$, and a non-zero split would then
+   need a $J_\Pi$-odd datum from the Lorentzian completion.
 
 7. **Schur-null and Schur-transverse loci.** Under $J_\Pi$-compatibility, the first-order opening of the split is
 governed
