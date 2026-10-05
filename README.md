@@ -69,6 +69,9 @@ conditional. The note localises necessary conditions and missing constructions; 
 non-zero split. Under the generation reading, a non-zero reference residue cannot lie on the left-admissible branch of
 Q14, since $J_\Pi$-invariance and $E\preceq0$ force it to vanish there.
 
+The multiplicative reading of the generation triplet (reading map $\Phi$ multiplicative and positivity-preserving) is a
+separate hypothesis, [H-Mult], not part of [H-Gen], which supplies only a real-linear $\Phi$.
+
 ## Position in the programme
 
 This note belongs to the **fermionic matter sub-programme** (Presentation Note 6). It refines
