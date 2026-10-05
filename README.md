@@ -62,7 +62,7 @@ absolute normalisation $|u|$, and the projected Yukawa sector.
 ## Scope
 
 For the reference operator $P = \Pi_S^{*}\Pi_S$ the compression remainder and its properties are established under the
-stated hypotheses, and under the generation-reading hypothesis the framework gives $u = 0$. For a general locking
+stated hypotheses, and under the generation-reading hypothesis [H-Gen] (with $J_\Pi$-compatible $D$ and $\Pi_S$) the framework gives $u = 0$. For a general locking
 operator $P \neq \Pi_S^{*}\Pi_S$ only the Schur expression and its sign are unconditional; the compression-remainder
 formula and the Seeley–DeWitt identification do not transfer to it, and every consequence for a non-zero split is
 conditional. The note localises necessary conditions and missing constructions; it derives no physical mechanism for a
@@ -100,3 +100,9 @@ python -W error schur_symbol_obstruction.py
 The first script verifies the exact $\mathfrak{sl}_2$ opening of the oriented step; the second verifies, in exact
 arithmetic, the algebraic statements on the symbol condition (finite model, at a point). Neither controls terms
 containing the derivative of $\Pi_S^{*}$. Dependencies: `code/requirements.txt`.
+
+## Known debt (scripts)
+
+`code/frontB2_no_horizontal_operation.py`, `code/frontB_recursive_type_rigidity.py` and
+`code/spin-stratum-type-rigidity-test.py` are exploratory checks (√5 / 2I data) not cited by the TeX and supporting no
+retained result; they are kept for history only.
