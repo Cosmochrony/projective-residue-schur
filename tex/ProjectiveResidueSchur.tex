@@ -137,12 +137,12 @@ of Projection Locking}
     The only remaining unknown is therefore
     \begin{equation}
       \label{eq:udef}
-      u=\frac{\big\langle \Pi_{J_\Pi\text{-odd}}(G),\,J_3\big\rangle_{\HS}}{\langle J_3,J_3\rangle_{\HS}}
+      u=\frac{\big\langle \Pi_{J\text{-odd}}(G),\,J_3\big\rangle_{\HS}}{\langle J_3,J_3\rangle_{\HS}}
       =\tfrac12\big(\langle e_+|G|e_+\rangle-\langle e_-|G|e_-\rangle\big).
     \end{equation}
     In~\eqref{eq:normalform} and~\eqref{eq:udef}, $G=\Phi(E_\Pi^2)$ is the generation reading of $E_\Pi^2$ through the
-    reading map $\Phi$ of Hypothesis~\ref{hyp:generation}; it is the compression of $E_\Pi^2$ to $\Cgen$ only under the
-    separate Hypothesis~\ref{hyp:mult}; Q14 supplies no such reading~\cite{Beau2026q14}.
+    reading map $\Phi$ of Hypothesis~\ref{hyp:generation}; it is the restriction of $E_\Pi^2$ to a triplet only when $\Phi$ is that restriction; Hypothesis~\ref{hyp:mult} asks
+    for a multiplicative, positivity-preserving $\Phi$, which is not in general a compression; Q14 supplies no such reading~\cite{Beau2026q14}.
     This note records what is established about $u$ and isolates the single conceptual obstruction
     that remains, so that the explicit construction of $E_\Pi$ can proceed in a locked frame.
     The companion front observables of the angular and oriented-frontier
@@ -226,13 +226,14 @@ of Projection Locking}
 
     \begin{proposition}[Schur form of the projective residue]
       \label{prop:schur}
-      Let $P$ be a locking operator and $N_P:=(1-P)^{1/2}D_{g,A}\PiS^{*}$.
+      Let $P$ be a smooth locking operator (a smooth bundle endomorphism with $0\preceq P\preceq1$), $D_{g,A}$ formally
+      self-adjoint on compactly supported smooth sections, and $N_P:=(1-P)^{1/2}D_{g,A}\PiS^{*}$.
       Then
       \begin{equation}
         \label{eq:schur}
         \EPi[P]=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N_P^{\dagger}N_P\preceq0
       \end{equation}
-      as a quadratic form on smooth sections, and $\EPi[P]=0$ where $P=1$.
+      as a quadratic form on compactly supported smooth sections, and $\EPi[P]=0$ where $P=1$.
       Under Hypothesis~\ref{hyp:contraction}, for $P=P_{\mathrm{ref}}$, $\EPi=\EPi[P_{\mathrm{ref}}]=D^2_{\Pi,g,A}-\PiS
       D_{g,A}^2\PiS^{*}$ is the compression remainder of the projected Dirac square
       (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
@@ -267,8 +268,8 @@ of Projection Locking}
       Conversely, the second-order symbol of $N_P^{\dagger}N_P$ at $\xi$ is $a(\xi)^{\dagger}a(\xi)\succeq0$, which
       vanishes if and only if $a(\xi)=0$.
       The vanishing of the second-order symbol alone leaves, a priori, a first-order part; here the factorisation
-      forces it to vanish as well, since every first-order term of $N_P^{\dagger}N_P$ contains a factor $a$ or
-      a derivative of $a$.
+      forces it to vanish as well: the symbol condition holds at every point, so $a$ vanishes identically as a field and
+      so does its derivative, and every first-order term of $N_P^{\dagger}N_P$ contains $a$ or a derivative of $a$.
     \end{proof}
 
     \begin{remark}[Idempotence of $P_{\mathrm{ref}}$]
@@ -557,6 +558,11 @@ of Projection Locking}
       spaces of endomorphisms, so that $\Phi(\partial_s^iX)=\partial_s^i\Phi(X)$ for $C^i$ families.
       If $\Phi$ moved with $s$, for instance as the compression to a moving subspace, terms in $\partial_s\Phi$ would
       add to the jet and the formula below would not hold.
+      Satisfiability: the hypothesis is not vacuous (a toy model with $\mathcal S_\Pi\supset\mathbb C^2\otimes\mathbb C^2$ and a
+      multiplicative $J_\Pi$-covariant $\Phi$ onto $\mathrm{Sym}^2(V)$ exists, so $J_\Pi^2=-1$ against $J^2=+1$ is no
+      obstruction), but it is restrictive: in the chiral rank-two setting a multiplicative $J_\Pi$-covariant $\Phi$
+      onto a space of dimension at least three can exist only if the jets of the left block $E_{LL}$ commute.
+      [H-Mult] therefore carries this commutation implicitly; the note neither derives nor uses it.
     \end{hypothesis}
 
     Hypothesis~\ref{hyp:mult} is a separate condition, not part of the meaning of [H-Gen]: [H-Gen] supplies only a
@@ -568,7 +574,8 @@ of Projection Locking}
 
     \begin{lemma}[Chiral obstruction of spinorial locking]
       \label{lem:chiral-obstruction}
-      Assume Hypothesis~\ref{hyp:generation}, and let $P$ be a locking operator, $0\preceq P\preceq1$.
+      Assume Hypothesis~\ref{hyp:generation}, and let $P$ be a locking operator, $0\preceq P\preceq1$, satisfying
+      Hypothesis~\ref{hyp:symbol}, so that $\EPi[P]$ is a zero-order endomorphism and $\Phi(\EPi[P])$ is defined.
       If $J_\Pi PJ_\Pi^{-1}=P$, then $J_\Pi\,\EPi[P]\,J_\Pi^{-1}=\EPi[P]$, $J\,G[P]\,J^{-1}=G[P]$, and
       $\langle e_+|G[P]|e_+\rangle=\langle e_-|G[P]|e_-\rangle$, so that $u[P]=0$.
       Hence a non-zero generation split requires a locking operator that does not commute with $J_\Pi$,
@@ -607,7 +614,7 @@ of Projection Locking}
 
     \begin{remark}[Compatibility with the left-admissible branch of Q14]
       \label{rem:q14-left}
-      Q14 shows that on the left-admissible branch $P_R\,\EPi^{\mathrm{Q14}}P_R=0$ and that, if
+      In Q14 the left-admissible branch is defined by $P_R\,\EPi^{\mathrm{Q14}}P_R=0$, and Q14 shows that on it, if
       $\EPi^{\mathrm{Q14}}\neq0$ and $\EPi^{\mathrm{Q14}}\preceq0$, then $\EPi^{\mathrm{Q14}}$ is not
       $J_\Pi$-invariant~\cite{Beau2026q14}.
       Assume Hypotheses~\ref{hyp:chiral-splitting} and~\ref{hyp:generation}(i) and the identity of
@@ -628,8 +635,8 @@ of Projection Locking}
       of a family whose embedding moves.
       In the covariant family of~\cite{Beau2026ebj} one has $J_\Pi\PiS(s)J_\Pi^{-1}=\PiS(-s)$, each
       $P(s)=\PiS(s)^{*}\PiS(s)$ is the reference operator of its own $\PiS(s)$, and the rate $u'(0)$ is non-zero.
-      Its even base block is $J_\Pi$-compatible, so by the argument above its residue cannot be left-admissible
-      and non-zero; the statement is made for the chiral frame of that note and not for its finite witness on
+      Its even base block $P(0)$ is $J_\Pi$-compatible, so by the argument above its residue at $s=0$ cannot be
+      left-admissible and non-zero; the statement is made for the chiral frame of that note and not for its finite witness on
       $\mathbb C^3_{\mathrm{gen}}$, whose target carries no chirality.
     \end{remark}
 
@@ -827,7 +834,8 @@ of Projection Locking}
 
     \begin{definition}[Schur transversality]
       \label{def:schur-transversality}
-      Assume Hypothesis~\ref{hyp:generation}.
+      Assume Hypothesis~\ref{hyp:generation}, and that $\EPi$ and $\PiS D\sigma D\PiS^{*}$ are zero-order
+      (Hypothesis~\ref{hyp:symbol}), so that $\Phi$ is defined on them.
       Let $\sigma:=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)$ be the $J_\Pi$-odd part of the
       opened direction, a linear operator on $\mathcal S$, and
       \begin{equation}

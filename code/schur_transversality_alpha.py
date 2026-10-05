@@ -124,8 +124,8 @@ def main():
     print("det g =", sp.simplify(g.det()))
     print("log g coefficients (E, F, H) =",
           (sp.simplify(coeffE), sp.simplify(coeffF), sp.simplify(coeffH)))
-    print("alpha(t, s) =", alpha, "   [ = ts * r / sinh r ]")
-    print("mu(t, s)    =", mu)
+    print("alpha(x, y) =", alpha, "   [ = xy * r / sinh r ; x=t, y=s of this script ]")
+    print("m(x, y)     =", mu, "   [ = mu(t, s) of this script ]")
     print("alpha as a function of u = ts:", alpha_u)
     print("leading term of alpha in u = ts:", leading, "  (=> alpha = ts + O((ts)^2), not identically zero)")
     print("ALL EXACT CHECKS PASSED")

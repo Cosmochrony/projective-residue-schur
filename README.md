@@ -9,9 +9,9 @@ Working paper, v3.0 (candidate, not deposited). DOI: [10.5281/zenodo.20601040](h
 ## Abstract
 
 The fermionic sub-programme of Cosmochrony locates the three-generation mass split in the
-$J_3$-odd part of the squared projective endomorphism $E_\Pi^2$ restricted to the gauge-singlet
-generation triplet $C^3_{\mathrm{gen}}$, parametrised by a single real number $u$ through
-$E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac{1}{2} + u, \tfrac{1}{2} - u)$, with the
+$J_3$-odd part of the squared projective endomorphism $E_\Pi^2$ read on the gauge-singlet
+generation triplet $C^3_{\mathrm{gen}}$ through a reading map $\Phi$, parametrised by a single real number $u$ through
+$\Phi(E_\Pi^2) = \mathrm{diag}(1, \tfrac{1}{2} + u, \tfrac{1}{2} - u)$, with the
 even sector $\mathrm{diag}(1, \tfrac{1}{2}, \tfrac{1}{2})$, the algebraic value of $(C_2 - J_3^2)/C_2$ at
 $C_2 = 2$. Its reading as the Born–Infeld even sector would require an identification between the
 conditional $3 \times 3$ model of O30 on $\mathrm{Sym}^2(V_\rho)$ and $(E_\Pi^2)_{\mathrm{even}}$; no such
