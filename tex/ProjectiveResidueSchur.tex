@@ -235,7 +235,7 @@ of Projection Locking}
         \label{eq:schur}
         \EPi[P]=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N_P^{\dagger}N_P\preceq0
       \end{equation}
-      as a quadratic form on compactly supported smooth sections, and $\EPi[P]=0$ pointwise where $P=1$ for smooth $P$.
+      as a quadratic form on compactly supported smooth sections, and $\EPi[P]=0$ on any open set where $P=1$ identically.
       Under Hypothesis~\ref{hyp:contraction}, for $P=P_{\mathrm{ref}}$, $\EPi=\EPi[P_{\mathrm{ref}}]=D^2_{\Pi,g,A}-\PiS
       D_{g,A}^2\PiS^{*}$ is the compression remainder of the projected Dirac square
       (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
@@ -567,12 +567,14 @@ of Projection Locking}
       Limits. Let $\mathcal S_\Pi=\mathcal S_L\oplus\mathcal S_R$ with $\mathcal S_L,\mathcal S_R$ of rank two, let the residue be
       left-admissible, $\EPi=E_{LL}\oplus0$, and let $\Phi$ be multiplicative, $\Phi(XY)=\Phi(X)\Phi(Y)$, not necessarily
       unital, with non-singular even sector $\Phi(\EPi(0))^2=\mathrm{diag}(1,\tfrac12,\tfrac12)$ on $\dim\mathcal H=3$.
-      If the jets of $E_{LL}$ do not commute they generate a full matrix algebra ($M_2(\mathbb R)$ or $M_2(\mathbb C)$), whose
-      modules of dimension at most three have dimension $0$ or $2$, so $\Phi(\EPi(0))$ would be singular: no such $\Phi$
+      The jets of $E_{LL}$ are self-adjoint; if they do not commute they generate a full matrix algebra ($M_2(\mathbb R)$ or
+      $M_2(\mathbb C)$), and after complex-linear extension of $\Phi$ its modules of complex dimension at most three have
+      dimension $0$ or $2$, so $\Phi(\EPi(0))$ would be singular: no such $\Phi$
       exists.
       If they commute and such a $\Phi$ exists, then $\Phi(E_i)=\mathrm{diag}(p_i,q_i,q_i)$ is forced and $u\equiv0$ to all
       orders; the $J_\Pi$-covariance is not used.
-      Without non-singularity, $\Phi(X)=X\oplus0$ (into a two-dimensional subspace of $\mathcal H$) is multiplicative.
+      Without non-singularity, the extraction $X\mapsto X\oplus0$ of the $LL$ block (into a two-dimensional subspace of
+      $\mathcal H$) is multiplicative; it is not $J_\Pi$-covariant, hence not a model of [H-Gen](iii).
       [H-Mult] therefore cannot support a non-zero split in that frame; no model satisfying all of [H-Gen] and [H-Mult] is
       exhibited here, and nothing in this note uses the hypothesis.
     \end{hypothesis}
