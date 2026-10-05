@@ -70,7 +70,8 @@ non-zero split. Under the generation reading and the chiral splitting, a non-zer
 Q14, since $J_\Pi$-invariance and $E\preceq0$ force it to vanish there.
 
 The multiplicative reading of the generation triplet (reading map $\Phi$ multiplicative and positivity-preserving) is a
-separate hypothesis, [H-Mult], not part of [H-Gen], which supplies only a real-linear $\Phi$.
+separate hypothesis, [H-Mult], not part of [H-Gen], which supplies only a real-linear $\Phi$. In the chiral rank-two left-admissible frame with a non-singular even sector,
+[H-Mult] forces $u\equiv0$ (or admits no $\Phi$), so it cannot support a non-zero split there.
 
 ## Position in the programme
 
