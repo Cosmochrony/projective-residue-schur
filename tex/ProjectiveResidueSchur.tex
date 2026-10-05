@@ -47,7 +47,7 @@ of Projection Locking}
     The fermionic sub-programme of Cosmochrony locates the three-generation mass split in the
       \texorpdfstring{$J_3$}{J₃}-odd part
     of \texorpdfstring{$E_\Pi^2$}{EΠ²} on a generation triplet \texorpdfstring{$\Cgen$}{C³_gen}, through
-    \texorpdfstring{$E_\Pi^2|_{\Cgen}=\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$}{EΠ²|_{C³_gen} = diag(1, ½+u, ½−u)},
+    \texorpdfstring{$\Phi(E_\Pi^2)=\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$}{Φ(EΠ²) = diag(1, ½+u, ½−u)},
       with even
     sector \texorpdfstring{$\mathrm{diag}(1,\tfrac12,\tfrac12)$}{diag(1, ½, ½)}, the algebraic value of
     \texorpdfstring{$(C_2-J_3^2)/C_2$}{(C₂−J₃²)/C₂} at \texorpdfstring{$C_2=2$}{C₂ = 2}; its reading as the
@@ -118,7 +118,7 @@ of Projection Locking}
     $J_3=\mathrm{diag}(0,1,-1)$, the squared residue takes the normal form
     \begin{equation}
       \label{eq:normalform}
-      E_\Pi^2\big|_{\Cgen}=\frac{C_2-J_3^2}{C_2}+u\,J_3+v\,R_{\mathrm{mix}},
+      G=\Phi(E_\Pi^2)=\frac{C_2-J_3^2}{C_2}+u\,J_3+v\,R_{\mathrm{mix}},
     \end{equation}
     where $C_2=2$ is the spin-one Casimir, $R_{\mathrm{mix}}$ is the off-diagonal generation mixing, and
     $u$ is the single real coefficient governing the split.
@@ -132,18 +132,17 @@ of Projection Locking}
     The even part is therefore taken as:
     \begin{equation}
       \label{eq:even}
-      (E_\Pi^2)_{\mathrm{even}}\big|_{\Cgen}=\frac{C_2-J_3^2}{C_2}=\mathrm{diag}\!\left(1,\tfrac12,\tfrac12\right).
+      G_{\mathrm{even}}=\Phi(E_\Pi^2)_{\mathrm{even}}=\frac{C_2-J_3^2}{C_2}=\mathrm{diag}\!\left(1,\tfrac12,\tfrac12\right).
     \end{equation}
     The only remaining unknown is therefore
     \begin{equation}
       \label{eq:udef}
-      u=\frac{\big\langle \Pi_{J_\Pi\text{-odd}}(E_\Pi^2),\,J_3\big\rangle_{\HS}}{\langle J_3,J_3\rangle_{\HS}}
-      =\tfrac12\big(\langle e_+|E_\Pi^2|e_+\rangle-\langle e_-|E_\Pi^2|e_-\rangle\big).
+      u=\frac{\big\langle \Pi_{J_\Pi\text{-odd}}(G),\,J_3\big\rangle_{\HS}}{\langle J_3,J_3\rangle_{\HS}}
+      =\tfrac12\big(\langle e_+|G|e_+\rangle-\langle e_-|G|e_-\rangle\big).
     \end{equation}
-    In~\eqref{eq:normalform} and~\eqref{eq:udef}, $E_\Pi^2|_{\Cgen}$ stands for the compression to $\Cgen$ of the
-      generation
-    reading $G=\Phi(E_\Pi^2)$ of $E_\Pi^2$ on the generation space of Hypothesis~\ref{hyp:generation}; Q14 supplies no
-    such reading~\cite{Beau2026q14}.
+    In~\eqref{eq:normalform} and~\eqref{eq:udef}, $G=\Phi(E_\Pi^2)$ is the generation reading of $E_\Pi^2$ through the
+    reading map $\Phi$ of Hypothesis~\ref{hyp:generation}; it is the compression of $E_\Pi^2$ to $\Cgen$ only under the
+    separate Hypothesis~\ref{hyp:mult}; Q14 supplies no such reading~\cite{Beau2026q14}.
     This note records what is established about $u$ and isolates the single conceptual obstruction
     that remains, so that the explicit construction of $E_\Pi$ can proceed in a locked frame.
     The companion front observables of the angular and oriented-frontier
@@ -233,17 +232,20 @@ of Projection Locking}
         \label{eq:schur}
         \EPi[P]=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N_P^{\dagger}N_P\preceq0
       \end{equation}
-      as a quadratic form, and $\EPi[P]=0$ where $P=1$.
+      as a quadratic form on smooth sections, and $\EPi[P]=0$ where $P=1$.
       Under Hypothesis~\ref{hyp:contraction}, for $P=P_{\mathrm{ref}}$, $\EPi=\EPi[P_{\mathrm{ref}}]=D^2_{\Pi,g,A}-\PiS
       D_{g,A}^2\PiS^{*}$ is the compression remainder of the projected Dirac square
       (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
     \end{proposition}
 
     \begin{proof}
-      Since $1-P$ is self-adjoint and non-negative, $1-P=(1-P)^{1/2}(1-P)^{1/2}$, and
-      $N_P^{\dagger}=\PiS D_{g,A}(1-P)^{1/2}$ because $D_{g,A}$ is self-adjoint (the identity is read as a quadratic
-      form, $(1-P)^{1/2}$ being taken weakly differentiable).
-      Hence $\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}=N_P^{\dagger}N_P\succeq0$, which gives~\eqref{eq:schur}.
+      Take $P$ a smooth bundle endomorphism, so that $D_{g,A}(1-P)D_{g,A}$ is defined on smooth sections.
+      For smooth $\psi$, $D_{g,A}$ self-adjoint gives
+      $\langle\psi,\PiS D_{g,A}(1-P)D_{g,A}\PiS^{*}\psi\rangle=\langle D_{g,A}\PiS^{*}\psi,(1-P)D_{g,A}\PiS^{*}\psi\rangle
+      =\|(1-P)^{1/2}D_{g,A}\PiS^{*}\psi\|^2=\|N_P\psi\|^2\ge0$.
+      Only the bounded operator $(1-P)^{1/2}$ acts, pointwise and after $D_{g,A}$, and its differentiability is never
+      used; the identity $\EPi[P]=-N_P^{\dagger}N_P$ is an identity of quadratic forms, which is all that $\preceq0$
+      requires, and it gives~\eqref{eq:schur}.
       For $P=P_{\mathrm{ref}}$, $D^2_{\Pi,g,A}=\PiS D_{g,A}\PiS^{*}\PiS D_{g,A}\PiS^{*}=\PiS
       D_{g,A}P_{\mathrm{ref}}D_{g,A}
       \PiS^{*}$ holds for any $\PiS$, so no idempotence is used, and subtracting $\PiS D_{g,A}^2\PiS^{*}$ gives the
@@ -408,7 +410,7 @@ of Projection Locking}
 
     \begin{corollary}[Localisation of $u$]
       \label{cor:localise}
-      After restriction to $\Cgen$, the $J_3$-odd part of $E_\Pi^2$ is read, at the structural level, from the chiral
+      After reading through $\Phi$, the $J_3$-odd part of $G=\Phi(E_\Pi^2)$ is read, at the structural level, from the chiral
       asymmetry of the eliminated block,
       \begin{equation}
         \label{eq:uasym}
@@ -551,6 +553,10 @@ of Projection Locking}
       the endomorphisms $\EPi[P]$ under consideration and positivity-preserving there: $\Phi(XY)=\Phi(X)\Phi(Y)$ and $\Phi(X)\succeq0$ for $X\succeq0$.
       Multiplicativity is required on the algebra generated by the whole family $\EPi[P(s)]$ and its jets, not on a
       single $\EPi[P]$.
+      Moreover $\Phi$ does not depend on the modulus $s$: it is one fixed real-linear map between finite-dimensional
+      spaces of endomorphisms, so that $\Phi(\partial_s^iX)=\partial_s^i\Phi(X)$ for $C^i$ families.
+      If $\Phi$ moved with $s$, for instance as the compression to a moving subspace, terms in $\partial_s\Phi$ would
+      add to the jet and the formula below would not hold.
     \end{hypothesis}
 
     Hypothesis~\ref{hyp:mult} is a separate condition, not part of the meaning of [H-Gen]: [H-Gen] supplies only a
@@ -592,7 +598,7 @@ of Projection Locking}
       \label{rem:necessary}
       The condition $[P,J_\Pi]\neq0$ is necessary for $u\neq0$, but not sufficient.
       The commutator may be supported outside the generation triplet, or in components that do not survive
-      the Dirac transport and the final projection to $\Cgen$.
+      the Dirac transport and the generation reading $\Phi$.
       The magnitude of $u$ is therefore not determined by the abstract commutator itself.
       Whether it is set by the $\Deff^{\pm}$-transported, generation-projected part of the antiunitary defect
       $\Delta_\chi(P)$ of~\eqref{eq:defect} is a structural reading, not a theorem; determining this transported and
@@ -774,7 +780,7 @@ of Projection Locking}
 
     Remark~\ref{rem:necessary} left the A4-level deliverable as a necessary condition that is not yet a
     criterion: the commutator $[P,J_\Pi]\neq0$ may be supported outside the generation triplet, or may die
-    under the Weyl transport and the projection to $\Cgen$.
+    under the Weyl transport and the generation reading $\Phi$.
     Section~\ref{sec:finite-equivariance} reduces the modulus to the Lorentzian deformation $s$
     with saturation curvature $\mu_\chi^2$~\eqref{eq:muchi}.
     We now turn the necessary condition into a criterion on the transported,
@@ -877,7 +883,7 @@ of Projection Locking}
       \[
         \alpha(x,y)=xy\,\frac{r}{\sinh r}=xy+O\!\left((xy)^2\right),
       \]
-      while the $R_{\mathrm{mix}}$ component vanishes identically, $\mu(x,y)\equiv0$.
+      while the $R_{\mathrm{mix}}$ component $m(x,y)$ vanishes identically, $m(x,y)\equiv0$.
       In particular $\alpha(x,y)\neq0$ for every oriented step with $xy>0$.
     \end{lemma}
 
@@ -894,7 +900,7 @@ of Projection Locking}
       $\alpha(x,y)=xy+O((xy)^2)$.
       Lifting to $\operatorname{Sym}^2(V)$, the horizontal generators $E,F$ send $e_0$ to $e_\pm$ and $e_\pm$ to $e_0$ or $0$
       (never to the other outer weight), so their restriction to $\langle e_+,e_-\rangle$ carries no $R_{\mathrm{mix}}$
-      component; only the Cartan $J_3$ survives, whence $\mu(x,y)\equiv0$, the mixing direction being absent in the
+      component; only the Cartan $J_3$ survives, whence $m(x,y)\equiv0$, the mixing direction being absent in the
       real symplectic model~\cite{Beau2026q14}.
       The factor $r/\sinh r$ is strictly positive for $r>0$, so $\alpha(x,y)\neq0$ for $xy>0$.
     \end{proof}
@@ -977,7 +983,7 @@ of Projection Locking}
       a raw asymmetry $\pi_{RR}-\pi_{LL}$ (Corollary~\ref{cor:localise}), and refined in
       Section~\ref{sec:spinorial-locking} as the antiunitary equivariance defect
       $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$, after $\Deff^{\pm}$-transport and
-      projection to $\Cgen$.
+      generation reading $\Phi$.
       \item $J_\Pi PJ_\Pi^{-1}=P\Rightarrow u=0$ under Hypothesis~\ref{hyp:generation}; on the interpretive reading of
       axioms
       A1--A4, a
