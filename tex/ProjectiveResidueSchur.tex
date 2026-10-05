@@ -249,6 +249,8 @@ of Projection Locking}
       Only the bounded operator $(1-P)^{1/2}$ acts, pointwise and after $D_{g,A}$, and its differentiability is never
       used; the identity $\EPi[P]=-N_P^{\dagger}N_P$ is an identity of quadratic forms, which is all that $\preceq0$
       requires, and it gives~\eqref{eq:schur}.
+      If $1-P=0$ on an open set $U$, then $(1-P)D_{g,A}\PiS^{*}\psi=0$ on $U$ and $\PiS D_{g,A}$ is local, so
+      $\EPi[P]\psi=0$ on $U$.
       For $P=P_{\mathrm{ref}}$, $D^2_{\Pi,g,A}=\PiS D_{g,A}\PiS^{*}\PiS D_{g,A}\PiS^{*}=\PiS
       D_{g,A}P_{\mathrm{ref}}D_{g,A}
       \PiS^{*}$ holds for any $\PiS$, so no idempotence is used, and subtracting $\PiS D_{g,A}^2\PiS^{*}$ gives the
@@ -574,7 +576,8 @@ of Projection Locking}
       If they commute and such a $\Phi$ exists, then $\Phi(E_i)=\mathrm{diag}(p_i,q_i,q_i)$ is forced and $u\equiv0$ to all
       orders; the $J_\Pi$-covariance is not used.
       Without non-singularity, the extraction $X\mapsto X\oplus0$ of the $LL$ block (into a two-dimensional subspace of
-      $\mathcal H$) is multiplicative; it is not $J_\Pi$-covariant, hence not a model of [H-Gen](iii).
+      $\mathcal H$) is multiplicative on $LL$-supported endomorphisms ($X=P_LXP_L$) only, since in general
+      $(XY)_{LL}=X_{LL}Y_{LL}+X_{LR}Y_{RL}$; it is not $J_\Pi$-covariant, hence not a model of [H-Gen](iii).
       [H-Mult] therefore cannot support a non-zero split in that frame; no model satisfying all of [H-Gen] and [H-Mult] is
       exhibited here, and nothing in this note uses the hypothesis.
     \end{hypothesis}
