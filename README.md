@@ -51,7 +51,7 @@ This note fixes the structural status of $u$ before any explicit construction of
 7. **Schur-null and Schur-transverse loci.** The $J_\Pi$-odd tilt of the locking operator, transported by the Schur
    map and read on the outer generation weights, is the $J$-odd part of the first-order polarisation; the locking is
    Schur-null when it vanishes and Schur-transverse otherwise. The oriented metaplectic step has the exact
-   $\mathfrak{sl}_2$ opening $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, produced by the commutator $[E,F] = H$.
+   $\mathfrak{sl}_2$ opening $\alpha(x, y) = xy\,(r/\sinh r) \not\equiv 0$, produced by the commutator $[E,F] = H$.
    That the transported tilt equals this opening up to a non-zero factor is supplied by no source; under that
    hypothesis the locking is Schur-transverse.
 
@@ -66,7 +66,7 @@ stated hypotheses, and under the generation-reading hypothesis the framework giv
 operator $P \neq \Pi_S^{*}\Pi_S$ only the Schur expression and its sign are unconditional; the compression-remainder
 formula and the Seeley–DeWitt identification do not transfer to it, and every consequence for a non-zero split is
 conditional. The note localises necessary conditions and missing constructions; it derives no physical mechanism for a
-non-zero split. Under the generation reading, a non-zero reference residue cannot lie on the left-admissible branch of
+non-zero split. Under the generation reading and the chiral splitting, a non-zero residue of a $J_\Pi$-commuting locking operator (in particular the reference one) cannot lie on the left-admissible branch of
 Q14, since $J_\Pi$-invariance and $E\preceq0$ force it to vanish there.
 
 The multiplicative reading of the generation triplet (reading map $\Phi$ multiplicative and positivity-preserving) is a

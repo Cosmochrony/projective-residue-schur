@@ -5,6 +5,7 @@ derivative of the locking operator P(s); that relation is Hypothesis [H-Tr] of t
 
 Verifies, by exact symbolic computation (no numerical sampling), the closed form of the J_Pi-odd Cartan coefficient
 alpha(t, s) of the lifted cascade generator, and that the mixing coefficient mu(t, s) vanishes identically.
+(Variable names t, s below are the shear parameters x, y of the TeX; s is not the trajectory modulus.)
 
 Convention contract (frozen): fundamental V = C^2 with sl_2 generators E, F, H,
     [E, F] = H = 2 J_3,  [H, E] = 2 E,  [H, F] = -2 F,
