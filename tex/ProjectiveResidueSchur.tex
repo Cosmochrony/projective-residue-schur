@@ -64,8 +64,8 @@ of Projection Locking}
     \texorpdfstring{$E_\Pi=0$}{EΠ = 0} on irreducible Clifford fibres.
     Under the generation-reading hypothesis [H-Gen] (with $J_\Pi$-compatible $D$ and $\PiS$), \texorpdfstring{$u=0$}{u = 0}
     for this operator; the reading of $\EPi^2$ on the triplet goes through a reading map $\Phi$, and a multiplicative
-    reading of $\tfrac12\pm u$ as eigenvalues is the separate hypothesis [H-Mult], which cannot give a non-zero split in
-    the chiral rank-two left-admissible frame (Section~\ref{sec:spinorial-locking}).
+    reading of $\tfrac12\pm u$ as eigenvalues is the separate hypothesis [H-Mult], which, with a non-singular even sector, gives $u\equiv0$ or admits no $\Phi$ in
+    the chiral rank-two left-admissible frame (limits stated in Hypothesis~\ref{hyp:mult}).
     For a general locking operator \texorpdfstring{$0\preceq P\preceq1$}{0 ≤ P ≤ 1} only the Schur expression
     \texorpdfstring{$E_\Pi[P]=-\PiS D(1-P)D\PiS^{*}=-N^{\dagger}N$}{EΠ[P] = −Π_S D (1−P) D Π_S* = −N†N} and its
       sign are
@@ -92,8 +92,8 @@ of Projection Locking}
       mechanism for a
     non-zero split is derived.
     Under the chiral splitting and the generation reading, the reference residue is not left-admissible in the sense of
-    Q14 when non-zero; the multiplicative reading of the generation map is a separate hypothesis [H-Mult], unusable for a non-zero split in
-    the chiral rank-two left-admissible frame.
+    Q14 when non-zero; the multiplicative reading of the generation map is a separate hypothesis [H-Mult], which with a non-singular even sector gives $u\equiv0$ or admits no $\Phi$ in the chiral
+    rank-two left-admissible frame.
     Open: that hypothesis, the eliminated block \texorpdfstring{$1-P(s)$}{1−P(s)}, \texorpdfstring{$|u|$}{|u|}, and the
       Yukawa sector.
   \end{abstract}
@@ -235,7 +235,7 @@ of Projection Locking}
         \label{eq:schur}
         \EPi[P]=-\PiS\,D_{g,A}\,(1-P)\,D_{g,A}\,\PiS^{*}=-N_P^{\dagger}N_P\preceq0
       \end{equation}
-      as a quadratic form on compactly supported smooth sections, and $\EPi[P]=0$ where $P=1$.
+      as a quadratic form on compactly supported smooth sections, and $\EPi[P]=0$ pointwise where $P=1$ for smooth $P$.
       Under Hypothesis~\ref{hyp:contraction}, for $P=P_{\mathrm{ref}}$, $\EPi=\EPi[P_{\mathrm{ref}}]=D^2_{\Pi,g,A}-\PiS
       D_{g,A}^2\PiS^{*}$ is the compression remainder of the projected Dirac square
       (Remark~\ref{rem:q14-symbol} relates it to the projective endomorphism of~\cite{Beau2026q14}).
@@ -544,15 +544,15 @@ of Projection Locking}
       $\mathcal H=\mathrm{Sym}^2(V)$ and $J=J_\Pi^{(2)}$ of~\eqref{eq:jpisym}.
       (iii) A real-linear reading map $\Phi:\mathrm{End}(\mathcal S_\Pi)\to\mathrm{End}(\mathcal H)$ satisfies
       $\Phi(X^{*})=\Phi(X)^{*}$ and $\Phi(J_\Pi XJ_\Pi^{-1})=J\,\Phi(X)\,J^{-1}$.
+      (iv) $\Phi$ is applied only to zero-order endomorphisms: for every locking operator $P$ considered, $\EPi[P]$ and
+      $\PiS D\sigma D\PiS^{*}$, with $\sigma$ the $J_\Pi$-odd part of $\partial_sP|_0$, are assumed zero-order along the family
+      (Hypothesis~\ref{hyp:symbol} for $\EPi$; for the $\sigma$-term this is an assumption, Lemma~\ref{lem:weyl-faithful} only
+      showing that its symbol-level part vanishes under the symbol condition).
       The generation operator of a locking operator $P$ is $G[P]:=\Phi(\EPi[P]^2)$, and $u[P]$ is given
       by~\eqref{eq:udef} with $G[P]$ in place of $E_\Pi^2$.
       Q14 keeps the generation carrier distinct from the soldered doublet, uses a different operator on it, and supplies
       neither this reading map nor this compatibility~\cite{Beau2026q14}; this hypothesis supplies them.
     \end{hypothesis}
-
-    Convention: wherever $\Phi$ is applied to $\EPi[P]$ or to $\PiS D\sigma D\PiS^{*}$, these are assumed zero-order
-    (Hypothesis~\ref{hyp:symbol} and Lemma~\ref{lem:weyl-faithful}); every statement below involving $G[P]$, $u[P]$ or
-    $T_{\mathrm{out}}$ carries this assumption, also where it is not repeated.
 
     \begin{hypothesis}[Multiplicative reading, {[H-Mult]}]
       \label{hyp:mult}
@@ -564,20 +564,17 @@ of Projection Locking}
       spaces of endomorphisms, so that $\Phi(\partial_s^iX)=\partial_s^i\Phi(X)$ for $C^i$ families.
       If $\Phi$ moved with $s$, for instance as the compression to a moving subspace, terms in $\partial_s\Phi$ would
       add to the jet and the formula below would not hold.
-      Satisfiability and limits (established in the round-12 review by explicit analysis and a numerical search, not a
-      result of this note).
-      The hypothesis is not vacuous: with $\mathcal S_\Pi=(V\otimes V)\otimes U$ non-chiral and $J_\Pi^2=-1$, the map
-      ``partial trace over $U$, then compression to $\mathrm{Sym}^2(V)$'' is $*$-preserving, $J$-covariant, and
-      multiplicative and positive on the block-diagonal subalgebra $X\otimes1$, so $J_\Pi^2=-1$ against $J^2=+1$ is no
-      obstruction.
-      In the chiral frame with $\mathcal S_\Pi=\mathcal S_L\oplus\mathcal S_R$ of rank two each, left-admissible
-      ($\EPi=E_{LL}\oplus0$) and with non-singular even sector $\mathrm{diag}(1,\tfrac12,\tfrac12)$, it is unusable
-      for a non-zero split: if the jets of $E_{LL}$ do not commute they generate $M_2(\mathbb C)$, whose modules on a
-      three-dimensional $\mathcal H$ are $\mathbb C^2\oplus0$, so $\Phi(E_0)$ would be singular; if they commute,
-      $\Phi(E_i)=\mathrm{diag}(p_i,q_i,q_i)$ is forced and $u\equiv0$ to all orders.
-      Without the non-singularity assumption, $\Phi(X)=X\oplus0$ is multiplicative.
-      [H-Mult] therefore applies only in frames where $\mathcal S_\Pi$ carries more structure than that chiral
-      rank-two frame; the note neither derives nor uses it.
+      Limits. Let $\mathcal S_\Pi=\mathcal S_L\oplus\mathcal S_R$ with $\mathcal S_L,\mathcal S_R$ of rank two, let the residue be
+      left-admissible, $\EPi=E_{LL}\oplus0$, and let $\Phi$ be multiplicative, $\Phi(XY)=\Phi(X)\Phi(Y)$, not necessarily
+      unital, with non-singular even sector $\Phi(\EPi(0))^2=\mathrm{diag}(1,\tfrac12,\tfrac12)$ on $\dim\mathcal H=3$.
+      If the jets of $E_{LL}$ do not commute they generate a full matrix algebra ($M_2(\mathbb R)$ or $M_2(\mathbb C)$), whose
+      modules of dimension at most three have dimension $0$ or $2$, so $\Phi(\EPi(0))$ would be singular: no such $\Phi$
+      exists.
+      If they commute and such a $\Phi$ exists, then $\Phi(E_i)=\mathrm{diag}(p_i,q_i,q_i)$ is forced and $u\equiv0$ to all
+      orders; the $J_\Pi$-covariance is not used.
+      Without non-singularity, $\Phi(X)=X\oplus0$ (into a two-dimensional subspace of $\mathcal H$) is multiplicative.
+      [H-Mult] therefore cannot support a non-zero split in that frame; no model satisfying all of [H-Gen] and [H-Mult] is
+      exhibited here, and nothing in this note uses the hypothesis.
     \end{hypothesis}
 
     Hypothesis~\ref{hyp:mult} is a separate condition, not part of the meaning of [H-Gen]: [H-Gen] supplies only a
@@ -850,8 +847,7 @@ of Projection Locking}
     \begin{definition}[Schur transversality]
       \label{def:schur-transversality}
       Assume Hypothesis~\ref{hyp:generation}, and that $\EPi$ and $\PiS D\sigma D\PiS^{*}$ are zero-order
-      (Hypothesis~\ref{hyp:symbol} for $\EPi$; for the $\sigma$-term Lemma~\ref{lem:weyl-faithful} and the assumption
-      that it is zero-order), so that $\Phi$ is defined on them.
+      (clause (iv) of Hypothesis~\ref{hyp:generation}), so that $\Phi$ is defined on them.
       Let $\sigma:=\tfrac12\big(\partial_sP|_0-J_\Pi(\partial_sP|_0)J_\Pi^{-1}\big)$ be the $J_\Pi$-odd part of the
       opened direction, a linear operator on $\mathcal S$, and
       \begin{equation}
